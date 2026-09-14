@@ -68,4 +68,6 @@ def test_intrinsic_ta_adds_back_reference_water_alkalinity() -> None:
     grid = Grid(alkalinity_mgl=np.array([32.3]), hardness_mgl=np.array([48.0]))
     res = residual_acidity(r, grid, CationParams())
     assert res[0, 0] == pytest.approx(12.46, rel=1e-6)
-    assert sourness_from_ta(12.46) == pytest.approx(37.5, abs=0.5)
+    # Straight line through three roast means; residuals under 1 point on the 0 to 100 scale.
+    for ta, sour in ((12.46, 37.54), (11.36, 31.77), (9.78, 27.65)):
+        assert abs(float(sourness_from_ta(ta)) - sour) < 1.0
