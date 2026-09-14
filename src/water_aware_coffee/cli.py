@@ -96,6 +96,78 @@ def cmd_regimes(_: argparse.Namespace) -> None:
     )
 
 
+def cmd_bands(_: argparse.Namespace) -> None:
+    import pandas as pd
+
+    from water_aware_coffee.atlas.bands import build_bands, edge_acid_loss
+
+    out_dir = INTERIM_DIR.parent / "processed"
+    wide = pd.read_parquet(out_dir / "atlas_v0_wide.parquet")
+    d, summary, match = build_bands(wide, out_dir)
+    pd.set_option("display.width", 200)
+    print(f"bands v0: {len(d):,} localities")
+    print(edge_acid_loss().round(3).to_string(index=False))
+    print(
+        summary[
+            [
+                "band",
+                "name",
+                "localities",
+                "population_share",
+                "population_share_measured_only",
+                "alkalinity_median",
+                "hardness_median",
+                "share_softened",
+                "share_imputed_alkalinity",
+            ]
+        ]
+        .round(3)
+        .to_string(index=False)
+    )
+    print(
+        match[
+            [
+                "band",
+                "roast",
+                "relative_residual_at_median",
+                "relative_residual_at_upper_edge",
+                "label_at_median",
+                "label_at_upper_edge",
+            ]
+        ]
+        .round(2)
+        .to_string(index=False)
+    )
+
+
+def cmd_dialin(args: argparse.Namespace) -> None:
+    from water_aware_coffee.model.params import ROASTS
+    from water_aware_coffee.model.sensory import AdditiveSensory, dial_in
+
+    sens = AdditiveSensory.from_frost_csv()
+    roast = next(r for r in ROASTS if r.name == args.roast)
+    d = dial_in(args.alkalinity, roast, sens)
+    print(f"{roast.name} roast in water with alkalinity {args.alkalinity:g} mg/L as CaCO3")
+    print(f"  acid neutralised vs reference (40 mg/L): {d.acid_neutralised_meq:+.2f} meq/L")
+    print(f"  predicted sourness change: {d.sourness_change_points:+.1f} points (0 to 100 scale)")
+    print(
+        f"  strength route: TDS {d.tds_delta_percent:+.2f} to {d.tds_delta_percent_sensory:+.2f} %"
+        f" (dose {100 * d.dose_change_fraction:+.0f} to"
+        f" {100 * d.dose_change_fraction_sensory:+.0f} %),"
+        " chemistry to sensory estimate; side effects at the chemistry value: "
+        + ", ".join(f"{k} {v:+.1f}" for k, v in d.side_effects_tds_route.items())
+    )
+    print(
+        f"  extraction route: PE {d.pe_delta_percent:+.1f} %; side effects: "
+        + ", ".join(f"{k} {v:+.1f}" for k, v in d.side_effects_pe_route.items())
+    )
+    print(
+        f"  dilution route: blend {100 * d.dilution_fraction_zero_alk_water:.0f} % zero-alkalinity "
+        "water (distilled / reverse osmosis / near-zero-bicarbonate bottled) to reach 40 mg/L"
+    )
+    print(f"  {d.note}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wac", description="Water-aware coffee tools.")
     sub = parser.add_subparsers(dest="command")
@@ -111,6 +183,14 @@ def main() -> None:
         "regimes", help="cluster the atlas into water regimes and build the matching table"
     )
     p_reg.set_defaults(func=cmd_regimes)
+    p_bands = sub.add_parser(
+        "bands", help="Task 4 (decision 29): fixed alkalinity bands + matching table"
+    )
+    p_bands.set_defaults(func=cmd_bands)
+    p_dial = sub.add_parser("dialin", help="Task 5: compensation for a water alkalinity and roast")
+    p_dial.add_argument("--alkalinity", type=float, required=True, help="mg/L as CaCO3")
+    p_dial.add_argument("--roast", choices=["light", "medium", "dark"], default="medium")
+    p_dial.set_defaults(func=cmd_dialin)
     args = parser.parse_args()
     if args.command is None:
         parser.print_help()
