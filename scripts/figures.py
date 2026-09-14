@@ -22,6 +22,8 @@ from pathlib import Path
 import matplotlib
 
 matplotlib.use("Agg")
+import sys  # noqa: E402
+
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
@@ -35,7 +37,8 @@ from water_aware_coffee.model.sensory import AdditiveSensory, rules_table  # noq
 
 ROOT = Path(__file__).resolve().parents[1]
 PROC = ROOT / "data" / "processed"
-FIG = ROOT / "docs" / "figures"
+PAPER_MODE = "--paper" in sys.argv  # paper figures: no in-figure titles, captions carry the text
+FIG = ROOT / ("paper" if PAPER_MODE else "docs") / "figures"
 
 # Palette instance (references/palette.md): categorical slots 1..3, blue ramp, chrome.
 SLOT = ["#2a78d6", "#eb6834", "#1baf7a"]
@@ -97,6 +100,8 @@ plt.rcParams.update(
 
 def _title(ax: plt.Axes, title: str, subtitle: str | None = None) -> None:
     ax.set_title("")
+    if PAPER_MODE:
+        return
     y = 1.075 if subtitle else 1.02
     ax.text(
         0,

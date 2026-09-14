@@ -7,7 +7,6 @@ Writes paper/tables/*.md (included from paper/paper.qmd) and copies the figures 
 from __future__ import annotations
 
 import ast
-import shutil
 from pathlib import Path
 
 import pandas as pd
@@ -19,7 +18,6 @@ from water_aware_coffee.model.sensory import AdditiveSensory, rules_table
 ROOT = Path(__file__).resolve().parents[1]
 PROC = ROOT / "data" / "processed"
 OUT = ROOT / "paper" / "tables"
-FIGS = ROOT / "docs" / "figures"
 
 
 def md_table(df: pd.DataFrame, caption: str, label: str) -> str:
@@ -213,10 +211,7 @@ def main() -> None:
     (OUT / "matching.md").write_text(matching_table())
     (OUT / "rules.md").write_text(rules_table_md())
     (OUT / "bottled.md").write_text(bottled_table())
-    for f in FIGS.glob("fig*.png"):
-        shutil.copy(f, ROOT / "paper" / "figures" / f.name)
-    for f in FIGS.glob("fig*.svg"):
-        shutil.copy(f, ROOT / "paper" / "figures" / f.name)
+    # Paper figures are rendered without in-figure titles by `python scripts/figures.py --paper`.
     edges = [e for e in BAND_EDGES if 0 < e < float("inf")]
     print("tables written:", sorted(p.name for p in OUT.glob("*.md")), "band edges", edges)
 
