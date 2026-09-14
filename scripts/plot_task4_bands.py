@@ -111,7 +111,9 @@ def main() -> None:
         fontsize=11,
         color=INK,
     )
-    plt.close(fig)  # figure superseded by scripts/figures.py fig3; markdown below is still produced here
+    plt.close(
+        fig
+    )  # figure superseded by scripts/figures.py fig3; markdown below is still produced here
 
     # Task 4 results markdown
     lines = [

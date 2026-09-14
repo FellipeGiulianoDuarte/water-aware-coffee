@@ -1,0 +1,20 @@
+project:
+  type: default
+  output-dir: _output
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    fig-width: 7.2
+    embed-resources: true
+    theme: cosmo
+  pdf:
+    documentclass: article
+    papersize: a4
+    number-sections: true
+    geometry: margin=25mm
+    fig-pos: "H"
+
+bibliography: references.bib
+csl: https://www.zotero.org/styles/apa

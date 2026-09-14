@@ -16,3 +16,5 @@ build/
 .ipynb_checkpoints/
 .DS_Store
 *.sha256
+paper/_output/
+paper/.quarto/
