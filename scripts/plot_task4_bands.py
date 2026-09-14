@@ -25,9 +25,9 @@ FIG = ROOT / "docs" / "figures"
 INK, INK2, GRIDC, SURFACE = "#0b0b0b", "#52514e", "#e6e5e1", "#fcfcfb"
 COUNTRY_COLOURS = {"US": "#2a78d6", "GB": "#eb6834", "BR": "#1baf7a"}
 COUNTRY_NAMES = {
-    "US": "United States (measured)",
-    "GB": "United Kingdom (measured)",
-    "BR": "Brazil (imputed)",
+    "US": "United States, 3,341 cities with measured alkalinity",
+    "GB": "England, 3 water companies with measured alkalinity",
+    "BR": "Brazil, 2,441 municipalities, alkalinity imputed",
 }
 
 plt.rcParams.update(
@@ -90,7 +90,7 @@ def main() -> None:
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=8.5)
     ax.set_ylabel("share of the country's population")
-    ax.set_ylim(0, 0.8)
+    ax.set_ylim(0, 0.9)
     ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0))
     ax.legend(frameon=False, fontsize=9, loc="upper left")
     ax.grid(axis="y", color=GRIDC, linewidth=0.8)
@@ -99,7 +99,7 @@ def main() -> None:
     for k, (e, lost) in enumerate(zip(edges.iloc[:, 0], edges.iloc[:, 1], strict=True)):
         ax.text(
             k + 0.5,
-            0.74,
+            0.60,
             f"{lost:.0%} of a light roast's\nacidity lost at {e:.0f} mg/L",
             ha="center",
             fontsize=7.5,
@@ -128,7 +128,7 @@ def main() -> None:
         "|---|---|",
         *[
             f"| {e:.0f} | {lost:.0%} |"
-            for e, l in zip(edges.iloc[:, 0], edges.iloc[:, 1], strict=True)
+            for e, lost in zip(edges.iloc[:, 0], edges.iloc[:, 1], strict=True)
         ],
         "",
         "## Bands",

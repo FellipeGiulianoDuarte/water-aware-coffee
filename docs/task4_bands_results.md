@@ -7,9 +7,9 @@ Figure: docs/figures/task4_bands.png. Decision 29: bands replace the Gaussian mi
 
 | alkalinity edge (mg/L as CaCO3) | share of light-roast acidity neutralised |
 |---|---|
-| 40 | 39% |
-| 80 | 39% |
-| 150 | 39% |
+| 40 | 6% |
+| 80 | 12% |
+| 150 | 23% |
 | 250 | 39% |
 
 ## Bands
