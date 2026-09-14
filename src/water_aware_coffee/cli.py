@@ -35,6 +35,18 @@ def cmd_build(args: argparse.Namespace) -> None:
         print(f"{sid}: {len(df):,} rows -> {out.relative_to(INTERIM_DIR.parent.parent)} {by_q}")
 
 
+def cmd_atlas(_: argparse.Namespace) -> None:
+    from water_aware_coffee.atlas.aggregate import build_atlas_v0
+
+    out_dir = INTERIM_DIR.parent / "processed"
+    long, wide = build_atlas_v0(INTERIM_DIR, out_dir)
+    print(f"atlas v0: {len(long):,} locality×quantity rows, {len(wide):,} localities -> {out_dir}")
+    for q in ("hardness", "alkalinity", "calcium", "magnesium"):
+        col = f"{q}_median"
+        if col in wide.columns:
+            print(f"  {q}: {wide[col].notna().sum():,} localities")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wac", description="Water-aware coffee tools.")
     sub = parser.add_subparsers(dest="command")
@@ -44,6 +56,8 @@ def main() -> None:
     p_build.add_argument("source_id", nargs="*")
     p_build.add_argument("--all", action="store_true")
     p_build.set_defaults(func=cmd_build)
+    p_atlas = sub.add_parser("atlas", help="aggregate interim tables into per-locality atlas v0")
+    p_atlas.set_defaults(func=cmd_atlas)
     args = parser.parse_args()
     if args.command is None:
         parser.print_help()

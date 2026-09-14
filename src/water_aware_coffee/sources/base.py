@@ -21,6 +21,9 @@ from water_aware_coffee.provenance import COLUMNS, validate
 from water_aware_coffee.units import TARGET_UNIT, Quantity, conversion_factor, is_ambiguous
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
+
+# A bare "mg/L" is ambiguous only where the reporting basis matters (as CaCO3 vs as ion).
+AMBIGUOUS_QUANTITIES = frozenset({Quantity.HARDNESS, Quantity.ALKALINITY})
 RAW_DIR = REPO_ROOT / "data" / "raw"
 INTERIM_DIR = REPO_ROOT / "data" / "interim"
 
@@ -128,7 +131,7 @@ class MeasurementBuilder:
         else:
             factor = conversion_factor(quantity, original_unit)
         if unit_assumed is None:
-            unit_assumed = is_ambiguous(original_unit) and quantity is not Quantity.PH
+            unit_assumed = is_ambiguous(original_unit) and quantity in AMBIGUOUS_QUANTITIES
         self.rows.append(
             {
                 "source_id": self.src.source_id,
@@ -193,7 +196,7 @@ def frame_from_records(records: pd.DataFrame, src: SourceFile) -> pd.DataFrame:
         df["conversion_factor"] = [uniq[k] for k in key]
     if "unit_assumed" not in df.columns:
         df["unit_assumed"] = [
-            is_ambiguous(u) and q != Quantity.PH.value
+            is_ambiguous(u) and Quantity(q) in AMBIGUOUS_QUANTITIES
             for q, u in zip(df["quantity"], df["original_unit"], strict=True)
         ]
     df["value"] = df["original_value"].astype(float) * df["conversion_factor"].astype(float)
