@@ -1,0 +1,47 @@
+attribute,attribute_key,roast_or_pooled,significant_fit_reported,model_order,model_order_source,figure
+Burnt wood/ash flavor,burnt_wood_ash_flavor,Light,yes,not_stated,,Figure 8
+Burnt wood/ash flavor,burnt_wood_ash_flavor,Medium,yes,not_stated,,Figure 8
+Burnt wood/ash flavor,burnt_wood_ash_flavor,Dark,yes,not_stated,,Figure 8
+Citrus flavor,citrus_flavor,Light,yes,first,Frost2020 section 3.3 text,Figure 8
+Citrus flavor,citrus_flavor,Medium,yes,first,Frost2020 section 3.3 text,Figure 8
+Citrus flavor,citrus_flavor,Dark,yes,second,Frost2020 section 3.3 text,Figure 8
+Sourness,sourness,Light,yes,first,Frost2020 section 3.3 text,Figure 8
+Sourness,sourness,Medium,yes,first,Frost2020 section 3.3 text,Figure 8
+Sourness,sourness,Dark,yes,second,Frost2020 section 3.3 text,Figure 8
+Bitterness,bitterness,Light,yes,not_stated,,Figure 8
+Bitterness,bitterness,Medium,yes,not_stated,,Figure 8
+Bitterness,bitterness,Dark,yes,not_stated,,Figure 8
+Sweetness,sweetness,Light,yes,not_stated,,Figure 8
+Sweetness,sweetness,Medium,yes,not_stated,,Figure 8
+Sweetness,sweetness,Dark,yes,not_stated,,Figure 8
+Thickness,thickness,Light,yes,not_stated,,Figure 8
+Thickness,thickness,Medium,yes,not_stated,,Figure 8
+Thickness,thickness,Dark,yes,not_stated,,Figure 8
+Flavor persistence,flavor_persistence,Light,yes,second,"Frost2020 section 4 text (stationary point 22.6% PE, 1.37% TDS)",Figure 8
+Flavor persistence,flavor_persistence,Medium,yes,not_stated,,Figure 8
+Flavor persistence,flavor_persistence,Dark,yes,not_stated,,Figure 8
+Astringency,astringency,Light,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Earthy flavor,earthy_flavor,Light,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Fermented flavor,fermented_flavor,Light,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Rubber flavor,rubber_flavor,Light,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Black pepper flavor,black_pepper_flavor,Medium,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Blueberry flavor,blueberry_flavor,Medium,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Brown spice flavor,brown_spice_flavor,Medium,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Dark chocolate flavor,dark_chocolate_flavor,Medium,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Earthy flavor,earthy_flavor,Medium,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Roasted flavor,roasted_flavor,Medium,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Rubber flavor,rubber_flavor,Medium,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Astringency,astringency,Dark,yes,first,Frost2020 section 3.3 text ('fit with linear response surfaces (Figure 9)'),Figure 9
+Sourness,sourness,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Citrus flavor,citrus_flavor,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Astringency,astringency,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Bitterness,bitterness,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Fermented flavor,fermented_flavor,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Roasted flavor,roasted_flavor,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Rubber flavor,rubber_flavor,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Burnt wood/ash flavor,burnt_wood_ash_flavor,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Dried fruit flavor,dried_fruit_flavor,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Flavor persistence,flavor_persistence,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Thickness,thickness,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Earthy flavor,earthy_flavor,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10
+Sweetness,sweetness,pooled (roast removed as blocking factor),yes,not_stated,,Figure 10

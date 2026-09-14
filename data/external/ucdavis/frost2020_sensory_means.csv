@@ -1,0 +1,289 @@
+roast,tds_percent,pe_percent,attribute,attribute_key,mean_intensity,n_or_se_if_given,lsd_group,fisher_lsd_main_effect,varied_factor,significant_interaction,source_table
+Light,all,all,Astringency,astringency,44.8,,b,2.49,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Astringency,astringency,47.5,,a,2.49,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Astringency,astringency,48.1,,a,2.49,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Astringency,astringency,43.5,,b,2.49,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Astringency,astringency,47.2,,a,2.49,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Astringency,astringency,49.6,,a,2.49,tds,,Frost2020_SI Supplemental B
+all,all,16,Astringency,astringency,45.9,,,2.49,pe,,Frost2020_SI Supplemental B
+all,all,20,Astringency,astringency,47.7,,,2.49,pe,,Frost2020_SI Supplemental B
+all,all,24,Astringency,astringency,46.7,,,2.49,pe,,Frost2020_SI Supplemental B
+Light,all,all,Bitterness,bitterness,32.4,,c,2.09,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Bitterness,bitterness,37.8,,,2.09,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Bitterness,bitterness,44.6,,a,2.09,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Bitterness,bitterness,32.4,,c,2.09,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Bitterness,bitterness,38.5,,b,2.09,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Bitterness,bitterness,44.0,,a,2.09,tds,,Frost2020_SI Supplemental B
+all,all,16,Bitterness,bitterness,35.1,,b,2.09,pe,,Frost2020_SI Supplemental B
+all,all,20,Bitterness,bitterness,39.7,,a,2.09,pe,,Frost2020_SI Supplemental B
+all,all,24,Bitterness,bitterness,40.1,,a,2.09,pe,,Frost2020_SI Supplemental B
+Light,all,all,Black Pepper Aroma,black_pepper_aroma,14.3,,,,roast,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+Medium,all,all,Black Pepper Aroma,black_pepper_aroma,13.9,,,,roast,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+Dark,all,all,Black Pepper Aroma,black_pepper_aroma,16.3,,,,roast,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+all,1.00,all,Black Pepper Aroma,black_pepper_aroma,14.7,,,,tds,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+all,1.25,all,Black Pepper Aroma,black_pepper_aroma,15.0,,,,tds,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+all,1.50,all,Black Pepper Aroma,black_pepper_aroma,14.7,,,,tds,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+all,all,16,Black Pepper Aroma,black_pepper_aroma,15.0,,,,pe,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+all,all,20,Black Pepper Aroma,black_pepper_aroma,14.4,,,,pe,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+all,all,24,Black Pepper Aroma,black_pepper_aroma,15.1,,,,pe,roast_x_tds;roast_x_pe,Frost2020_SI Supplemental B
+Light,all,all,Black Tea Flavor,black_tea_flavor,26.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Black Tea Flavor,black_tea_flavor,27.7,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Black Tea Flavor,black_tea_flavor,27.6,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Black Tea Flavor,black_tea_flavor,27.9,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Black Tea Flavor,black_tea_flavor,27.2,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Black Tea Flavor,black_tea_flavor,26.6,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Black Tea Flavor,black_tea_flavor,26.8,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Black Tea Flavor,black_tea_flavor,27.3,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Black Tea Flavor,black_tea_flavor,27.7,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Blueberry Flavor,blueberry_flavor,16.7,,a,1.44,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Blueberry Flavor,blueberry_flavor,15.3,,a,1.44,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Blueberry Flavor,blueberry_flavor,12.9,,b,1.44,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Blueberry Flavor,blueberry_flavor,15.5,,,1.44,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Blueberry Flavor,blueberry_flavor,15.1,,,1.44,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Blueberry Flavor,blueberry_flavor,14.3,,,1.44,tds,,Frost2020_SI Supplemental B
+all,all,16,Blueberry Flavor,blueberry_flavor,15.0,,,1.44,pe,,Frost2020_SI Supplemental B
+all,all,20,Blueberry Flavor,blueberry_flavor,14.7,,,1.44,pe,,Frost2020_SI Supplemental B
+all,all,24,Blueberry Flavor,blueberry_flavor,15.2,,,1.44,pe,,Frost2020_SI Supplemental B
+Light,all,all,Broth Flavor,broth_flavor,14.6,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Broth Flavor,broth_flavor,14.0,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Broth Flavor,broth_flavor,14.0,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Broth Flavor,broth_flavor,14.0,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Broth Flavor,broth_flavor,14.5,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Broth Flavor,broth_flavor,14.1,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Broth Flavor,broth_flavor,14.6,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Broth Flavor,broth_flavor,14.2,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Broth Flavor,broth_flavor,14.0,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Brown Spice Aroma,brown_spice_aroma,17.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Brown Spice Aroma,brown_spice_aroma,18.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Brown Spice Aroma,brown_spice_aroma,16.7,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Brown Spice Aroma,brown_spice_aroma,17.5,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Brown Spice Aroma,brown_spice_aroma,18.1,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Brown Spice Aroma,brown_spice_aroma,16.9,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Brown Spice Aroma,brown_spice_aroma,17.1,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Brown Spice Aroma,brown_spice_aroma,16.8,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Brown Spice Aroma,brown_spice_aroma,18.5,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Brown Spice Flavor,brown_spice_flavor,12.5,,b,1.03,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Brown Spice Flavor,brown_spice_flavor,13.2,,b,1.03,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Brown Spice Flavor,brown_spice_flavor,14.4,,a,1.03,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Brown Spice Flavor,brown_spice_flavor,13.3,,,1.03,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Brown Spice Flavor,brown_spice_flavor,13.7,,,1.03,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Brown Spice Flavor,brown_spice_flavor,13.2,,,1.03,tds,,Frost2020_SI Supplemental B
+all,all,16,Brown Spice Flavor,brown_spice_flavor,12.6,,,1.03,pe,,Frost2020_SI Supplemental B
+all,all,20,Brown Spice Flavor,brown_spice_flavor,13.1,,,1.03,pe,,Frost2020_SI Supplemental B
+all,all,24,Brown Spice Flavor,brown_spice_flavor,14.4,,,1.03,pe,,Frost2020_SI Supplemental B
+Light,all,all,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,22.8,,c,1.95,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,28.9,,b,1.95,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,32.7,,a,1.95,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,25.1,,c,1.95,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,28.2,,b,1.95,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,31.1,,a,1.95,tds,,Frost2020_SI Supplemental B
+all,all,16,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,24.8,,b,1.95,pe,,Frost2020_SI Supplemental B
+all,all,20,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,29.2,,a,1.95,pe,,Frost2020_SI Supplemental B
+all,all,24,Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,30.4,,a,1.95,pe,,Frost2020_SI Supplemental B
+Light,all,all,Cereal Malt Flavor,cereal_malt_flavor,18.7,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Cereal Malt Flavor,cereal_malt_flavor,19.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Cereal Malt Flavor,cereal_malt_flavor,17.9,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Cereal Malt Flavor,cereal_malt_flavor,19.5,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Cereal Malt Flavor,cereal_malt_flavor,18.6,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Cereal Malt Flavor,cereal_malt_flavor,18.0,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Cereal Malt Flavor,cereal_malt_flavor,18.4,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Cereal Malt Flavor,cereal_malt_flavor,18.9,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Cereal Malt Flavor,cereal_malt_flavor,18.8,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Citrus Flavor,citrus_flavor,21.9,,a,1.97,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Citrus Flavor,citrus_flavor,17.6,,b,1.97,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Citrus Flavor,citrus_flavor,15.3,,c,1.97,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Citrus Flavor,citrus_flavor,15.0,,b,1.97,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Citrus Flavor,citrus_flavor,19.1,,b,1.97,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Citrus Flavor,citrus_flavor,20.7,,a,1.97,tds,,Frost2020_SI Supplemental B
+all,all,16,Citrus Flavor,citrus_flavor,21.0,,a,1.97,pe,,Frost2020_SI Supplemental B
+all,all,20,Citrus Flavor,citrus_flavor,18.1,,b,1.97,pe,,Frost2020_SI Supplemental B
+all,all,24,Citrus Flavor,citrus_flavor,15.7,,c,1.97,pe,,Frost2020_SI Supplemental B
+Light,all,all,Cocoa Aroma,cocoa_aroma,25.0,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Cocoa Aroma,cocoa_aroma,24.3,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Cocoa Aroma,cocoa_aroma,22.7,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Cocoa Aroma,cocoa_aroma,24.1,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Cocoa Aroma,cocoa_aroma,23.4,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Cocoa Aroma,cocoa_aroma,24.4,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Cocoa Aroma,cocoa_aroma,25.4,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Cocoa Aroma,cocoa_aroma,23.4,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Cocoa Aroma,cocoa_aroma,23.1,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Dark Chocolate Flavor,dark_chocolate_flavor,17.8,,c,1.66,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Dark Chocolate Flavor,dark_chocolate_flavor,19.8,,b,1.66,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Dark Chocolate Flavor,dark_chocolate_flavor,22.1,,a,1.66,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Dark Chocolate Flavor,dark_chocolate_flavor,20.2,,,1.66,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Dark Chocolate Flavor,dark_chocolate_flavor,20.1,,,1.66,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Dark Chocolate Flavor,dark_chocolate_flavor,19.5,,,1.66,tds,,Frost2020_SI Supplemental B
+all,all,16,Dark Chocolate Flavor,dark_chocolate_flavor,18.4,,b,1.66,pe,,Frost2020_SI Supplemental B
+all,all,20,Dark Chocolate Flavor,dark_chocolate_flavor,20.3,,a,1.66,pe,,Frost2020_SI Supplemental B
+all,all,24,Dark Chocolate Flavor,dark_chocolate_flavor,21.1,,a,1.66,pe,,Frost2020_SI Supplemental B
+Light,all,all,Dark Green Veg Flavor,dark_green_veg_flavor,20.0,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Dark Green Veg Flavor,dark_green_veg_flavor,19.5,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Dark Green Veg Flavor,dark_green_veg_flavor,19.2,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Dark Green Veg Flavor,dark_green_veg_flavor,18.6,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Dark Green Veg Flavor,dark_green_veg_flavor,20.5,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Dark Green Veg Flavor,dark_green_veg_flavor,19.7,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Dark Green Veg Flavor,dark_green_veg_flavor,19.6,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Dark Green Veg Flavor,dark_green_veg_flavor,19.8,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Dark Green Veg Flavor,dark_green_veg_flavor,19.3,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Dried Fruit Flavor,dried_fruit_flavor,21.1,,a,1.67,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Dried Fruit Flavor,dried_fruit_flavor,20.1,,a,1.67,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Dried Fruit Flavor,dried_fruit_flavor,17.9,,b,1.67,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Dried Fruit Flavor,dried_fruit_flavor,18.4,,,1.67,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Dried Fruit Flavor,dried_fruit_flavor,19.9,,,1.67,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Dried Fruit Flavor,dried_fruit_flavor,20.7,,,1.67,tds,,Frost2020_SI Supplemental B
+all,all,16,Dried Fruit Flavor,dried_fruit_flavor,21.2,,a,1.67,pe,,Frost2020_SI Supplemental B
+all,all,20,Dried Fruit Flavor,dried_fruit_flavor,19.0,,b,1.67,pe,,Frost2020_SI Supplemental B
+all,all,24,Dried Fruit Flavor,dried_fruit_flavor,18.9,,b,1.67,pe,,Frost2020_SI Supplemental B
+Light,all,all,Earthy Flavor,earthy_flavor,18.5,,b,1.68,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Earthy Flavor,earthy_flavor,21.5,,a,1.68,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Earthy Flavor,earthy_flavor,23.1,,a,1.68,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Earthy Flavor,earthy_flavor,20.4,,,1.68,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Earthy Flavor,earthy_flavor,21.3,,,1.68,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Earthy Flavor,earthy_flavor,21.3,,,1.68,tds,,Frost2020_SI Supplemental B
+all,all,16,Earthy Flavor,earthy_flavor,19.3,,b,1.68,pe,,Frost2020_SI Supplemental B
+all,all,20,Earthy Flavor,earthy_flavor,21.0,,b,1.68,pe,,Frost2020_SI Supplemental B
+all,all,24,Earthy Flavor,earthy_flavor,22.8,,a,1.68,pe,,Frost2020_SI Supplemental B
+Light,all,all,Fermented Flavor,fermented_flavor,14.9,,,1.47,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Fermented Flavor,fermented_flavor,13.4,,,1.47,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Fermented Flavor,fermented_flavor,12.7,,,1.47,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Fermented Flavor,fermented_flavor,12.3,,b,1.47,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Fermented Flavor,fermented_flavor,14.2,,a,1.47,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Fermented Flavor,fermented_flavor,14.6,,a,1.47,tds,,Frost2020_SI Supplemental B
+all,all,16,Fermented Flavor,fermented_flavor,14.3,,,1.47,pe,,Frost2020_SI Supplemental B
+all,all,20,Fermented Flavor,fermented_flavor,13.2,,,1.47,pe,,Frost2020_SI Supplemental B
+all,all,24,Fermented Flavor,fermented_flavor,13.5,,,1.47,pe,,Frost2020_SI Supplemental B
+Light,all,all,Flavor Persistence,flavor_persistence,40.9,,,2.22,roast,roast_x_tds,Frost2020_SI Supplemental B
+Medium,all,all,Flavor Persistence,flavor_persistence,44.1,,,2.22,roast,roast_x_tds,Frost2020_SI Supplemental B
+Dark,all,all,Flavor Persistence,flavor_persistence,47.5,,,2.22,roast,roast_x_tds,Frost2020_SI Supplemental B
+all,1.00,all,Flavor Persistence,flavor_persistence,37.9,,,2.22,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,1.25,all,Flavor Persistence,flavor_persistence,45.5,,,2.22,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,1.50,all,Flavor Persistence,flavor_persistence,49.1,,,2.22,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,all,16,Flavor Persistence,flavor_persistence,41.6,,b,2.22,pe,roast_x_tds,Frost2020_SI Supplemental B
+all,all,20,Flavor Persistence,flavor_persistence,45.5,,a,2.22,pe,roast_x_tds,Frost2020_SI Supplemental B
+all,all,24,Flavor Persistence,flavor_persistence,45.4,,a,2.22,pe,roast_x_tds,Frost2020_SI Supplemental B
+Light,all,all,Floral Aroma,floral_aroma,15.5,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Floral Aroma,floral_aroma,13.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Floral Aroma,floral_aroma,14.1,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Floral Aroma,floral_aroma,14.0,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Floral Aroma,floral_aroma,14.4,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Floral Aroma,floral_aroma,14.6,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Floral Aroma,floral_aroma,13.1,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Floral Aroma,floral_aroma,14.2,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Floral Aroma,floral_aroma,15.7,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Hay Like Flavor,hay_like_flavor,15.7,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Hay Like Flavor,hay_like_flavor,15.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Hay Like Flavor,hay_like_flavor,14.2,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Hay Like Flavor,hay_like_flavor,14.4,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Hay Like Flavor,hay_like_flavor,15.5,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Hay Like Flavor,hay_like_flavor,15.4,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Hay Like Flavor,hay_like_flavor,15.2,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Hay Like Flavor,hay_like_flavor,15.5,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Hay Like Flavor,hay_like_flavor,14.6,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Molasses Flavor,molasses_flavor,17.9,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Molasses Flavor,molasses_flavor,16.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Molasses Flavor,molasses_flavor,15.9,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Molasses Flavor,molasses_flavor,15.6,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Molasses Flavor,molasses_flavor,17.2,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Molasses Flavor,molasses_flavor,17.5,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Molasses Flavor,molasses_flavor,16.7,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Molasses Flavor,molasses_flavor,17.0,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Molasses Flavor,molasses_flavor,16.5,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Nutty Aroma,nutty_aroma,29.0,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Nutty Aroma,nutty_aroma,28.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Nutty Aroma,nutty_aroma,28.1,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Nutty Aroma,nutty_aroma,27.7,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Nutty Aroma,nutty_aroma,29.3,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Nutty Aroma,nutty_aroma,28.5,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Nutty Aroma,nutty_aroma,29.0,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Nutty Aroma,nutty_aroma,28.6,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Nutty Aroma,nutty_aroma,27.9,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Nutty Flavor,nutty_flavor,25.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Nutty Flavor,nutty_flavor,26.2,,,n.s.,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Nutty Flavor,nutty_flavor,27.4,,,n.s.,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Nutty Flavor,nutty_flavor,26.6,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Nutty Flavor,nutty_flavor,26.8,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Nutty Flavor,nutty_flavor,25.6,,,n.s.,tds,,Frost2020_SI Supplemental B
+all,all,16,Nutty Flavor,nutty_flavor,26.4,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,20,Nutty Flavor,nutty_flavor,25.9,,,n.s.,pe,,Frost2020_SI Supplemental B
+all,all,24,Nutty Flavor,nutty_flavor,26.6,,,n.s.,pe,,Frost2020_SI Supplemental B
+Light,all,all,Roasted Flavor,roasted_flavor,30.8,,,2.06,roast,roast_x_tds,Frost2020_SI Supplemental B
+Medium,all,all,Roasted Flavor,roasted_flavor,35.2,,,2.06,roast,roast_x_tds,Frost2020_SI Supplemental B
+Dark,all,all,Roasted Flavor,roasted_flavor,42.0,,,2.06,roast,roast_x_tds,Frost2020_SI Supplemental B
+all,1.00,all,Roasted Flavor,roasted_flavor,34.3,,,2.06,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,1.25,all,Roasted Flavor,roasted_flavor,36.0,,,2.06,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,1.50,all,Roasted Flavor,roasted_flavor,37.7,,,2.06,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,all,16,Roasted Flavor,roasted_flavor,34.0,,b,2.06,pe,roast_x_tds,Frost2020_SI Supplemental B
+all,all,20,Roasted Flavor,roasted_flavor,36.4,,a,2.06,pe,roast_x_tds,Frost2020_SI Supplemental B
+all,all,24,Roasted Flavor,roasted_flavor,37.6,,a,2.06,pe,roast_x_tds,Frost2020_SI Supplemental B
+Light,all,all,Rubber Flavor,rubber_flavor,15.1,,b,1.53,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Rubber Flavor,rubber_flavor,16.2,,b,1.53,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Rubber Flavor,rubber_flavor,19.7,,a,1.53,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Rubber Flavor,rubber_flavor,15.1,,b,1.53,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Rubber Flavor,rubber_flavor,17.3,,a,1.53,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Rubber Flavor,rubber_flavor,18.6,,a,1.53,tds,,Frost2020_SI Supplemental B
+all,all,16,Rubber Flavor,rubber_flavor,15.5,,b,1.53,pe,,Frost2020_SI Supplemental B
+all,all,20,Rubber Flavor,rubber_flavor,17.2,,a,1.53,pe,,Frost2020_SI Supplemental B
+all,all,24,Rubber Flavor,rubber_flavor,18.2,,a,1.53,pe,,Frost2020_SI Supplemental B
+Light,all,all,Smoke/ Acrid Aroma,smoke_acrid_aroma,20.0,,b,1.93,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Smoke/ Acrid Aroma,smoke_acrid_aroma,21.7,,b,1.93,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Smoke/ Acrid Aroma,smoke_acrid_aroma,25.1,,a,1.93,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Smoke/ Acrid Aroma,smoke_acrid_aroma,21.9,,,1.93,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Smoke/ Acrid Aroma,smoke_acrid_aroma,22.4,,,1.93,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Smoke/ Acrid Aroma,smoke_acrid_aroma,22.5,,,1.93,tds,,Frost2020_SI Supplemental B
+all,all,16,Smoke/ Acrid Aroma,smoke_acrid_aroma,22.0,,,1.93,pe,,Frost2020_SI Supplemental B
+all,all,20,Smoke/ Acrid Aroma,smoke_acrid_aroma,22.8,,,1.93,pe,,Frost2020_SI Supplemental B
+all,all,24,Smoke/ Acrid Aroma,smoke_acrid_aroma,22.0,,,1.93,pe,,Frost2020_SI Supplemental B
+Light,all,all,Sourness,sourness,37.4,,,1.71,roast,roast_x_tds,Frost2020_SI Supplemental B
+Medium,all,all,Sourness,sourness,31.5,,,1.71,roast,roast_x_tds,Frost2020_SI Supplemental B
+Dark,all,all,Sourness,sourness,27.6,,,1.71,roast,roast_x_tds,Frost2020_SI Supplemental B
+all,1.00,all,Sourness,sourness,26.5,,,1.71,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,1.25,all,Sourness,sourness,32.9,,,1.71,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,1.50,all,Sourness,sourness,37.2,,,1.71,tds,roast_x_tds,Frost2020_SI Supplemental B
+all,all,16,Sourness,sourness,35.1,,a,1.71,pe,roast_x_tds,Frost2020_SI Supplemental B
+all,all,20,Sourness,sourness,32.9,,b,1.71,pe,roast_x_tds,Frost2020_SI Supplemental B
+all,all,24,Sourness,sourness,28.5,,c,1.71,pe,roast_x_tds,Frost2020_SI Supplemental B
+Light,all,all,Sweetness,sweetness,27.8,,a,1.54,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Sweetness,sweetness,25.7,,b,1.54,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Sweetness,sweetness,23.6,,c,1.54,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Sweetness,sweetness,28.1,,a,1.54,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Sweetness,sweetness,25.3,,b,1.54,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Sweetness,sweetness,23.8,,b,1.54,tds,,Frost2020_SI Supplemental B
+all,all,16,Sweetness,sweetness,26.9,,a,1.54,pe,,Frost2020_SI Supplemental B
+all,all,20,Sweetness,sweetness,25.2,,b,1.54,pe,,Frost2020_SI Supplemental B
+all,all,24,Sweetness,sweetness,25.0,,b,1.54,pe,,Frost2020_SI Supplemental B
+Light,all,all,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,26.4,,a,1.50,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,24.9,,a,1.50,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,22.0,,b,1.50,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,24.9,,,1.50,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,24.7,,,1.50,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,23.7,,,1.50,tds,,Frost2020_SI Supplemental B
+all,all,16,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,26.5,,a,1.50,pe,,Frost2020_SI Supplemental B
+all,all,20,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,23.3,,b,1.50,pe,,Frost2020_SI Supplemental B
+all,all,24,Sweet Brown Roast Flavor,sweet_brown_roast_flavor,23.6,,b,1.50,pe,,Frost2020_SI Supplemental B
+Light,all,all,Thickness,thickness,39.3,,c,2.08,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Thickness,thickness,43.5,,b,2.08,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Thickness,thickness,48.3,,a,2.08,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Thickness,thickness,40.3,,c,2.08,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Thickness,thickness,44.2,,b,2.08,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Thickness,thickness,46.7,,a,2.08,tds,,Frost2020_SI Supplemental B
+all,all,16,Thickness,thickness,40.8,,b,2.08,pe,,Frost2020_SI Supplemental B
+all,all,20,Thickness,thickness,44.8,,a,2.08,pe,,Frost2020_SI Supplemental B
+all,all,24,Thickness,thickness,45.5,,a,2.08,pe,,Frost2020_SI Supplemental B
+Light,all,all,Tobacco Flavor,tobacco_flavor,19.2,,b,1.53,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Tobacco Flavor,tobacco_flavor,21.3,,a,1.53,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Tobacco Flavor,tobacco_flavor,20.8,,a,1.53,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Tobacco Flavor,tobacco_flavor,19.6,,,1.53,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Tobacco Flavor,tobacco_flavor,20.3,,,1.53,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Tobacco Flavor,tobacco_flavor,21.4,,,1.53,tds,,Frost2020_SI Supplemental B
+all,all,16,Tobacco Flavor,tobacco_flavor,20.6,,,1.53,pe,,Frost2020_SI Supplemental B
+all,all,20,Tobacco Flavor,tobacco_flavor,20.4,,,1.53,pe,,Frost2020_SI Supplemental B
+all,all,24,Tobacco Flavor,tobacco_flavor,20.3,,,1.53,pe,,Frost2020_SI Supplemental B
+Light,all,all,Woody Flavor,woody_flavor,21.4,,c,1.66,roast,,Frost2020_SI Supplemental B
+Medium,all,all,Woody Flavor,woody_flavor,24.7,,b,1.66,roast,,Frost2020_SI Supplemental B
+Dark,all,all,Woody Flavor,woody_flavor,26.8,,a,1.66,roast,,Frost2020_SI Supplemental B
+all,1.00,all,Woody Flavor,woody_flavor,23.8,,,1.66,tds,,Frost2020_SI Supplemental B
+all,1.25,all,Woody Flavor,woody_flavor,23.6,,,1.66,tds,,Frost2020_SI Supplemental B
+all,1.50,all,Woody Flavor,woody_flavor,25.5,,,1.66,tds,,Frost2020_SI Supplemental B
+all,all,16,Woody Flavor,woody_flavor,24.1,,,1.66,pe,,Frost2020_SI Supplemental B
+all,all,20,Woody Flavor,woody_flavor,24.0,,,1.66,pe,,Frost2020_SI Supplemental B
+all,all,24,Woody Flavor,woody_flavor,24.9,,,1.66,pe,,Frost2020_SI Supplemental B

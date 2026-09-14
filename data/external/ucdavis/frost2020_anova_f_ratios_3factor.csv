@@ -1,0 +1,193 @@
+attribute,attribute_key,factor,df,f_ratio,significant_p_lt_0_05,source_table
+Astringency,astringency,Coffee,26,2.12,yes,Frost2020_SI Supplemental A
+Bitterness,bitterness,Coffee,26,10.42,yes,Frost2020_SI Supplemental A
+Black Pepper Aroma,black_pepper_aroma,Coffee,26,1.78,yes,Frost2020_SI Supplemental A
+Black Tea Flavor,black_tea_flavor,Coffee,26,1.03,no,Frost2020_SI Supplemental A
+Blueberry Flavor,blueberry_flavor,Coffee,26,2.07,yes,Frost2020_SI Supplemental A
+Brothy Flavor,brothy_flavor,Coffee,26,0.82,no,Frost2020_SI Supplemental A
+Brown Spice Aroma,brown_spice_aroma,Coffee,26,1.04,no,Frost2020_SI Supplemental A
+Brown Spice Flavor,brown_spice_flavor,Coffee,26,1.98,yes,Frost2020_SI Supplemental A
+Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,Coffee,26,7.5,yes,Frost2020_SI Supplemental A
+Cereal Malt Flavor,cereal_malt_flavor,Coffee,26,1.14,no,Frost2020_SI Supplemental A
+Citrus Flavor,citrus_flavor,Coffee,26,5.28,yes,Frost2020_SI Supplemental A
+Astringency,astringency,Judge,11,62.66,yes,Frost2020_SI Supplemental A
+Bitterness,bitterness,Judge,11,66.01,yes,Frost2020_SI Supplemental A
+Black Pepper Aroma,black_pepper_aroma,Judge,11,22.09,yes,Frost2020_SI Supplemental A
+Black Tea Flavor,black_tea_flavor,Judge,11,89.04,yes,Frost2020_SI Supplemental A
+Blueberry Flavor,blueberry_flavor,Judge,11,56.87,yes,Frost2020_SI Supplemental A
+Brothy Flavor,brothy_flavor,Judge,11,37.21,yes,Frost2020_SI Supplemental A
+Brown Spice Aroma,brown_spice_aroma,Judge,11,39.48,yes,Frost2020_SI Supplemental A
+Brown Spice Flavor,brown_spice_flavor,Judge,11,104.58,yes,Frost2020_SI Supplemental A
+Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,Judge,11,129.36,yes,Frost2020_SI Supplemental A
+Cereal Malt Flavor,cereal_malt_flavor,Judge,11,198.45,yes,Frost2020_SI Supplemental A
+Citrus Flavor,citrus_flavor,Judge,11,23.99,yes,Frost2020_SI Supplemental A
+Astringency,astringency,Judge × Coffee,286,0.97,no,Frost2020_SI Supplemental A
+Bitterness,bitterness,Judge × Coffee,286,1.36,yes,Frost2020_SI Supplemental A
+Black Pepper Aroma,black_pepper_aroma,Judge × Coffee,286,1.05,no,Frost2020_SI Supplemental A
+Black Tea Flavor,black_tea_flavor,Judge × Coffee,286,1.15,no,Frost2020_SI Supplemental A
+Blueberry Flavor,blueberry_flavor,Judge × Coffee,286,1.13,no,Frost2020_SI Supplemental A
+Brothy Flavor,brothy_flavor,Judge × Coffee,286,1.02,no,Frost2020_SI Supplemental A
+Brown Spice Aroma,brown_spice_aroma,Judge × Coffee,286,1.04,no,Frost2020_SI Supplemental A
+Brown Spice Flavor,brown_spice_flavor,Judge × Coffee,286,1.23,yes,Frost2020_SI Supplemental A
+Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,Judge × Coffee,286,1.49,yes,Frost2020_SI Supplemental A
+Cereal Malt Flavor,cereal_malt_flavor,Judge × Coffee,286,1.06,no,Frost2020_SI Supplemental A
+Citrus Flavor,citrus_flavor,Judge × Coffee,286,1.11,no,Frost2020_SI Supplemental A
+Astringency,astringency,Judge × Rep,22,2.92,yes,Frost2020_SI Supplemental A
+Bitterness,bitterness,Judge × Rep,22,3.63,yes,Frost2020_SI Supplemental A
+Black Pepper Aroma,black_pepper_aroma,Judge × Rep,22,1.36,no,Frost2020_SI Supplemental A
+Black Tea Flavor,black_tea_flavor,Judge × Rep,22,2.41,yes,Frost2020_SI Supplemental A
+Blueberry Flavor,blueberry_flavor,Judge × Rep,22,1.83,yes,Frost2020_SI Supplemental A
+Brothy Flavor,brothy_flavor,Judge × Rep,22,1.55,no,Frost2020_SI Supplemental A
+Brown Spice Aroma,brown_spice_aroma,Judge × Rep,22,2.45,yes,Frost2020_SI Supplemental A
+Brown Spice Flavor,brown_spice_flavor,Judge × Rep,22,1.26,no,Frost2020_SI Supplemental A
+Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,Judge × Rep,22,3.00,yes,Frost2020_SI Supplemental A
+Cereal Malt Flavor,cereal_malt_flavor,Judge × Rep,22,1.61,yes,Frost2020_SI Supplemental A
+Citrus Flavor,citrus_flavor,Judge × Rep,22,4.29,yes,Frost2020_SI Supplemental A
+Astringency,astringency,Rep,2,1.34,no,Frost2020_SI Supplemental A
+Bitterness,bitterness,Rep,2,4.04,yes,Frost2020_SI Supplemental A
+Black Pepper Aroma,black_pepper_aroma,Rep,2,1.50,no,Frost2020_SI Supplemental A
+Black Tea Flavor,black_tea_flavor,Rep,2,3.22,yes,Frost2020_SI Supplemental A
+Blueberry Flavor,blueberry_flavor,Rep,2,2.57,no,Frost2020_SI Supplemental A
+Brothy Flavor,brothy_flavor,Rep,2,0.03,no,Frost2020_SI Supplemental A
+Brown Spice Aroma,brown_spice_aroma,Rep,2,10.8,yes,Frost2020_SI Supplemental A
+Brown Spice Flavor,brown_spice_flavor,Rep,2,1.37,no,Frost2020_SI Supplemental A
+Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,Rep,2,1.98,no,Frost2020_SI Supplemental A
+Cereal Malt Flavor,cereal_malt_flavor,Rep,2,0.11,no,Frost2020_SI Supplemental A
+Citrus Flavor,citrus_flavor,Rep,2,6.55,yes,Frost2020_SI Supplemental A
+Astringency,astringency,Rep × Coffee,52,0.97,no,Frost2020_SI Supplemental A
+Bitterness,bitterness,Rep × Coffee,52,0.91,no,Frost2020_SI Supplemental A
+Black Pepper Aroma,black_pepper_aroma,Rep × Coffee,52,1.08,no,Frost2020_SI Supplemental A
+Black Tea Flavor,black_tea_flavor,Rep × Coffee,52,0.97,no,Frost2020_SI Supplemental A
+Blueberry Flavor,blueberry_flavor,Rep × Coffee,52,1.11,no,Frost2020_SI Supplemental A
+Brothy Flavor,brothy_flavor,Rep × Coffee,52,0.72,no,Frost2020_SI Supplemental A
+Brown Spice Aroma,brown_spice_aroma,Rep × Coffee,52,0.91,no,Frost2020_SI Supplemental A
+Brown Spice Flavor,brown_spice_flavor,Rep × Coffee,52,1.11,no,Frost2020_SI Supplemental A
+Burnt Wood/Ash Flavor,burnt_wood_ash_flavor,Rep × Coffee,52,0.94,no,Frost2020_SI Supplemental A
+Cereal Malt Flavor,cereal_malt_flavor,Rep × Coffee,52,1.06,no,Frost2020_SI Supplemental A
+Citrus Flavor,citrus_flavor,Rep × Coffee,52,0.96,no,Frost2020_SI Supplemental A
+Cocoa Aroma,cocoa_aroma,Coffee,26,1.29,no,Frost2020_SI Supplemental A
+Dark Chocolate Flavor,dark_chocolate_flavor,Coffee,26,2.04,yes,Frost2020_SI Supplemental A
+Dark Green Veg Flavor,dark_green_veg_flavor,Coffee,26,0.85,no,Frost2020_SI Supplemental A
+Dried Fruit Flavor,dried_fruit_flavor,Coffee,26,2.41,yes,Frost2020_SI Supplemental A
+Earthy Flavor,earthy_flavor,Coffee,26,2.90,yes,Frost2020_SI Supplemental A
+Fermented Flavor,fermented_flavor,Coffee,26,1.36,no,Frost2020_SI Supplemental A
+Flavor Persistence,flavor_persistence,Coffee,26,6.73,yes,Frost2020_SI Supplemental A
+Floral Aroma,floral_aroma,Coffee,26,1.04,no,Frost2020_SI Supplemental A
+Hay-Like Flavor,hay_like_flavor,Coffee,26,1.15,no,Frost2020_SI Supplemental A
+Molasses Flavor,molasses_flavor,Coffee,26,1.44,no,Frost2020_SI Supplemental A
+Nutty Aroma,nutty_aroma,Coffee,26,1.10,no,Frost2020_SI Supplemental A
+Cocoa Aroma,cocoa_aroma,Judge,11,35.30,yes,Frost2020_SI Supplemental A
+Dark Chocolate Flavor,dark_chocolate_flavor,Judge,11,52.54,yes,Frost2020_SI Supplemental A
+Dark Green Veg Flavor,dark_green_veg_flavor,Judge,11,73.63,yes,Frost2020_SI Supplemental A
+Dried Fruit Flavor,dried_fruit_flavor,Judge,11,84.3,yes,Frost2020_SI Supplemental A
+Earthy Flavor,earthy_flavor,Judge,11,82.36,yes,Frost2020_SI Supplemental A
+Fermented Flavor,fermented_flavor,Judge,11,31.34,yes,Frost2020_SI Supplemental A
+Flavor Persistence,flavor_persistence,Judge,11,36.3,yes,Frost2020_SI Supplemental A
+Floral Aroma,floral_aroma,Judge,11,34.74,yes,Frost2020_SI Supplemental A
+Hay-Like Flavor,hay_like_flavor,Judge,11,69.86,yes,Frost2020_SI Supplemental A
+Molasses Flavor,molasses_flavor,Judge,11,82.63,yes,Frost2020_SI Supplemental A
+Nutty Aroma,nutty_aroma,Judge,11,90.12,yes,Frost2020_SI Supplemental A
+Cocoa Aroma,cocoa_aroma,Judge × Coffee,286,0.81,no,Frost2020_SI Supplemental A
+Dark Chocolate Flavor,dark_chocolate_flavor,Judge × Coffee,286,1.02,no,Frost2020_SI Supplemental A
+Dark Green Veg Flavor,dark_green_veg_flavor,Judge × Coffee,286,1.41,yes,Frost2020_SI Supplemental A
+Dried Fruit Flavor,dried_fruit_flavor,Judge × Coffee,286,1.42,yes,Frost2020_SI Supplemental A
+Earthy Flavor,earthy_flavor,Judge × Coffee,286,1.19,yes,Frost2020_SI Supplemental A
+Fermented Flavor,fermented_flavor,Judge × Coffee,286,0.91,no,Frost2020_SI Supplemental A
+Flavor Persistence,flavor_persistence,Judge × Coffee,286,1.45,yes,Frost2020_SI Supplemental A
+Floral Aroma,floral_aroma,Judge × Coffee,286,0.98,no,Frost2020_SI Supplemental A
+Hay-Like Flavor,hay_like_flavor,Judge × Coffee,286,1.07,no,Frost2020_SI Supplemental A
+Molasses Flavor,molasses_flavor,Judge × Coffee,286,1.07,no,Frost2020_SI Supplemental A
+Nutty Aroma,nutty_aroma,Judge × Coffee,286,1.26,yes,Frost2020_SI Supplemental A
+Cocoa Aroma,cocoa_aroma,Judge × Rep,22,3.20,yes,Frost2020_SI Supplemental A
+Dark Chocolate Flavor,dark_chocolate_flavor,Judge × Rep,22,2.77,yes,Frost2020_SI Supplemental A
+Dark Green Veg Flavor,dark_green_veg_flavor,Judge × Rep,22,3.71,yes,Frost2020_SI Supplemental A
+Dried Fruit Flavor,dried_fruit_flavor,Judge × Rep,22,1.81,yes,Frost2020_SI Supplemental A
+Earthy Flavor,earthy_flavor,Judge × Rep,22,4.10,yes,Frost2020_SI Supplemental A
+Fermented Flavor,fermented_flavor,Judge × Rep,22,3.82,yes,Frost2020_SI Supplemental A
+Flavor Persistence,flavor_persistence,Judge × Rep,22,2.23,yes,Frost2020_SI Supplemental A
+Floral Aroma,floral_aroma,Judge × Rep,22,2.52,yes,Frost2020_SI Supplemental A
+Hay-Like Flavor,hay_like_flavor,Judge × Rep,22,3.33,yes,Frost2020_SI Supplemental A
+Molasses Flavor,molasses_flavor,Judge × Rep,22,1.94,yes,Frost2020_SI Supplemental A
+Nutty Aroma,nutty_aroma,Judge × Rep,22,3.87,yes,Frost2020_SI Supplemental A
+Cocoa Aroma,cocoa_aroma,Rep,2,4.51,yes,Frost2020_SI Supplemental A
+Dark Chocolate Flavor,dark_chocolate_flavor,Rep,2,8.01,yes,Frost2020_SI Supplemental A
+Dark Green Veg Flavor,dark_green_veg_flavor,Rep,2,2.00,no,Frost2020_SI Supplemental A
+Dried Fruit Flavor,dried_fruit_flavor,Rep,2,5.09,yes,Frost2020_SI Supplemental A
+Earthy Flavor,earthy_flavor,Rep,2,1.34,no,Frost2020_SI Supplemental A
+Fermented Flavor,fermented_flavor,Rep,2,0.29,no,Frost2020_SI Supplemental A
+Flavor Persistence,flavor_persistence,Rep,2,0.27,no,Frost2020_SI Supplemental A
+Floral Aroma,floral_aroma,Rep,2,4.13,yes,Frost2020_SI Supplemental A
+Hay-Like Flavor,hay_like_flavor,Rep,2,0.89,no,Frost2020_SI Supplemental A
+Molasses Flavor,molasses_flavor,Rep,2,2.24,no,Frost2020_SI Supplemental A
+Nutty Aroma,nutty_aroma,Rep,2,14.08,yes,Frost2020_SI Supplemental A
+Cocoa Aroma,cocoa_aroma,Rep × Coffee,52,0.71,no,Frost2020_SI Supplemental A
+Dark Chocolate Flavor,dark_chocolate_flavor,Rep × Coffee,52,0.61,no,Frost2020_SI Supplemental A
+Dark Green Veg Flavor,dark_green_veg_flavor,Rep × Coffee,52,1.03,no,Frost2020_SI Supplemental A
+Dried Fruit Flavor,dried_fruit_flavor,Rep × Coffee,52,1.20,no,Frost2020_SI Supplemental A
+Earthy Flavor,earthy_flavor,Rep × Coffee,52,1.01,no,Frost2020_SI Supplemental A
+Fermented Flavor,fermented_flavor,Rep × Coffee,52,0.96,no,Frost2020_SI Supplemental A
+Flavor Persistence,flavor_persistence,Rep × Coffee,52,1.08,no,Frost2020_SI Supplemental A
+Floral Aroma,floral_aroma,Rep × Coffee,52,0.97,no,Frost2020_SI Supplemental A
+Hay-Like Flavor,hay_like_flavor,Rep × Coffee,52,1.01,no,Frost2020_SI Supplemental A
+Molasses Flavor,molasses_flavor,Rep × Coffee,52,1.26,no,Frost2020_SI Supplemental A
+Nutty Aroma,nutty_aroma,Rep × Coffee,52,0.86,no,Frost2020_SI Supplemental A
+Nutty Flavor,nutty_flavor,Coffee,26,1.00,no,Frost2020_SI Supplemental A
+Roasted Flavor,roasted_flavor,Coffee,26,7.31,yes,Frost2020_SI Supplemental A
+Rubber Flavor,rubber_flavor,Coffee,26,3.12,yes,Frost2020_SI Supplemental A
+Smoke/Acrid Aroma,smoke_acrid_aroma,Coffee,26,1.69,yes,Frost2020_SI Supplemental A
+Sourness,sourness,Coffee,26,11.04,yes,Frost2020_SI Supplemental A
+Sweetness,sweetness,Coffee,26,2.35,yes,Frost2020_SI Supplemental A
+Sweet Brown Roast Flavor,sweet_brown_roast_flavor,Coffee,26,3.16,yes,Frost2020_SI Supplemental A
+Thickness,thickness,Coffee,26,5.2,yes,Frost2020_SI Supplemental A
+Tobacco Flavor,tobacco_flavor,Coffee,26,0.91,no,Frost2020_SI Supplemental A
+Woody Flavor,woody_flavor,Coffee,26,2.95,yes,Frost2020_SI Supplemental A
+Nutty Flavor,nutty_flavor,Judge,11,135.87,yes,Frost2020_SI Supplemental A
+Roasted Flavor,roasted_flavor,Judge,11,134.61,yes,Frost2020_SI Supplemental A
+Rubber Flavor,rubber_flavor,Judge,11,11.43,yes,Frost2020_SI Supplemental A
+Smoke/Acrid Aroma,smoke_acrid_aroma,Judge,11,58.75,yes,Frost2020_SI Supplemental A
+Sourness,sourness,Judge,11,79.48,yes,Frost2020_SI Supplemental A
+Sweetness,sweetness,Judge,11,53.34,yes,Frost2020_SI Supplemental A
+Sweet Brown Roast Flavor,sweet_brown_roast_flavor,Judge,11,257.11,yes,Frost2020_SI Supplemental A
+Thickness,thickness,Judge,11,31.05,yes,Frost2020_SI Supplemental A
+Tobacco Flavor,tobacco_flavor,Judge,11,220.6,yes,Frost2020_SI Supplemental A
+Woody Flavor,woody_flavor,Judge,11,258.21,yes,Frost2020_SI Supplemental A
+Nutty Flavor,nutty_flavor,Judge × Coffee,286,0.99,no,Frost2020_SI Supplemental A
+Roasted Flavor,roasted_flavor,Judge × Coffee,286,1.71,yes,Frost2020_SI Supplemental A
+Rubber Flavor,rubber_flavor,Judge × Coffee,286,1.31,yes,Frost2020_SI Supplemental A
+Smoke/Acrid Aroma,smoke_acrid_aroma,Judge × Coffee,286,0.98,no,Frost2020_SI Supplemental A
+Sourness,sourness,Judge × Coffee,286,1.12,no,Frost2020_SI Supplemental A
+Sweetness,sweetness,Judge × Coffee,286,1.23,yes,Frost2020_SI Supplemental A
+Sweet Brown Roast Flavor,sweet_brown_roast_flavor,Judge × Coffee,286,1.71,yes,Frost2020_SI Supplemental A
+Thickness,thickness,Judge × Coffee,286,1.53,yes,Frost2020_SI Supplemental A
+Tobacco Flavor,tobacco_flavor,Judge × Coffee,286,1.17,no,Frost2020_SI Supplemental A
+Woody Flavor,woody_flavor,Judge × Coffee,286,1.35,yes,Frost2020_SI Supplemental A
+Nutty Flavor,nutty_flavor,Judge × Rep,22,2.19,yes,Frost2020_SI Supplemental A
+Roasted Flavor,roasted_flavor,Judge × Rep,22,1.73,yes,Frost2020_SI Supplemental A
+Rubber Flavor,rubber_flavor,Judge × Rep,22,2.41,yes,Frost2020_SI Supplemental A
+Smoke/Acrid Aroma,smoke_acrid_aroma,Judge × Rep,22,3.05,yes,Frost2020_SI Supplemental A
+Sourness,sourness,Judge × Rep,22,4.11,yes,Frost2020_SI Supplemental A
+Sweetness,sweetness,Judge × Rep,22,2.99,yes,Frost2020_SI Supplemental A
+Sweet Brown Roast Flavor,sweet_brown_roast_flavor,Judge × Rep,22,5.25,yes,Frost2020_SI Supplemental A
+Thickness,thickness,Judge × Rep,22,1.38,no,Frost2020_SI Supplemental A
+Tobacco Flavor,tobacco_flavor,Judge × Rep,22,4.32,yes,Frost2020_SI Supplemental A
+Woody Flavor,woody_flavor,Judge × Rep,22,3.80,yes,Frost2020_SI Supplemental A
+Nutty Flavor,nutty_flavor,Rep,2,5.48,yes,Frost2020_SI Supplemental A
+Roasted Flavor,roasted_flavor,Rep,2,5.89,yes,Frost2020_SI Supplemental A
+Rubber Flavor,rubber_flavor,Rep,2,2.35,no,Frost2020_SI Supplemental A
+Smoke/Acrid Aroma,smoke_acrid_aroma,Rep,2,5.19,yes,Frost2020_SI Supplemental A
+Sourness,sourness,Rep,2,5.26,yes,Frost2020_SI Supplemental A
+Sweetness,sweetness,Rep,2,2.39,no,Frost2020_SI Supplemental A
+Sweet Brown Roast Flavor,sweet_brown_roast_flavor,Rep,2,3.31,yes,Frost2020_SI Supplemental A
+Thickness,thickness,Rep,2,1.60,no,Frost2020_SI Supplemental A
+Tobacco Flavor,tobacco_flavor,Rep,2,6.88,yes,Frost2020_SI Supplemental A
+Woody Flavor,woody_flavor,Rep,2,4.54,yes,Frost2020_SI Supplemental A
+Nutty Flavor,nutty_flavor,Rep × Coffee,52,1.16,no,Frost2020_SI Supplemental A
+Roasted Flavor,roasted_flavor,Rep × Coffee,52,1.22,no,Frost2020_SI Supplemental A
+Rubber Flavor,rubber_flavor,Rep × Coffee,52,1.08,no,Frost2020_SI Supplemental A
+Smoke/Acrid Aroma,smoke_acrid_aroma,Rep × Coffee,52,1.10,no,Frost2020_SI Supplemental A
+Sourness,sourness,Rep × Coffee,52,0.68,no,Frost2020_SI Supplemental A
+Sweetness,sweetness,Rep × Coffee,52,0.70,no,Frost2020_SI Supplemental A
+Sweet Brown Roast Flavor,sweet_brown_roast_flavor,Rep × Coffee,52,1.10,no,Frost2020_SI Supplemental A
+Thickness,thickness,Rep × Coffee,52,1.13,no,Frost2020_SI Supplemental A
+Tobacco Flavor,tobacco_flavor,Rep × Coffee,52,0.97,no,Frost2020_SI Supplemental A
+Woody Flavor,woody_flavor,Rep × Coffee,52,1.05,no,Frost2020_SI Supplemental A

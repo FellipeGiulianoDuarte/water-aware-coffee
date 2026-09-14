@@ -1,0 +1,20 @@
+cluster,factor,level,jar_question,response,percent_of_responses,hedonic_penalty_9pt,source
+cluster1,TDS,Low,flavor intensity,just about right,38,,Cotter2021 section 3.6 text
+cluster1,TDS,Low,flavor intensity,too weak,57,,Cotter2021 section 3.6 text
+cluster1,TDS,High,flavor intensity,just about right,60,,Cotter2021 section 3.6 text
+cluster1,TDS,Low,mouthfeel,just about right,49,,Cotter2021 section 3.6 text
+cluster1,TDS,High,mouthfeel,just about right,69,,Cotter2021 section 3.6 text
+cluster1,TDS,Low,mouthfeel,too thin,46,,Cotter2021 section 3.6 text
+cluster2,TDS,Low,flavor intensity,just about right,50,,Cotter2021 section 3.6 text
+cluster2,TDS,High,acidity,too much,43,,Cotter2021 section 3.6 text
+cluster2,PE,Low,acidity,too much,39,,Cotter2021 section 3.6 text
+cluster2,TDS,Low,mouthfeel,too thin,36,,Cotter2021 section 3.6 text
+cluster2,TDS,Medium,mouthfeel,just about right,67,,Cotter2021 section 3.6 text
+cluster1,all,all,flavor intensity,too weak,35,1.6,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
+cluster2,all,all,flavor intensity,too weak,28,0.9,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
+cluster1,all,all,mouthfeel,too thin,35,1.1,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
+cluster2,all,all,mouthfeel,too thin,25,0.5,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
+cluster1,all,all,acidity,too much,27,1.2,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
+cluster2,all,all,acidity,too much,32,1.5,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
+cluster1,all,all,serving temperature,too hot,,<0.4,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
+cluster2,all,all,serving temperature,too hot,,<0.4,"Cotter2021 section 3.7 text (penalty analysis, Figure S2)"
