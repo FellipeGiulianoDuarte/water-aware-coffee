@@ -1,0 +1,6 @@
+fit alk_v0_loglog_sourcetype: n=5,658, weighted=True, R2=0.478, residual sd (log)=0.516 -> multiplicative band x/÷ 1.68
+coefficients (log alkalinity; surface is the reference source type):
+           const = +1.244
+    log_hardness = +0.617
+       st_ground = +0.735
+      st_unknown = +0.631

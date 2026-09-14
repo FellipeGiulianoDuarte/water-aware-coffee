@@ -44,6 +44,7 @@ def summarise_long(df: pd.DataFrame, finished_only: bool = True) -> pd.DataFrame
         utility=("utility", "first"),
         utility_code=("utility_code", "first"),
         population=("population", "max"),
+        source_type=("source_type", lambda s: s.mode().iat[0] if len(s) else "unknown"),
         median=("value", "median"),
         p10=("value", lambda s: s.quantile(0.10)),
         p90=("value", lambda s: s.quantile(0.90)),
@@ -74,6 +75,7 @@ def to_wide(summary: pd.DataFrame) -> pd.DataFrame:
         utility=("utility", "first"),
         utility_code=("utility_code", "first"),
         population=("population", "max"),
+        source_type=("source_type", lambda s: s.mode().iat[0] if len(s) else "unknown"),
         latitude=("latitude", "first"),
         longitude=("longitude", "first"),
         period_start=("period_start", "min"),
@@ -107,6 +109,7 @@ def join_us_hardness_alkalinity(wide: pd.DataFrame) -> pd.DataFrame:
     epa = wide[wide["source_id"] == "epa-syr4-us"]
     epa_cols = [
         "utility_code",
+        "source_type",
         "alkalinity_median",
         "alkalinity_n",
         "alkalinity_share_unit_assumed",
