@@ -38,7 +38,14 @@ from water_aware_coffee.model.sensory import AdditiveSensory, rules_table  # noq
 ROOT = Path(__file__).resolve().parents[1]
 PROC = ROOT / "data" / "processed"
 PAPER_MODE = "--paper" in sys.argv  # paper figures: no in-figure titles, captions carry the text
-FIG = ROOT / ("paper" if PAPER_MODE else "docs") / "figures"
+SOCIAL_MODE = (
+    "--social" in sys.argv
+)  # titled figures with a source footer, for posting outside the paper
+FIG = ROOT / ("paper" if PAPER_MODE else "docs") / "figures" / ("social" if SOCIAL_MODE else "")
+SOURCE_LINE = (
+    "Duarte 2026, doi.org/10.5281/zenodo.22758448 · code and data: github.com/FellipeGiulianoDuarte/water-aware-coffee · "
+    "model prediction, not yet tasted"
+)
 
 # Palette instance (references/palette.md): categorical slots 1..3, blue ramp, chrome.
 SLOT = ["#2a78d6", "#eb6834", "#1baf7a"]
@@ -119,6 +126,8 @@ def _title(ax: plt.Axes, title: str, subtitle: str | None = None) -> None:
 
 def _save(fig: plt.Figure, name: str) -> None:
     FIG.mkdir(parents=True, exist_ok=True)
+    if SOCIAL_MODE:
+        fig.text(0.01, -0.02, SOURCE_LINE, color=MUTED, fontsize=7.2, ha="left", va="top")
     fig.savefig(FIG / f"{name}.png", dpi=200, bbox_inches="tight", pad_inches=0.15)
     fig.savefig(FIG / f"{name}.svg", bbox_inches="tight", pad_inches=0.15)
     plt.close(fig)
