@@ -1,0 +1,55 @@
+name: Brew session (validation protocol)
+description: Report one three-cup blind session following docs/validation_protocol.md
+title: "Brew session: <city>, <roast>"
+labels: ["validation"]
+body:
+  - type: input
+    id: location
+    attributes: {label: City and utility (or postcode district), placeholder: "Curitiba, PR (Sanepar)"}
+    validations: {required: true}
+  - type: dropdown
+    id: roast
+    attributes: {label: Roast level printed on the bag, options: [light, medium, dark]}
+    validations: {required: true}
+  - type: input
+    id: roaster
+    attributes: {label: Roaster and coffee (optional)}
+  - type: dropdown
+    id: filter
+    attributes: {label: Home filter or softener on the tap water used, options: [none, carbon or pitcher filter, softener, reverse osmosis, other]}
+    validations: {required: true}
+  - type: input
+    id: reference_water
+    attributes: {label: Reference bottled water used for cup B, placeholder: "Dias D'Ávila 5 L"}
+    validations: {required: true}
+  - type: input
+    id: recipe
+    attributes: {label: Recipe for cups A and B (dose g, water g, grind setting, brew time, temperature)}
+    validations: {required: true}
+  - type: input
+    id: dose_c
+    attributes: {label: Dose used for cup C and the alkalinity value you used to compute it}
+    validations: {required: true}
+  - type: input
+    id: strip
+    attributes: {label: Tap water alkalinity from a test strip (mg/L or dKH), if measured}
+  - type: textarea
+    id: answers
+    attributes:
+      label: The nine answers, after unblinding
+      description: For each pair write which cup (A tap, B reference, C tap + extra dose) was more sour, more bitter, preferred.
+      value: |
+        A vs B: sourer = , bitterer = , preferred =
+        A vs C: sourer = , bitterer = , preferred =
+        B vs C: sourer = , bitterer = , preferred =
+    validations: {required: true}
+  - type: textarea
+    id: notes
+    attributes: {label: Anything else (optional)}
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I agree that these answers are published under CC BY 4.0 with the city but without my name.
+          required: true
