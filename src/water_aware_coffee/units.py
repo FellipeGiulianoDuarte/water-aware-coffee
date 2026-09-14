@@ -86,6 +86,8 @@ class UnknownUnitError(ValueError):
 _HARDNESS_FACTORS: dict[str, float] = {
     "mg/l as caco3": 1.0,
     "mg/l caco3": 1.0,
+    "mg caco3/l": 1.0,
+    "mgcaco3/l": 1.0,
     "ppm caco3": 1.0,
     "ppm as caco3": 1.0,
     "mg/l": 1.0,  # bare mg/L for hardness is assumed to be as CaCO3 (flagged by caller)
@@ -114,6 +116,8 @@ _HARDNESS_FACTORS: dict[str, float] = {
 _ALKALINITY_FACTORS: dict[str, float] = {
     "mg/l as caco3": 1.0,
     "mg/l caco3": 1.0,
+    "mg caco3/l": 1.0,
+    "mgcaco3/l": 1.0,
     "ppm caco3": 1.0,
     "ppm as caco3": 1.0,
     "mg/l": 1.0,  # bare mg/L for alkalinity assumed as CaCO3 (flagged by caller)
@@ -122,6 +126,8 @@ _ALKALINITY_FACTORS: dict[str, float] = {
     "mmol/l": EQ_CACO3,  # 1 mmol/L HCO3- = 1 meq/L
     "mg/l hco3": HCO3_TO_CACO3,
     "mg/l as hco3": HCO3_TO_CACO3,
+    "mg hco3/l": HCO3_TO_CACO3,
+    "mghco3/l": HCO3_TO_CACO3,
     "ppm hco3": HCO3_TO_CACO3,
     "°dh": DH_TO_MGL_CACO3,  # "Karbonathärte" in German data
     "dh": DH_TO_MGL_CACO3,
@@ -134,6 +140,8 @@ _ION_FACTORS: dict[Quantity, dict[str, float]] = {
         "mg/l": 1.0,
         "ppm": 1.0,
         "mg/l ca": 1.0,
+        "mg ca/l": 1.0,
+        "mgca/l": 1.0,
         "mmol/l": M_CA,
         "meq/l": M_CA / 2,
         "mg/l as caco3": 1.0 / CA_TO_CACO3,
@@ -143,6 +151,8 @@ _ION_FACTORS: dict[Quantity, dict[str, float]] = {
         "mg/l": 1.0,
         "ppm": 1.0,
         "mg/l mg": 1.0,
+        "mg mg/l": 1.0,
+        "mgmg/l": 1.0,
         "mmol/l": M_MG,
         "meq/l": M_MG / 2,
         "mg/l as caco3": 1.0 / MG_TO_CACO3,
@@ -152,6 +162,8 @@ _ION_FACTORS: dict[Quantity, dict[str, float]] = {
         "mg/l": 1.0,
         "ppm": 1.0,
         "mg/l na": 1.0,
+        "mg na/l": 1.0,
+        "mgna/l": 1.0,
         "mmol/l": M_NA,
         "meq/l": M_NA,
     },
@@ -166,7 +178,21 @@ _ION_FACTORS: dict[Quantity, dict[str, float]] = {
     },
 }
 
-_PH_UNITS = {"", "ph", "unitless", "std units", "standard units", "su", "none", "-"}
+_PH_UNITS = {
+    "",
+    "ph",
+    "ph value",
+    "ph values",
+    "ph unit",
+    "ph units",
+    "ph_unit",
+    "unitless",
+    "std units",
+    "standard units",
+    "su",
+    "none",
+    "-",
+}
 
 # Units whose meaning depends on an assumption we cannot check from the string alone.
 AMBIGUOUS_UNITS = {"mg/l", "ppm"}

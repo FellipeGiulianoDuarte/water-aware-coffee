@@ -78,6 +78,17 @@ def test_alkalinity_from_bicarbonate() -> None:
     assert u.alkalinity_from_bicarbonate(61.016) == approx(50.043)
 
 
+def test_uk_unit_spellings() -> None:
+    assert convert(1.0, Quantity.HARDNESS, "mg CaCO3/L") == 1.0
+    assert convert(1.0, Quantity.ALKALINITY, "mg CaCO3/L") == 1.0
+    assert convert(1.0, Quantity.SODIUM, "mg Na/l") == 1.0
+    assert convert(1.0, Quantity.CALCIUM, "mgCa/l") == 1.0
+    assert convert(1.0, Quantity.MAGNESIUM, "mg Mg/l") == 1.0
+    assert convert(7.0, Quantity.PH, "pH value") == 7.0
+    assert convert(7.0, Quantity.PH, "pH units") == 7.0
+    assert convert(1.0, Quantity.ALKALINITY, "mg HCO3/l") == approx(0.8202)
+
+
 def test_ph_unitless() -> None:
     assert convert(7.2, Quantity.PH, None) == 7.2
     assert convert(7.2, Quantity.PH, "std units") == 7.2

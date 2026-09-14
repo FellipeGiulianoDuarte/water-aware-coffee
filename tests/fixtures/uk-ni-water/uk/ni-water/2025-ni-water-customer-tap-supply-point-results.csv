@@ -1,0 +1,161 @@
+﻿Year,Sample Location,Site Code,Site Name,Sample Id Text,Sample Date,Postcode,Parameter,PCV Limit,Result,Report Value,Units
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5020813,07/01/2025 08:37,Withheld,"2,4-D",0.1,<0.011,0,ug/l
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5047270,25/03/2025 10:35,Withheld,"2,4-D",0.1,<0.011,0,ug/l
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5068378,13/05/2025 07:53,Withheld,"2,4-D",0.1,<0.011,0,ug/l
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5084994,24/06/2025 08:05,Withheld,"2,4-D",0.1,<0.011,0,ug/l
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5029903,11/02/2025 08:17,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5047270,25/03/2025 10:35,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5068378,13/05/2025 07:53,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5084994,24/06/2025 08:05,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5106340,12/08/2025 08:23,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5125742,23/09/2025 11:48,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5147721,11/11/2025 07:50,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5162641,16/12/2025 08:04,Withheld,Clostridium perfringens (sulph red),0,0,0,CFU/100 ml
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5047270,25/03/2025 10:35,Withheld,Glyphosate,0.1,0.026,0.026,ug/l
+2025,Supply Point,W1301P,Moyola PPP WTW,W1301POUT-25-5027181,04/02/2025 08:11,Withheld,Gross Beta Activity,,0.09,0.09,Bq/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5020692,07/01/2025 10:33,BT52 2BS,Calcium,,36,36,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5032595,17/02/2025 11:21,BT52 2PT,Calcium,,35,35,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5053066,07/04/2025 12:29,BT51 3DB,Calcium,,39,39,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5070629,19/05/2025 12:21,BT52 1LB,Calcium,,39,39,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5091190,07/07/2025 11:45,BT55 7BW,Calcium,,39,39,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5108797,18/08/2025 11:45,BT52 2NR,Calcium,,39,39,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5131209,06/10/2025 10:49,BT52 2RG,Calcium,,33,33,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5150488,17/11/2025 11:17,BT52 1NF,Calcium,,31,31,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5020692,07/01/2025 10:33,BT52 2BS,Conductivity,2500,300,300,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5022517,13/01/2025 00:00,BT52 2AR,Conductivity,2500,320,320,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5023651,21/01/2025 12:31,BT52 1JL,Conductivity,2500,330,330,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5024621,31/01/2025 09:15,BT55 7SW,Conductivity,2500,330,330,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5026891,03/02/2025 10:03,BT55 7HJ,Conductivity,2500,350,350,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5029642,11/02/2025 10:50,BT55 7RE,Conductivity,2500,310,310,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5032595,17/02/2025 11:21,BT52 2PT,Conductivity,2500,310,310,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5035196,24/02/2025 11:51,BT52 2DJ,Conductivity,2500,320,320,uS/cm 20 C
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5020692,07/01/2025 10:33,BT52 2BS,Hydrogen Ion,9.5,7.4,7.4,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5022517,13/01/2025 00:00,BT52 2AR,Hydrogen Ion,9.5,7.2,7.2,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5023651,21/01/2025 12:31,BT52 1JL,Hydrogen Ion,9.5,7.3,7.3,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5024621,31/01/2025 09:15,BT55 7SW,Hydrogen Ion,9.5,7.4,7.4,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5026891,03/02/2025 10:03,BT55 7HJ,Hydrogen Ion,9.5,7.3,7.3,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5029642,11/02/2025 10:50,BT55 7RE,Hydrogen Ion,9.5,7.2,7.2,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5032595,17/02/2025 11:21,BT52 2PT,Hydrogen Ion,9.5,7.3,7.3,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5035196,24/02/2025 11:51,BT52 2DJ,Hydrogen Ion,9.5,7.5,7.5,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5038141,03/03/2025 11:45,BT52 1NA,Hydrogen Ion,9.5,7.5,7.5,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5041209,10/03/2025 10:09,BT56 8DQ,Hydrogen Ion,9.5,7.6,7.6,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5044173,26/03/2025 09:57,BT52 1GZ,Hydrogen Ion,9.5,7.3,7.3,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5047143,27/03/2025 11:38,BT56 8PJ,Hydrogen Ion,9.5,7.5,7.5,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5050167,31/03/2025 11:43,BT52 1JR,Hydrogen Ion,9.5,7.6,7.6,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5053066,07/04/2025 12:29,BT51 3DB,Hydrogen Ion,9.5,7.7,7.7,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5056108,15/04/2025 11:44,BT56 8SD,Hydrogen Ion,9.5,7.7,7.7,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5059342,24/04/2025 12:21,BT52 1WS,Hydrogen Ion,9.5,7.6,7.6,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5061869,29/04/2025 09:35,BT55 7JQ,Hydrogen Ion,9.5,7.6,7.6,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5065005,06/05/2025 11:43,BT52 1SN,Hydrogen Ion,9.5,7.5,7.5,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5068050,12/05/2025 12:39,BT52 1SN,Hydrogen Ion,9.5,7.7,7.7,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5070629,19/05/2025 12:21,BT52 1LB,Hydrogen Ion,9.5,7.5,7.5,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5076034,05/06/2025 11:43,BT55 7LS,Hydrogen Ion,9.5,7.7,7.7,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5078935,12/06/2025 10:21,BT55 7NT,Hydrogen Ion,9.5,7.7,7.7,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5082073,16/06/2025 11:35,BT55 7TW,Hydrogen Ion,9.5,7.7,7.7,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5084756,23/06/2025 10:10,BT56 8DZ,Hydrogen Ion,9.5,7.8,7.8,pH value
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5020692,07/01/2025 10:33,BT52 2BS,Magnesium,,8.8,8.8,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5032595,17/02/2025 11:21,BT52 2PT,Magnesium,,9.5,9.5,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5053066,07/04/2025 12:29,BT51 3DB,Magnesium,,11,11,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5070629,19/05/2025 12:21,BT52 1LB,Magnesium,,10,10,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5091190,07/07/2025 11:45,BT55 7BW,Magnesium,,9.9,9.9,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5108797,18/08/2025 11:45,BT52 2NR,Magnesium,,10,10,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5131209,06/10/2025 10:49,BT52 2RG,Magnesium,,9.4,9.4,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5150488,17/11/2025 11:17,BT52 1NF,Magnesium,,8,8,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5020692,07/01/2025 10:33,BT52 2BS,Sodium,200,18,18,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5032595,17/02/2025 11:21,BT52 2PT,Sodium,200,18,18,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5053066,07/04/2025 12:29,BT51 3DB,Sodium,200,20,20,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5070629,19/05/2025 12:21,BT52 1LB,Sodium,200,20,20,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5091190,07/07/2025 11:45,BT55 7BW,Sodium,200,20,20,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5108797,18/08/2025 11:45,BT52 2NR,Sodium,200,21,21,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5131209,06/10/2025 10:49,BT52 2RG,Sodium,200,22,22,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5150488,17/11/2025 11:17,BT52 1NF,Sodium,200,15,15,mg Na/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5020692,07/01/2025 10:33,BT52 2BS,Total hardness,,51,51,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5032595,17/02/2025 11:21,BT52 2PT,Total hardness,,51,51,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5053066,07/04/2025 12:29,BT51 3DB,Total hardness,,57,57,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5070629,19/05/2025 12:21,BT52 1LB,Total hardness,,56,56,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5091190,07/07/2025 11:45,BT55 7BW,Total hardness,,55,55,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5108797,18/08/2025 11:45,BT52 2NR,Total hardness,,56,56,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5131209,06/10/2025 10:49,BT52 2RG,Total hardness,,49,49,mg/l
+2025,Customer Tap,ZN0104,Ballinrees North,ZN0104AE-25-5150488,17/11/2025 11:17,BT52 1NF,Total hardness,,44,44,mg/l
+2025,Customer Tap,ZN0105,Ballinrees South,ZN0105AE-25-5070956,20/05/2025 10:45,BT51 3LH,Hydrogen Ion,9.5,7.6,7.6,pH value
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5020661,13/01/2025 07:30,BT54 6RT,Calcium,,11,11,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5056092,14/04/2025 07:00,BT54 6TD,Calcium,,11,11,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5091207,08/07/2025 07:50,BT54 6RT,Calcium,,11,11,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5134596,14/10/2025 07:15,BT54 6RT,Calcium,,11,11,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5020661,13/01/2025 07:30,BT54 6RT,Magnesium,,1.4,1.4,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5056092,14/04/2025 07:00,BT54 6TD,Magnesium,,1.3,1.3,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5091207,08/07/2025 07:50,BT54 6RT,Magnesium,,1.2,1.2,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5134596,14/10/2025 07:15,BT54 6RT,Magnesium,,1.2,1.2,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5020661,13/01/2025 07:30,BT54 6RT,Sodium,200,110,110,mg Na/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5056092,14/04/2025 07:00,BT54 6TD,Sodium,200,100,100,mg Na/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5091207,08/07/2025 07:50,BT54 6RT,Sodium,200,110,110,mg Na/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5134596,14/10/2025 07:15,BT54 6RT,Sodium,200,99,99,mg Na/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5020661,13/01/2025 07:30,BT54 6RT,Total hardness,,13,13,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5056092,14/04/2025 07:00,BT54 6TD,Total hardness,,13,13,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5091207,08/07/2025 07:50,BT54 6RT,Total hardness,,13,13,mg/l
+2025,Customer Tap,ZN0204,Rathlin Island,ZN0204AE-25-5134596,14/10/2025 07:15,BT54 6RT,Total hardness,,13,13,mg/l
+2025,Customer Tap,ZN0302,Dungonnell Glarryford,ZN0302AE-25-5087854,03/07/2025 07:31,BT44 9EG,Hydrogen Ion,9.5,7.8,7.8,pH value
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5029601,10/02/2025 09:15,BT15 3BG,Calcium,,49,49,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5047102,24/03/2025 12:10,BT2 8HH,Calcium,,49,49,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5068052,12/05/2025 13:13,BT1 4JE,Calcium,,51,51,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5084758,23/06/2025 12:31,BT12 4NF,Calcium,,51,51,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5105986,11/08/2025 12:44,BT2 8PS,Calcium,,46,46,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5125493,22/09/2025 10:35,BT14 6BA,Calcium,,49,49,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5147388,10/11/2025 12:40,BT2 7HE,Calcium,,49,49,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5153845,15/12/2025 10:35,BT12 4NF,Calcium,,41,41,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5029601,10/02/2025 09:15,BT15 3BG,Magnesium,,8.9,8.9,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5047102,24/03/2025 12:10,BT2 8HH,Magnesium,,9.2,9.2,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5068052,12/05/2025 13:13,BT1 4JE,Magnesium,,8.8,8.8,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5084758,23/06/2025 12:31,BT12 4NF,Magnesium,,8.7,8.7,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5105986,11/08/2025 12:44,BT2 8PS,Magnesium,,8.7,8.7,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5125493,22/09/2025 10:35,BT14 6BA,Magnesium,,9.4,9.4,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5147388,10/11/2025 12:40,BT2 7HE,Magnesium,,9,9,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5153845,15/12/2025 10:35,BT12 4NF,Magnesium,,9.1,9.1,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5029601,10/02/2025 09:15,BT15 3BG,Sodium,200,17,17,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5047102,24/03/2025 12:10,BT2 8HH,Sodium,200,16,16,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5068052,12/05/2025 13:13,BT1 4JE,Sodium,200,16,16,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5084758,23/06/2025 12:31,BT12 4NF,Sodium,200,16,16,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5105986,11/08/2025 12:44,BT2 8PS,Sodium,200,17,17,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5125493,22/09/2025 10:35,BT14 6BA,Sodium,200,17,17,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5147388,10/11/2025 12:40,BT2 7HE,Sodium,200,17,17,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5153845,15/12/2025 10:35,BT12 4NF,Sodium,200,15,15,mg Na/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5029601,10/02/2025 09:15,BT15 3BG,Total hardness,,64,64,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5047102,24/03/2025 12:10,BT2 8HH,Total hardness,,64,64,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5068052,12/05/2025 13:13,BT1 4JE,Total hardness,,66,66,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5084758,23/06/2025 12:31,BT12 4NF,Total hardness,,65,65,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5105986,11/08/2025 12:44,BT2 8PS,Total hardness,,60,60,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5125493,22/09/2025 10:35,BT14 6BA,Total hardness,,65,65,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5147388,10/11/2025 12:40,BT2 7HE,Total hardness,,64,64,mg/l
+2025,Customer Tap,ZS0107,Belfast Oldpark,ZS0107AE-25-5153845,15/12/2025 10:35,BT12 4NF,Total hardness,,56,56,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5020682,07/01/2025 09:24,BT71 4JE,Calcium,,52,52,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5032591,17/02/2025 10:34,BT71 7SH,Calcium,,45,45,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5053062,08/04/2025 12:09,BT71 6JN,Calcium,,49,49,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5070672,20/05/2025 10:04,BT71 7NS,Calcium,,51,51,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5091234,08/07/2025 12:01,BT71 6SQ,Calcium,,52,52,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5108794,18/08/2025 09:34,BT71 4SQ,Calcium,,54,54,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5131206,06/10/2025 09:18,BT71 7PD,Calcium,,49,49,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5150486,18/11/2025 09:22,BT71 6US,Calcium,,52,52,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5020682,07/01/2025 09:24,BT71 4JE,Magnesium,,8.8,8.8,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5032591,17/02/2025 10:34,BT71 7SH,Magnesium,,8.4,8.4,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5053062,08/04/2025 12:09,BT71 6JN,Magnesium,,8.6,8.6,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5070672,20/05/2025 10:04,BT71 7NS,Magnesium,,8.5,8.5,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5091234,08/07/2025 12:01,BT71 6SQ,Magnesium,,8.7,8.7,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5108794,18/08/2025 09:34,BT71 4SQ,Magnesium,,8.9,8.9,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5131206,06/10/2025 09:18,BT71 7PD,Magnesium,,9,9,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5150486,18/11/2025 09:22,BT71 6US,Magnesium,,9.2,9.2,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5020682,07/01/2025 09:24,BT71 4JE,Sodium,200,23,23,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5032591,17/02/2025 10:34,BT71 7SH,Sodium,200,23,23,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5053062,08/04/2025 12:09,BT71 6JN,Sodium,200,20,20,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5070672,20/05/2025 10:04,BT71 7NS,Sodium,200,17,17,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5091234,08/07/2025 12:01,BT71 6SQ,Sodium,200,18,18,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5108794,18/08/2025 09:34,BT71 4SQ,Sodium,200,19,19,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5131206,06/10/2025 09:18,BT71 7PD,Sodium,200,19,19,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5150486,18/11/2025 09:22,BT71 6US,Sodium,200,20,20,mg Na/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5020682,07/01/2025 09:24,BT71 4JE,Total hardness,,67,67,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5032591,17/02/2025 10:34,BT71 7SH,Total hardness,,59,59,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5053062,08/04/2025 12:09,BT71 6JN,Total hardness,,63,63,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5070672,20/05/2025 10:04,BT71 7NS,Total hardness,,65,65,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5091234,08/07/2025 12:01,BT71 6SQ,Total hardness,,66,66,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5108794,18/08/2025 09:34,BT71 4SQ,Total hardness,,69,69,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5131206,06/10/2025 09:18,BT71 7PD,Total hardness,,64,64,mg/l
+2025,Customer Tap,ZS0809,Castor Bay Dungannon,ZS0809AE-25-5150486,18/11/2025 09:22,BT71 6US,Total hardness,,67,67,mg/l

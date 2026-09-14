@@ -20,7 +20,8 @@ def cmd_sources(_: argparse.Namespace) -> None:
 
 
 def cmd_build(args: argparse.Namespace) -> None:
-    ids = available() if args.all else args.source_id
+    known = available()  # imports loader modules so LOADERS is populated
+    ids = known if args.all else args.source_id
     if not ids:
         sys.exit("give one or more source ids, or --all")
     INTERIM_DIR.mkdir(parents=True, exist_ok=True)
