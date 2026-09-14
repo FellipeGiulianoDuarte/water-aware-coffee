@@ -6,7 +6,8 @@ unit-assumed rows, share below detection, and period covered; then a wide table 
 locality holding hardness, calcium, magnesium, alkalinity, sodium, pH medians, plus hardness derived
 from Ca and Mg where both exist.
 
-Only finished water is aggregated. A locality key is locality_code when present, else locality.
+Finished (tap) and bottled water are aggregated; source water is not. A locality key is
+locality_code when present, else utility_code, else locality.
 """
 
 from __future__ import annotations
@@ -30,7 +31,8 @@ def load_interim(interim_dir: Path, sources: list[str] | None = None) -> pd.Data
 
 
 def summarise_long(df: pd.DataFrame, finished_only: bool = True) -> pd.DataFrame:
-    d = df[df["water_type"] == "finished"] if finished_only else df
+    keep = df["water_type"].isin(["finished", "bottled"]) if finished_only else slice(None)
+    d = df[keep] if finished_only else df
     d = d.copy()
     # Key preference: official locality code, else utility code (e.g. PWSID), else the name.
     key = d["locality_code"].where(d["locality_code"].notna(), d["utility_code"])

@@ -27,6 +27,7 @@ def register(source_id: str) -> Callable[[Loader], Loader]:
 def available() -> list[str]:
     # Import modules for their registration side effect.
     from water_aware_coffee.sources import (  # noqa: F401
+        bottled,
         epa_syr4,
         ni_water,
         sisagua,

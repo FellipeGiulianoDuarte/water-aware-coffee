@@ -62,7 +62,9 @@ class RegimeModel:
 
 def clustering_frame(wide: pd.DataFrame) -> pd.DataFrame:
     """Localities with hardness and (measured or imputed) alkalinity, with a weight column."""
-    d = wide.copy()
+    d = wide[
+        wide["source_id"] != "bottled-labels"
+    ].copy()  # tap water only; bottled is banded separately
     d["alk"] = pd.to_numeric(d["alkalinity_best"], errors="coerce")
     d["hard"] = pd.to_numeric(d["hardness_best"], errors="coerce")
     # EPA-only rows have alkalinity but no hardness; joined rows carry both. Avoid double counting:

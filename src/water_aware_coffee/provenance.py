@@ -29,6 +29,7 @@ from water_aware_coffee.units import Quantity
 
 class ValueType(StrEnum):
     SAMPLE = "sample"  # one measured sample
+    DECLARED = "declared"  # label / brand-site value; analysis date often unknown
     MEAN = "mean"
     MEDIAN = "median"
     MIN = "min"
@@ -40,6 +41,7 @@ class ValueType(StrEnum):
 class WaterType(StrEnum):
     FINISHED = "finished"  # treated water as supplied (tap, distribution, plant outlet)
     SOURCE = "source"  # raw / ambient water before treatment
+    BOTTLED = "bottled"  # packaged water as sold; values as declared on label or brand site
     UNKNOWN = "unknown"
 
 
