@@ -65,6 +65,10 @@ def summarise_long(df: pd.DataFrame, finished_only: bool = True) -> pd.DataFrame
 def to_wide(summary: pd.DataFrame) -> pd.DataFrame:
     """One row per locality; columns <quantity>_median, <quantity>_n, <quantity>_unit_assumed."""
     idx = ["source_id", "country_iso2", "admin1", "locality_key"]
+    # Null keys (e.g. admin1 missing) must survive: fill a sentinel before pivoting.
+    summary = summary.copy()
+    for c in idx:
+        summary[c] = summary[c].astype("object").where(summary[c].notna(), "__none__")
     wide = summary.pivot_table(
         index=idx,
         columns="quantity",
@@ -84,6 +88,8 @@ def to_wide(summary: pd.DataFrame) -> pd.DataFrame:
         period_end=("period_end", "max"),
     )
     wide = meta.join(wide).reset_index()
+    for c in idx:
+        wide[c] = wide[c].where(wide[c] != "__none__", None)
     for q in QUANTITIES:
         for stat in ("median", "n", "share_unit_assumed"):
             col = f"{q}_{stat}"

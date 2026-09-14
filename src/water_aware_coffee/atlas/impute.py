@@ -111,7 +111,8 @@ def impute_alkalinity(wide: pd.DataFrame, fit: AlkalinityFit) -> pd.DataFrame:
     out = wide.copy()
     alk = pd.to_numeric(out["alkalinity_median"], errors="coerce")
     hard = pd.to_numeric(out["hardness_best"], errors="coerce")
-    need = alk.isna() & hard.notna() & (hard > 0)
+    tap = out["source_id"] != "bottled-labels"  # never impute a label; declared values only
+    need = alk.isna() & hard.notna() & (hard > 0) & tap
     out["alkalinity_best"] = alk
     out["alkalinity_imputed"] = False
     out["alkalinity_low"] = np.nan
