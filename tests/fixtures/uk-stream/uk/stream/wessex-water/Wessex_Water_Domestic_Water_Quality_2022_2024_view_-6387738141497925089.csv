@@ -1,0 +1,96 @@
+﻿OBJECTID,Sample_Id,Determinand,DWI_Code,Units,Operator,Result,LSOA,Data_Provider,Sample_Date
+5788,0724ffd9-ecd4-42ef-88e4-a7b46ff89548,Sodium (total),A009,μg/l Na,,69,E01014390,Wessex Water Services Ltd,2022-10-05
+9793,90c522c5-ecf6-4278-beea-1dbea0a65643,Sodium (total),A009,μg/l Na,,11.8,E01034283,Wessex Water Services Ltd,2022-11-25
+13742,2bd88631-5e27-485b-8a73-a0acc3a10c78,Sodium (total),A009,μg/l Na,,8.8,E01020434,Wessex Water Services Ltd,2022-07-19
+15533,b1af232d-8dbd-4ef5-be65-bf88a82244ca,Sodium (total),A009,μg/l Na,,8.8,E01020529,Wessex Water Services Ltd,2022-10-11
+15591,851b8e92-e132-4c54-9ff0-76cb58a4b77a,Sodium (total),A009,μg/l Na,,9.6,E01020534,Wessex Water Services Ltd,2022-10-20
+16059,3134ae2d-082d-4612-a6ce-9b1c96e8ccc6,Sodium (total),A009,μg/l Na,,12,E01020509,Wessex Water Services Ltd,2022-01-20
+17915,f0c80ba1-a8c3-44fe-9c74-c16f56139389,E. coli (confirmed),C002,No. /100ml,,0,E01020555,Wessex Water Services Ltd,2022-06-10
+21749,5f8922c4-af5c-4619-996e-b000a2ab5647,Sodium (total),A009,μg/l Na,,6.8,E01031850,Wessex Water Services Ltd,2022-09-05
+22258,c9afa0d9-e8b4-4e1c-bbb3-1285348dd0bf,Sodium (total),A009,μg/l Na,,7.3,E01031872,Wessex Water Services Ltd,2022-02-16
+30325,e6970c00-b88e-4f2c-80f0-38f472f13be7,Sodium (total),A009,μg/l Na,,10,E01020454,Wessex Water Services Ltd,2022-11-21
+38501,52065aae-476b-44ca-8845-39331f3e862c,Sodium (total),A009,μg/l Na,,12.7,E01029130,Wessex Water Services Ltd,2022-07-27
+52915,71ab4429-e36f-4641-8e9e-06b7a6cc9176,Sodium (total),A009,mg/L Na,,7.5,E01031990,Wessex Water Services Ltd,2023-05-08
+67740,1aa07d0a-583e-4e28-9fc3-82ed43483f26,E. coli (confirmed),C002,Number/100ml,,0,E01035120,Wessex Water Services Ltd,2023-09-27
+80541,dd0d08e8-428e-49b6-8f6c-baa055767589,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.4,E01032104,Wessex Water Services Ltd,2024-02-20
+82815,3ff0a208-413f-45fb-b146-18000a044830,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.4,E01032045,Wessex Water Services Ltd,2024-04-26
+96842,96999a5e-8488-4f98-a281-46d02aebf8f2,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.3,E01020505,Wessex Water Services Ltd,2024-04-08
+98228,3314a84e-dffc-474e-84ec-aa9633e9e18f,Sodium (total),A009,mg/L Na,,13.5,E01020552,Wessex Water Services Ltd,2024-05-22
+110493,4b39a003-9740-4e4a-8c5d-1540896cb373,Sodium (total),A009,mg/L Na,,8.5,E01032018,Wessex Water Services Ltd,2024-02-15
+113412,6d10c659-936a-4359-8921-a408b42db6f7,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.4,E01034545,Wessex Water Services Ltd,2024-01-09
+131298,2d94d82b-0d8e-4b89-bad2-d3ee05301dee,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.5,E01032114,Wessex Water Services Ltd,2025-06-09
+146495,c12b6c4f-2654-4675-aebd-9f27d042600c,Sodium (total),A009,mg/L Na,,11.2,E01020507,Wessex Water Services Ltd,2025-11-18
+153771,b3caa063-05c6-4312-8733-257cdbed5322,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.2,E01020437,Wessex Water Services Ltd,2025-09-29
+155334,0f8ffd72-6255-44db-bb15-603b204e58b9,Trihalomethanes (total by calculation),D011,µg/L,,7.35,E01020460,Wessex Water Services Ltd,2025-11-27
+162938,51983e86-8b63-4446-a37e-fabb9e6900c1,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.6,E01032017,Wessex Water Services Ltd,2025-04-10
+169798,2cedfb42-609e-480d-8570-83c365cd678a,Alkalinity (methyl orange),E002,mg CaCO3/L,<,50,E01029278,Wessex Water Services Ltd,2022-01-03
+169831,99a1f6e2-7530-400d-b5b6-bfcf859b4110,Alkalinity (methyl orange),E002,mg CaCO3/L,<,50,E01029322,Wessex Water Services Ltd,2022-01-04
+169859,92057c55-dbb4-4641-9738-7d70068de845,Total hardness,E001C,mg CaCO3/L,,127,E01029096,Wessex Water Services Ltd,2022-01-05
+170645,d2bd9e45-ca6e-49e0-bdb0-aebcc2351963,Total hardness,E001C,mg CaCO3/L,,356,E01031908,Wessex Water Services Ltd,2022-02-01
+171156,e7ce5e2d-ba46-4aea-a033-d47703e66fca,Alkalinity (methyl orange),E002,mg CaCO3/L,,305,E01032072,Wessex Water Services Ltd,2022-02-25
+171447,605334ca-6271-4193-8644-429e5d58d786,Alkalinity (methyl orange),E002,mg CaCO3/L,,268,E01020442,Wessex Water Services Ltd,2022-03-11
+172033,b828efd1-5e02-4b72-a728-bc61a3f3b583,Total hardness,E001C,mg CaCO3/L,,279,E01032110,Wessex Water Services Ltd,2022-04-06
+172395,c3b0b0b2-cb59-4b71-bc0c-f59217bf4e26,Total hardness,E001C,mg CaCO3/L,,301,E01020505,Wessex Water Services Ltd,2022-04-25
+173668,426845e8-34cd-4ad6-afaa-074ec4ad905d,Alkalinity (methyl orange),E002,mg CaCO3/L,,222,E01032036,Wessex Water Services Ltd,2022-06-20
+174422,5362c7bf-7767-47b1-9e15-ea11f683af02,Alkalinity (methyl orange),E002,mg CaCO3/L,,200,E01029195,Wessex Water Services Ltd,2022-08-02
+174950,d0b5fb81-923a-4501-b1d7-346c9c67d37b,Alkalinity (methyl orange),E002,mg CaCO3/L,,259,E01015396,Wessex Water Services Ltd,2022-08-30
+176478,a629d096-d508-41d6-8152-56942019cd1c,Alkalinity (methyl orange),E002,mg CaCO3/L,,197,E01029224,Wessex Water Services Ltd,2022-11-20
+177167,d224cf99-2b46-49b5-9ceb-c60b4056bf10,Total hardness,E001C,mg CaCO3/L,,296,E01029209,Wessex Water Services Ltd,2022-12-16
+178217,08b18fea-f0a3-4cff-8c22-7c5afaafbe58,Total hardness,E001C,mg CaCO3/L,,293,E01032006,Wessex Water Services Ltd,2023-02-06
+178476,5b8365d7-c3b4-4e42-8f2a-a7320bd16902,Total hardness,E001C,mg CaCO3/L,,326,E01032047,Wessex Water Services Ltd,2023-02-14
+183505,303f15fd-ca4e-4acf-82cd-ac483d305071,Alkalinity (methyl orange),E002,mg CaCO3/L,,268,E01031885,Wessex Water Services Ltd,2023-10-24
+183588,10ca4dee-fd6c-4511-ae60-ac36d0b7e19a,Alkalinity (methyl orange),E002,mg CaCO3/L,,210,E01032027,Wessex Water Services Ltd,2023-10-27
+184178,a24e7bce-b1fb-4f31-9d49-898a9a2e96c6,Alkalinity (methyl orange),E002,mg CaCO3/L,,293,E01029240,Wessex Water Services Ltd,2023-11-24
+184190,8656d51c-10a6-4a68-9215-8927780889da,Alkalinity (methyl orange),E002,mg CaCO3/L,,125,E01029243,Wessex Water Services Ltd,2023-11-27
+184766,a52d0193-3f73-4bb5-9f91-7f7f9e55fbdb,Total hardness,E001C,mg CaCO3/L,,292,E01020512,Wessex Water Services Ltd,2023-12-22
+185138,42089a3e-c171-4b0b-8ecb-8f6583d16c17,Total hardness,E001C,mg CaCO3/L,<,3,E01032031,Wessex Water Services Ltd,2024-01-15
+185244,0bca8111-95b7-4dee-8eae-2aef08f26cf9,Total hardness,E001C,mg CaCO3/L,,294,E01015417,Wessex Water Services Ltd,2024-01-17
+185864,712ce2a3-08c2-4a13-9c24-b5f884936845,Alkalinity (methyl orange),E002,mg CaCO3/L,,260,E01031877,Wessex Water Services Ltd,2024-02-12
+186685,0e6fb86b-96f5-4679-8171-836ce97633a4,Total hardness,E001C,mg CaCO3/L,,308,E01032061,Wessex Water Services Ltd,2024-03-14
+187999,b0df08e4-e37c-44c2-b4dd-0d23def69a8d,Total hardness,E001C,mg CaCO3/L,,309,E01029153,Wessex Water Services Ltd,2024-05-15
+188959,73eb65f8-d520-4aee-b55f-0ea58bd4c7ca,Alkalinity (methyl orange),E002,mg CaCO3/L,,233,E01015449,Wessex Water Services Ltd,2024-07-03
+189440,f6c6fd1d-eba4-415e-9173-2aa3914cf579,Alkalinity (methyl orange),E002,mg CaCO3/L,,186,E01029232,Wessex Water Services Ltd,2024-07-29
+190736,518aa42b-5a6f-45ee-8a5d-52b481625c95,Total hardness,E001C,mg CaCO3/L,,54,E01029298,Wessex Water Services Ltd,2024-10-05
+191793,c081a4af-19da-47d9-9443-50ea8e091257,Total hardness,E001C,mg CaCO3/L,<,3,E01020529,Wessex Water Services Ltd,2024-11-29
+193324,8eb02e09-ab51-4c6d-b8a5-a45547c4bc6e,Total hardness,E001C,mg CaCO3/L,,343,E01032693,Wessex Water Services Ltd,2025-02-07
+193740,5f1bb9b0-7121-459e-aa9f-44d5d80b7e16,Total hardness,E001C,mg CaCO3/L,,56,E01029218,Wessex Water Services Ltd,2025-02-26
+194285,3bb3c98e-9f0d-4e73-a72a-dceffce323f0,Total hardness,E001C,mg CaCO3/L,,45,E01029223,Wessex Water Services Ltd,2025-03-20
+194561,12464303-1246-4078-86c1-ddab8e701670,Total hardness,E001C,mg CaCO3/L,,318,E01031894,Wessex Water Services Ltd,2025-04-03
+195032,933be82d-0aaf-45cf-b484-45f59316e9a2,Alkalinity (methyl orange),E002,mg CaCO3/L,,260,E01032093,Wessex Water Services Ltd,2025-04-24
+195510,e2013191-7fad-4769-a6bf-2972b4dab264,Alkalinity (methyl orange),E002,mg CaCO3/L,,250,E01015465,Wessex Water Services Ltd,2025-05-16
+195808,eabd0a04-3222-4570-a53c-81fd8575f0e1,Total hardness,E001C,mg CaCO3/L,,50,E01029343,Wessex Water Services Ltd,2025-06-03
+196129,fca87de8-efda-4c23-981b-cc3ea39db06b,Alkalinity (methyl orange),E002,mg CaCO3/L,,123,E01029215,Wessex Water Services Ltd,2025-06-18
+196481,29cab88a-58a2-44d2-aabc-36fbf6efdd15,Alkalinity (methyl orange),E002,mg CaCO3/L,,61,E01029341,Wessex Water Services Ltd,2025-07-07
+196756,0a32f396-eeb7-4ee8-baf3-414ee9cab3f0,Total hardness,E001C,mg CaCO3/L,,349,E01031851,Wessex Water Services Ltd,2025-07-22
+197617,636d10be-5876-487c-a657-5f2ef60548f7,Total hardness,E001C,mg CaCO3/L,,293,E01020534,Wessex Water Services Ltd,2025-09-08
+198182,21e6a40e-9332-4329-80d3-94b3bec10c9c,Alkalinity (methyl orange),E002,mg CaCO3/L,,283,E01031890,Wessex Water Services Ltd,2025-10-06
+199372,439a0132-872f-46e8-8d57-93c3c2cc86b9,Alkalinity (methyl orange),E002,mg CaCO3/L,,260,E01031903,Wessex Water Services Ltd,2025-11-05
+199653,811a61e5-bbd4-421a-bcd2-77c5cba5b5bd,Alkalinity (methyl orange),E002,mg CaCO3/L,,258,E01015418,Wessex Water Services Ltd,2025-11-04
+200510,1dc7ec52-d299-4f94-82fc-3656e625f9e2,Total hardness,E001C,mg CaCO3/L,,293,E01020385,Wessex Water Services Ltd,2025-12-11
+200633,2e898543-2dde-412e-b117-11a9abb60603,Total hardness,E001C,mg CaCO3/L,,5656,E01014456,Wessex Water Services Ltd,2025-11-06
+215198,26247e27-c4dc-4799-93f3-49af9a3f3ed0,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.1,E01032651,Wessex Water Services Ltd,2020-11-21
+234574,ffb720a0-c252-4c52-9222-4df74b6b6953,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.5,E01032103,Wessex Water Services Ltd,2017-11-03
+251534,3329621b-1084-4964-b8b9-85b144a50b62,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.3,E01031883,Wessex Water Services Ltd,2020-03-13
+253139,7d4adfa0-d0ae-41f8-8ae9-eae358e94515,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.6,E01031867,Wessex Water Services Ltd,2018-10-31
+264467,69eac572-8a58-4886-8515-45cc5daf3095,E. coli (confirmed),C002,number/100 ml,,0,E01032689,Wessex Water Services Ltd,2017-05-03
+264551,ff91efe0-454f-40a9-9fd1-1e3b92232b4d,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.4,E01031852,Wessex Water Services Ltd,2017-10-18
+267460,750f484c-5b20-457b-808c-273b62a0f859,Sodium (total),A009,mg/L Na,,7.6,E01031853,Wessex Water Services Ltd,2018-01-02
+281487,bd1f127e-d3a8-4ebe-8d49-262c0b2f17fe,Sodium (total),A009,mg/L Na,,21.8,E01031885,Wessex Water Services Ltd,2016-05-12
+287369,3f21ffb4-875d-4b08-9ec6-9ca6a3031f52,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.5,E01014415,Wessex Water Services Ltd,2017-04-04
+287371,f8297252-f8c1-4d78-81f5-a65f0c2a9d05,Sodium (total),A009,mg/L Na,,8.6,E01014415,Wessex Water Services Ltd,2017-04-04
+311208,bb83a430-e646-4d41-ba0d-0b6ea9b0d6bf,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.2,E01035122,Wessex Water Services Ltd,2016-04-12
+328824,a22535ba-6448-4e06-8e84-e9fb967c3d0b,Sodium (total),A009,mg/L Na,,12.2,E01020562,Wessex Water Services Ltd,2018-01-10
+336850,44c3f166-ac81-495e-996d-c952ba5e7284,Sodium (total),A009,mg/L Na,,7.8,E01020449,Wessex Water Services Ltd,2016-04-21
+348663,bd5b413c-bd6c-4ebe-a3c1-42f8521c414f,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.5,E01020485,Wessex Water Services Ltd,2018-01-25
+352684,1253563d-6499-4049-a5e3-db204615a1de,Sodium (total),A009,mg/L Na,,7.6,E01020445,Wessex Water Services Ltd,2018-01-19
+372430,08ea30a8-6837-475b-b73a-4b3a8ce6c219,Sodium (total),A009,mg/L Na,,19.8,E01020480,Wessex Water Services Ltd,2020-04-18
+405950,03954b57-9ce9-4605-9407-07b9b97eabc2,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.6,E01029185,Wessex Water Services Ltd,2020-06-10
+409228,f3162ad5-f59b-4204-bb85-9e3c0a040e7d,Sodium (total),A009,mg/L Na,,7.3,E01029181,Wessex Water Services Ltd,2016-01-22
+419272,6ba1bbac-680b-4952-baeb-ce3a870deead,E. coli (confirmed),C002,number/100 ml,,0,E01032087,Wessex Water Services Ltd,2017-10-06
+422094,8afdb96d-0bbe-491a-ae40-4c71def3c2fe,Sodium (total),A009,mg/L Na,,10.9,E01020503,Wessex Water Services Ltd,2016-02-01
+427320,da026537-c150-49a1-8a38-bf0ad578f66f,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.4,E01020535,Wessex Water Services Ltd,2021-07-20
+443822,17bd1240-46c6-4695-a949-b6eb5976c923,Sodium (total),A009,mg/L Na,,10.2,E01020538,Wessex Water Services Ltd,2021-07-13
+453643,df72ec84-9f54-4ac5-b0b6-305180eba20d,Sodium (total),A009,mg/L Na,,8.8,E01031877,Wessex Water Services Ltd,2021-07-06
+455649,77e1c620-d548-4298-9184-04304dddd372,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.4,E01031938,Wessex Water Services Ltd,2021-10-10
+457466,3dfb3f6e-0d1e-45ab-af0a-89d9607367d5,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.3,E01031850,Wessex Water Services Ltd,2021-10-04
+461526,17ab742d-19d9-4ba1-bc53-97814bb508cb,Hydrogen ion (pH) - indicator - zone,A006,pH Value,,7.2,E01032078,Wessex Water Services Ltd,2021-07-09
