@@ -266,8 +266,7 @@ def results_table(waters: pd.DataFrame) -> str:
 def main() -> None:
     FIG.mkdir(parents=True, exist_ok=True)
     waters = load_waters()
-    fig_neutralised(waters)
-    fig_grid(waters)
+    # Figures moved to scripts/figures.py (fig1, fig2); this script keeps the results table.
     OUT_MD.write_text(results_table(waters))
     print(OUT_MD.read_text())
 

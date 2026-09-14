@@ -111,9 +111,7 @@ def main() -> None:
         fontsize=11,
         color=INK,
     )
-    fig.tight_layout()
-    fig.savefig(FIG / "task4_bands.png", dpi=150)
-    plt.close(fig)
+    plt.close(fig)  # figure superseded by scripts/figures.py fig3; markdown below is still produced here
 
     # Task 4 results markdown
     lines = [
