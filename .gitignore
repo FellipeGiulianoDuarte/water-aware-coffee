@@ -18,3 +18,7 @@ build/
 *.sha256
 paper/_output/
 paper/.quarto/
+paper/arxiv/*.aux
+paper/arxiv/*.log
+paper/arxiv/*.out
+paper/arxiv/*.pdf

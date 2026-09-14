@@ -1,0 +1,1318 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  a4paper,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Tap water alkalinity and coffee acidity: a population-weighted atlas and a prediction model for filter brewing},
+  pdfauthor={Fellipe Giuliano Duarte},
+  pdfkeywords={\xmpquote{coffee}, \xmpquote{brewing
+water}, \xmpquote{alkalinity}, \xmpquote{hardness}, \xmpquote{titratable
+acidity}, \xmpquote{open data}},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Tap water alkalinity and coffee acidity: a population-weighted
+atlas and a prediction model for filter brewing}
+\author{Fellipe Giuliano Duarte}
+\date{2026-09-14}
+\begin{document}
+\maketitle
+\begin{abstract}
+Bicarbonate in brewing water neutralises part of the acidity of coffee.
+We quantify this effect for municipal tap water. We compiled an open,
+provenance-tracked atlas of finished tap-water chemistry for about
+47,000 localities in the United States, England, Northern Ireland and
+Brazil, added the label compositions of 187 bottled waters sold in seven
+countries, and weighted all statistics by population served. Combining
+the atlas with published drip-coffee measurements of titratable acidity
+by roast level and of sensory intensity by brew strength and extraction
+yield, we predict the share of a coffee's acidity that a given water
+neutralises. On a population basis, the median United States tap water
+neutralises 13 percent of a light roast's acidity and 16 percent of a
+dark roast's; the upper quartile neutralises 21 to 26 percent; about 10
+percent of the population receives water above 150 mg/L alkalinity as
+CaCO\textsubscript{3}, where all roast levels are predicted to need
+compensation. Alkalinity and hardness are correlated along one line
+across countries, so hardness, which is reported far more widely,
+predicts alkalinity within a factor of 1.7. Each 50 mg/L of alkalinity
+above the Specialty Coffee Association target neutralises about 1 meq/L
+of acid and lowers predicted sourness by 3.6 points on a 100-point
+scale; below about 100 mg/L this can be offset by 5 to 10 percent more
+coffee per 40 mg/L, above 150 mg/L dilution with low-alkalinity water
+requires less change than any recipe adjustment. Whether the shift is
+unwelcome depends on the drinker: most black-coffee consumers in
+published preference studies dislike sourness. The predictions carry
+stated uncertainties and have not been tested by tasting; a paired-brew
+protocol is provided. Data, code and figures are open.
+\end{abstract}
+
+
+\section{Introduction}\label{introduction}
+
+Municipal tap water varies widely in hardness (calcium and magnesium),
+alkalinity (mostly bicarbonate) and pH. Published chemistry describes
+how these variables affect coffee extraction and flavour. Bicarbonate
+neutralises the organic and chlorogenic acids that give coffee its
+perceived acidity (Yeager et al., 2023); dissolved cations may change
+the extraction of some compounds (Bratthäll et al., 2024; Hendon et al.,
+2014). These two bodies of knowledge have not been combined at scale: a
+map of the water people brew with, the chemistry applied to it, and a
+statement for each place and roast level of what the water does to the
+cup and how a brewer can compensate.
+
+This study reports model predictions, not new sensory measurements. The
+predictions are stated in a form that can be tested, and Section 6
+describes the test.
+
+We address three questions.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  How are alkalinity and hardness distributed in tap water when weighted
+  by the population served, and can alkalinity be predicted where only
+  hardness is reported?
+\item
+  What share of a coffee's acidity does a given water neutralise, by
+  roast level, and for what share of the population is this share large?
+\item
+  What does compensation cost, in coffee dose, in bitterness, or in
+  blended water?
+\end{enumerate}
+
+\section{Data}\label{data}
+
+\subsection{Sources}\label{sources}
+
+Table~\ref{tbl-sources} lists the sources in the first version of the
+atlas. Each row of the underlying measurement table records the source
+file, its checksum, the download date, the licence, the original
+parameter name, value and unit, and the conversion factor applied.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\caption{Sources in atlas v0. A locality is a city, utility, small area,
+municipality or bottled product; counts are after aggregation to one row
+per locality.}\label{tbl-sources}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+localities
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+with hardness
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+with alkalinity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+licence
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+localities
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+with hardness
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+with alkalinity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+licence
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Brazil, SISAGUA semestral control (Ministério da Saúde) & 2,473 & 2,441
+& 0 & CC BY \\
+United States, TapWaterData compiled city hardness & 7,614 & 7,614 & 0 &
+CC BY 4.0 \\
+United States, EPA Six-Year Review 4 finished-water monitoring 2012 to
+2019 & 27,030 & 0 & 15,240 & public domain \\
+United States, the two above joined on utility id & 4,893 & 4,893 &
+3,341 & derived \\
+England, water-industry open-data hub (Wessex, Southern, Yorkshire) &
+5,580 & 3,839 & 2,396 & CC BY 4.0 \\
+Northern Ireland Water customer-tap results & 64 & 64 & 0 & OGL v3 \\
+Bottled waters, label compositions (7 countries) & 171 & 146 & 142 & CC
+BY 4.0 compilation \\
+\end{longtable}
+
+\textbf{Brazil.} The national drinking-water surveillance system SISAGUA
+publishes the semestral control samples that suppliers report
+(Ministério da Saúde do Brasil, 2026). Total hardness, sodium and pH are
+present; alkalinity, calcium and magnesium are not measured in the
+system. We loaded the files for 2023 to 2026 (8.2 million rows) and kept
+194,226 measurements of the three variables at treatment outlets,
+distribution systems and consumption points in 2,441 municipalities.
+Source type (surface or ground) comes from the intake registry.
+
+\textbf{United States.} TapWaterData compiles utility-reported hardness
+for 16,561 cities from Consumer Confidence Reports, with a tier flag
+that separates utility-measured values from county-level ambient
+estimates (TapWaterData, 2026); we use the measured tiers only (7,614
+cities). The EPA Six-Year Review 4 compliance data give finished-water
+alkalinity and pH per public water system for 2012 to 2019 (United
+States Environmental Protection Agency, 2024). Joining the two datasets
+on the utility identifier gives hardness and alkalinity for 3,341 cities
+served by 1,670 utilities. The Water Quality Portal was examined and not
+used: its 1.3 million recent results are ambient surface water and
+groundwater, with fewer than a dozen finished-water sites.
+
+\textbf{England and Northern Ireland.} The water industry's open-data
+portal publishes tap-sample results per small area (Lower-layer Super
+Output Area, about 1,500 residents) for every company in England and
+Wales (Stream, 2026). Three companies report the variables needed here:
+Wessex Water (alkalinity and hardness, with units), Southern Water
+(calcium, magnesium and alkalinity, with an empty units column) and
+Yorkshire Water (hardness). Northern Ireland Water publishes hardness,
+calcium, magnesium, sodium and pH per supply zone under the Open
+Government Licence. The other companies publish alkalinity only in
+per-postcode lookups whose terms of use reserve all rights; those values
+were not used.
+
+\textbf{Bottled water.} We compiled the label compositions of 187
+bottled waters sold in supermarkets in Brazil, the United States, the
+United Kingdom, Germany, France, Italy and Portugal from brand websites
+and official label images, with one source URL per product; 182 have an
+official source. Alkalinity was computed as bicarbonate multiplied by
+0.820 where bicarbonate is printed.
+
+\subsection{Units and reporting basis}\label{units-and-reporting-basis}
+
+Hardness and alkalinity are stored in mg/L as CaCO\textsubscript{3},
+ions in mg/L of the ion, with conversion factors derived from molar
+masses. Three sources report ``total hardness'' in mg/L where the figure
+is in fact mg/L as calcium, a factor of 2.5 lower than mg/L as
+CaCO\textsubscript{3}: Northern Ireland Water (the CaCO\textsubscript{3}
+column of the zone report equals the CSV figure multiplied by 2.4985),
+Southern Water (the hardness column equals the calcium column, and the
+company's online checker labels its default unit ``Cal mg/l'') and SES
+Water. Wherever calcium and magnesium are both reported, hardness is
+derived from them and the reported hardness column is not used. Every
+value whose unit basis had to be assumed is flagged.
+
+\subsection{Population weighting}\label{population-weighting}
+
+A count of localities overstates the alkalinity of the water most people
+receive, because many small groundwater systems each count once. We
+attached a population to every locality: people served for United States
+utilities, mid-2024 estimates for English small areas, and the 2022
+census for Brazilian municipalities. The per-locality median alkalinity
+of finished water in the United States and England is 187 mg/L; the
+population-weighted median is 83 mg/L. All results below are
+population-weighted unless stated otherwise.
+
+\subsection{Alkalinity imputation}\label{alkalinity-imputation}
+
+Brazil has no alkalinity data. Across 5,658 United States and English
+localities with both variables, a regression of log alkalinity on log
+hardness and source type has R\textsuperscript{2} 0.48 and a residual
+standard deviation of 0.52 on the log scale, which corresponds to a
+multiplicative uncertainty of 1.7 in either direction. We applied this
+regression to Brazil's 2,441 municipalities and flagged every imputed
+value. Headline statistics are reported with and without Brazil.
+
+\section{Model}\label{model}
+
+\subsection{Residual acidity}\label{residual-acidity}
+
+Coffee acids protonate the bicarbonate in brewing water. At brew pH 4.9
+to 5.1, 94 to 96 percent of bicarbonate is protonated (carbonic acid
+pK\textsubscript{a1} 6.35), so the neutralisation is close to one
+milliequivalent of acid per milliequivalent of alkalinity. We define the
+residual acidity of a brew in meq/L as
+
+\[
+\mathrm{residual} = \mathrm{TA}_\mathrm{intrinsic}(\mathrm{roast}, \mathrm{TDS}) - f(\mathrm{pH}) \cdot \frac{\mathrm{alkalinity}}{50.04},
+\]
+
+where TA is the titratable acidity to pH 8.2, alkalinity is in mg/L as
+CaCO\textsubscript{3}, and \(f\) is the protonated fraction of
+bicarbonate at the brew pH. The neutralised share is the second term
+divided by the first.
+
+\subsection{Parameters}\label{parameters}
+
+Titratable acidity by roast level is taken from the one drip-coffee
+study that measured it across brew strength and extraction yield (Batali
+et al., 2021): 258 brews of one washed Honduran Arabica at three roast
+levels, three strengths (1.0, 1.25 and 1.5 percent total dissolved
+solids) and three extraction yields (16, 20 and 24 percent). Titratable
+acidity is linear in strength and nearly independent of extraction
+yield. Table~\ref{tbl-params} gives the values. The brew water in that
+study contained 32 mg/L alkalinity as CaCO\textsubscript{3} (computed
+from the printed mineral recipe), so the measured acidity had already
+lost about 0.6 meq/L to bicarbonate; the model adds this amount back
+before subtracting the alkalinity of the target water.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\caption{Model parameters per roast bin, from Batali et al.~(2021) Table
+1 and Supplemental Figure 1. The brew water in that study had 32 mg/L
+alkalinity as CaCO\textsubscript{3} (computed from the printed
+recipe).}\label{tbl-params}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+roast
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+titratable acidity, meq/L (measured, TDS 1.25 \%)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+range
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+intrinsic (brew water alkalinity added back)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+brew pH
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+protonated share of bicarbonate
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+roast
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+titratable acidity, meq/L (measured, TDS 1.25 \%)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+range
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+intrinsic (brew water alkalinity added back)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+brew pH
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+protonated share of bicarbonate
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+light & 12.46 & 11.5 to 13.0 & 13.08 & 4.93 & 0.963 \\
+medium & 11.36 & 10.4 to 12.0 & 11.98 & 5.01 & 0.956 \\
+dark & 9.78 & 9.2 to 10.4 & 10.39 & 5.14 & 0.942 \\
+\end{longtable}
+
+\subsection{Cation-dependent
+extraction}\label{cation-dependent-extraction}
+
+Hendon and colleagues predicted from binding energies that magnesium and
+calcium increase the extraction of coffee acids (Hendon et al., 2014). A
+GC-MS and NMR study found no such effect on organic acids at 100 mg/L
+(Bratthäll et al., 2024). A three-water filter-brewing study found that
+dark roast brewed in the hardest water was rated more acidic by a
+recognition panel, which the authors attribute to calcium-assisted
+extraction (Liu et al., 2025). None of these studies gives a magnitude
+that can be used as a parameter. We include a multiplicative extraction
+term on titratable acidity with a central value of zero and an upper
+bound of a 5 percent yield increase per meq/L of divalent cations, and
+report results for both. The result of Liu and colleagues suggests that
+the upper bound is relevant for dark roasts.
+
+\subsection{Alkalinity bands and matching
+criterion}\label{alkalinity-bands-and-matching-criterion}
+
+We classify water into five alkalinity bands with edges at 40, 80, 150
+and 250 mg/L as CaCO\textsubscript{3}. A Gaussian-mixture clustering was
+also fitted; it did not identify separated clusters. Tap water forms a
+continuum along the alkalinity--hardness line, and the information
+criterion continued to decrease up to the six-component limit. Fixed
+bands are equally defensible and simpler to communicate.
+
+For each band and roast we compute the residual acidity at the band's
+population-weighted median water relative to the Specialty Coffee
+Association reference water (40 mg/L alkalinity, 68 mg/L hardness
+(Specialty Coffee Association of America, 2009)). A ratio of 0.75 to
+1.25 is classified as \emph{works}, 0.5 to 0.75 as \emph{compensate},
+and below 0.5 as \emph{fights}.
+
+\subsection{Sensory model and compensation
+rules}\label{sensory-model-and-compensation-rules}
+
+The trained-panel study from which the titratable acidity values come
+also reports marginal mean intensities of 32 attributes at each level of
+roast, strength and extraction (Frost et al., 2020). The design is
+balanced, so an additive model reproduces the marginal means exactly.
+Interaction terms are not published, and the same group's response
+surface for sourness is a first-order plane (Batali et al., 2021), so
+main effects only are used. Sourness increases by 21 points per
+percentage point of strength and decreases by 0.83 points per percentage
+point of extraction; bitterness increases by 23 points per percentage
+point of strength.
+
+Two calibrations connect water chemistry to perception. The roast means
+of Batali and colleagues give 3.61 sourness points per meq/L of
+titratable acidity. Dividing the acid neutralised by a water by the
+slope of titratable acidity against strength gives the strength increase
+that restores the acid balance (the chemistry estimate). Dividing the
+predicted sourness loss by the slope of sourness against strength gives
+the increase that restores the predicted sourness (the sensory
+estimate). The two estimates differ by a factor of 1.8, and both are
+reported. A third route is dilution: alkalinity is linear in mixing, so
+a volume fraction \(1 - 40/\mathrm{alk}\) of zero-alkalinity water
+brings a tap water of alkalinity alk to the reference value.
+
+\section{Results}\label{results}
+
+\subsection{Distribution of tap-water alkalinity and
+hardness}\label{distribution-of-tap-water-alkalinity-and-hardness}
+
+Figure~\ref{fig-where} shows the 13,933 localities with both variables.
+Alkalinity and hardness are correlated along one line in every country.
+England's chalk catchments occupy the upper end; the imputed Brazilian
+municipalities form straight lines by construction. A small group of
+softened waters, with alkalinity retained and hardness removed, lies
+above the line and covers about 1 percent of the population.
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig2_where_waters_sit.png}}
+
+}
+
+\caption{\label{fig-where}Alkalinity against hardness for 13,933
+localities. Filled symbols are measured alkalinity; open symbols are
+imputed from hardness. Symbol area is proportional to the population
+served. Horizontal lines mark the band edges at 40, 80, 150 and 250
+mg/L. The star marks the Specialty Coffee Association reference water.}
+
+\end{figure}%
+
+\subsection{Neutralised share of coffee
+acidity}\label{neutralised-share-of-coffee-acidity}
+
+Figure~\ref{fig-neutral} shows the model output. At the reference
+alkalinity of 40 mg/L the water neutralises 6 percent of a light roast's
+titratable acidity and 8 percent of a dark roast's. At the
+population-weighted median for the United States (83 mg/L) the shares
+are 13 and 16 percent; at the population-weighted upper quartile (136
+mg/L) they are 21 and 26 percent. For 20 percent of the population the
+water neutralises more than a quarter of a light roast's acidity, and
+for 31 percent more than a quarter of a dark roast's. The dark roast
+loses the largest share at every alkalinity because it has the lowest
+titratable acidity.
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig1_acid_neutralised.png}}
+
+}
+
+\caption{\label{fig-neutral}Share of the brew's titratable acidity
+neutralised by the water, by roast level. The shaded band is the range
+of titratable acidity in Batali et al. (2021). The lower panel is the
+population-weighted distribution of measured alkalinity in United States
+and English tap water.}
+
+\end{figure}%
+
+\subsection{Population by alkalinity
+band}\label{population-by-alkalinity-band}
+
+Table~\ref{tbl-bands} and Figure~\ref{fig-bands} give the distribution
+by band. Bands one to three (up to 150 mg/L) hold about 90 percent of
+the population; the reference alkalinity lies at the upper edge of the
+first band. Bands four and five (above 150 mg/L) hold about 10 percent
+of the population overall (12 percent when Brazil's imputed values are
+excluded), but half of the English population served by the three
+companies with data, all of which draw on chalk aquifers.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 18\tabcolsep) * \real{0.1000}}@{}}
+\caption{Alkalinity bands and who brews with them. Population-weighted;
+`measured only' excludes Brazil, whose alkalinity is imputed. Country
+columns give the share of that country's population in the
+band.}\label{tbl-bands}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+band (mg/L as CaCO\textsubscript{3})
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+localities
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+share of people, all
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+share of people, measured only
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+US
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+England
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Brazil (imputed)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+median alkalinity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+median hardness
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+band (mg/L as CaCO\textsubscript{3})
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+localities
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+share of people, all
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+share of people, measured only
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+US
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+England
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Brazil (imputed)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+median alkalinity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+median hardness
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 to 40 & very low alkalinity & 2,312 & 20\% & 18\% & 18\% & 1\% & 40\%
+& 30 & 34 \\
+40 to 80 & low alkalinity & 3,331 & 47\% & 47\% & 48\% & 13\% & 44\% &
+64 & 102 \\
+80 to 150 & moderate alkalinity & 3,795 & 22\% & 22\% & 23\% & 21\% &
+14\% & 108 & 108 \\
+150 to 250 & high alkalinity & 3,404 & 10\% & 11\% & 10\% & 50\% & 3\% &
+213 & 180 \\
+over 250 & very high alkalinity & 1,114 & 1\% & 1\% & 1\% & 15\% & 0\% &
+280 & 310 \\
+\end{longtable}
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig3_population_by_band.png}}
+
+}
+
+\caption{\label{fig-bands}Share of each country's population by
+alkalinity band. England is represented by the three water companies
+with measured alkalinity; Brazilian alkalinity is imputed.}
+
+\end{figure}%
+
+\subsection{Matching table}\label{matching-table}
+
+Table~\ref{tbl-matching} applies the classification criterion. All roast
+levels are classified as \emph{works} in bands one to three, at the band
+medians and at the band edges. All roast levels are classified as
+\emph{compensate} in bands four and five: in band four the ratio ranges
+from 0.73 for light roast to 0.66 for dark roast, in band five from 0.62
+to 0.53. Differences between roast levels within a band are smaller than
+differences between bands.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\caption{Matching table v0: residual acidity at each band's median water
+relative to the SCA reference water (40 mg/L alkalinity, 68 mg/L
+hardness). 0.75 to 1.25 = works; 0.5 to 0.75 = compensate; below 0.5 =
+fights.}\label{tbl-matching}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+band
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+light roast
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+medium roast
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+dark roast
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+band
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+light roast
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+medium roast
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+dark roast
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 1.02 (works) & 1.02 (works) & 1.02 (works) \\
+2 & 0.96 (works) & 0.96 (works) & 0.95 (works) \\
+3 & 0.89 (works) & 0.88 (works) & 0.87 (works) \\
+4 & 0.73 (compensate (flatter)) & 0.71 (compensate (flatter)) & 0.66
+(compensate (flatter)) \\
+5 & 0.62 (compensate (flatter)) & 0.59 (compensate (flatter)) & 0.53
+(compensate (flatter)) \\
+\end{longtable}
+
+\subsection{Compensation rules}\label{compensation-rules}
+
+Figure~\ref{fig-rules} and Table~\ref{tbl-rules} translate the model
+into recipe changes. Each 50 mg/L of alkalinity above the reference
+neutralises about 1 meq/L of acid and lowers predicted sourness by 3.6
+points. Up to about 100 mg/L this can be offset by 5 to 10 percent more
+coffee per 40 mg/L above the reference, at a cost of 1 to 2 bitterness
+points. At 150 mg/L the strength route requires 16 to 29 percent more
+coffee and adds 4.5 bitterness points; at 250 mg/L, 31 to 55 percent and
+8.5 points. Restoring sourness by lowering extraction alone would
+require a reduction of 9 percentage points in yield at 150 mg/L, whereas
+a change of grind size typically moves yield by 2 to 4 points, so
+extraction is insufficient on its own. Above 150 mg/L, dilution with
+zero-alkalinity water (73 percent at 150 mg/L, 84 percent at 250 mg/L)
+or the use of a low-alkalinity bottled water requires less change than
+any recipe adjustment.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\caption{Dial-in rules v0 for a light roast at TDS 1.25 \% and 20 \%
+extraction. Medium and dark roasts differ by under 10 \% in every column
+(full table in the repository).}\label{tbl-rules}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+alkalinity, mg/L
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+acid neutralised vs reference, meq/L
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+predicted sourness change (0 to 100)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+extra coffee, chemistry to sensory estimate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+bitterness side effect
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+or blend with zero-alkalinity water
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+alkalinity, mg/L
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+acid neutralised vs reference, meq/L
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+predicted sourness change (0 to 100)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+extra coffee, chemistry to sensory estimate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+bitterness side effect
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+or blend with zero-alkalinity water
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+20 & -0.39 & +1.4 & -3 to -5 \% & -0.9 & 0 \% \\
+40 & +0.00 & -0.0 & +0 to +0 \% & +0.0 & 0 \% \\
+80 & +0.77 & -2.8 & +6 to +10 \% & +1.6 & 50 \% \\
+120 & +1.54 & -5.6 & +12 to +21 \% & +3.2 & 67 \% \\
+150 & +2.12 & -7.6 & +16 to +29 \% & +4.5 & 73 \% \\
+200 & +3.08 & -11.1 & +24 to +42 \% & +6.5 & 80 \% \\
+250 & +4.04 & -14.6 & +31 to +55 \% & +8.5 & 84 \% \\
+\end{longtable}
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig4_dialin_rules.png}}
+
+}
+
+\caption{\label{fig-rules}Left: predicted change in sourness relative to
+the reference water, by roast level. Right: additional coffee required
+to compensate; the thick line restores titratable acidity, the thin line
+restores predicted sourness. The shaded region marks alkalinities above
+150 mg/L.}
+
+\end{figure}%
+
+\subsection{Bottled water}\label{bottled-water}
+
+Figure~\ref{fig-bottled} and Table~\ref{tbl-bottled} place 142 bottled
+waters with a printed bicarbonate or alkalinity on the same scale. They
+cover the full range of tap water. Seventeen products have alkalinity
+below 15 mg/L and are suitable as diluents; most are purified United
+States brands. Thirty-two products have alkalinity between 25 and 60
+mg/L and brew like the reference water; because a given product is the
+same everywhere, these are suitable as a control water for a validation
+study. Forty-two products, many of them European natural mineral waters,
+have alkalinity above 150 mg/L. The compilation is not a market census:
+supermarket own labels and several large brands publish no analysis, and
+45 of the 187 products print neither bicarbonate nor alkalinity.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1111}}@{}}
+\caption{Bottled waters by brewing role, 142 products with bicarbonate
+or alkalinity printed on the label.}\label{tbl-bottled}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+role (alkalinity, mg/L as CaCO\textsubscript{3})
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+products
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+BR
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+US
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+GB
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DE
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+FR
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+IT
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+PT
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+role (alkalinity, mg/L as CaCO\textsubscript{3})
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+products
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+BR
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+US
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+GB
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DE
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+FR
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+IT
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+PT
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+diluent (under 15) & 17 & 5 & 5 & 0 & 2 & 0 & 1 & 4 \\
+bright (15 to 25) & 12 & 4 & 2 & 1 & 1 & 0 & 1 & 3 \\
+reference-like (25 to 60) & 32 & 20 & 8 & 0 & 1 & 1 & 1 & 1 \\
+moderate (60 to 150) & 39 & 13 & 7 & 4 & 3 & 6 & 3 & 3 \\
+as flat as hard tap water (over 150) & 42 & 4 & 3 & 4 & 17 & 6 & 6 &
+2 \\
+\end{longtable}
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig5_bottled.png}}
+
+}
+
+\caption{\label{fig-bottled}Bottled waters by label alkalinity, one row
+per country of sale. Shaded regions mark alkalinity below 15 mg/L and
+between 25 and 60 mg/L. The products with the lowest and highest
+alkalinity in each country are named.}
+
+\end{figure}%
+
+\section{Discussion}\label{discussion}
+
+\subsection{The alkalinity--hardness
+relationship}\label{the-alkalinityhardness-relationship}
+
+The single line in Figure~\ref{fig-where} has a geochemical explanation.
+Where groundwater or surface water dissolves calcite or dolomite, each
+calcium or magnesium ion enters with two bicarbonate ions, so carbonate
+hardness and alkalinity are equal when both are expressed as
+CaCO\textsubscript{3}. Waters lie above the line when alkalinity comes
+with sodium rather than calcium (sodium bicarbonate groundwaters, and
+municipal softening, which exchanges calcium for sodium and leaves
+bicarbonate in place) and below it when hardness comes from gypsum or
+chloride salts rather than carbonate. The fitted slope of log alkalinity
+on log hardness is 0.62 rather than 1, which indicates that
+non-carbonate hardness makes up a growing share of hardness at the hard
+end of the distribution. For brewing this matters in two ways. First,
+hardness, which nearly every utility reports, is a usable proxy for
+alkalinity, with the factor-of-1.7 uncertainty stated above; the
+residual is the price of not measuring. Second, the two variables act on
+coffee by different mechanisms, buffering and extraction, and a water
+that departs from the line separates them: softened water has the
+buffering effect without the cations, and gypsum-rich water the reverse.
+These off-line waters are where the two mechanisms could be
+distinguished experimentally.
+
+\subsection{The reference target and the
+population}\label{the-reference-target-and-the-population}
+
+The Specialty Coffee Association target of about 40 mg/L alkalinity
+(Specialty Coffee Association of America, 2009) lies at the upper edge
+of the first band, below the population-weighted median of 83 mg/L for
+the United States and below the water of about 80 percent of the
+population in our data. The target is a laboratory reference, not a
+description of tap water, and the model gives one reading of what it
+represents: a water that neutralises about 6 percent of a light roast's
+acidity, small enough to leave the roast's character intact. Half of the
+United States population is between 40 and 80 mg/L, where the
+neutralised share is 6 to 12 percent and the predicted sourness change
+relative to the reference is under 3 points on a 100-point scale, close
+to the resolution of a trained panel. The predicted effect becomes large
+only above 150 mg/L, for about 10 percent of the population in our data
+and half of the English population served by the three companies with
+data. The practical conclusion is that for most people the tap water is
+not far from the reference, and for a minority it is far enough that no
+recipe adjustment recovers the difference at acceptable cost.
+
+\subsection{Lower sourness is not lower
+quality}\label{lower-sourness-is-not-lower-quality}
+
+The model predicts the direction and size of a sourness change. Whether
+the change is an improvement depends on who is drinking. In the consumer
+study on the same brews, 57 percent of black-coffee drinkers formed a
+cluster that preferred low-strength, low-to-medium-extraction coffee and
+disliked both bitterness and sourness, while 43 percent formed a cluster
+that liked either acidic, fruity coffee or roasted, heavier coffee
+(Cotter et al., 2021; Guinard et al., 2023). For the majority cluster, a
+water that removes a quarter of a light roast's acidity moves the cup
+toward what they prefer; for the minority cluster, which includes most
+of the specialty-coffee community that discusses brewing water, it moves
+the cup away. The compensation rules in Table~\ref{tbl-rules} are
+therefore rules for the second group, and the framing of hard water as a
+problem is that group's framing. A brewer serving the first group might
+treat band four as favourable. The model does not take sides on this; it
+quantifies the shift.
+
+\subsection{Which uncertainty
+dominates}\label{which-uncertainty-dominates}
+
+Three uncertainties enter the predictions, and they dominate in
+different places. Below about 100 mg/L, the titratable acidity range
+(about 10 percent of the central value) dominates: the neutralised share
+is small and its uncertainty is the acidity denominator. Between 100 and
+250 mg/L, the factor-of-1.8 disagreement between the chemistry and
+sensory estimates of compensation dominates the dial-in advice, though
+not the neutralised share itself. For Brazil, the imputation uncertainty
+dominates everything: a municipality with imputed alkalinity 64 mg/L has
+a 68 percent interval of 38 to 109 mg/L, which spans three bands, so
+Brazilian band assignments are statements about the distribution of
+municipalities, not about any one of them. The 1.8 factor has a
+plausible origin: the sourness-per-acid calibration comes from roast
+means, and roast changes which acids are present as well as how much.
+Citric and malic acid degrade during roasting while quinic acid and
+chlorogenic acid lactones form (Batali et al., 2021; Yeager et al.,
+2023), and these acids differ in perceived sourness per milliequivalent.
+A calibration across strength at fixed roast, which the original data
+contain but the published tables do not, would resolve it.
+
+\subsection{Cation effects and dark
+roast}\label{cation-effects-and-dark-roast}
+
+In the study of Liu and colleagues, dark roast brewed in the hardest of
+three waters was rated more acidic than in the softest (Liu et al.,
+2025), the opposite direction to buffering. Their waters differed by 20
+mg/L in alkalinity but by 48 mg/L in hardness; acidity was assessed from
+relative chromatographic peak areas and an eleven-member recognition
+panel rather than titration; and a water supplier was a co-author and
+funder. The result is nevertheless consistent with the extraction
+mechanism proposed from binding energies (Hendon et al., 2014) and
+inconsistent with the null result for organic acids at 100 mg/L
+(Bratthäll et al., 2024), and the two experimental studies used
+different coffees, roasts and analytical methods. If cation-assisted
+extraction is real and roast-dependent, positive for dark roast where
+acids are bound in a more degraded matrix and small or negative for
+light roast, then the predictions for dark roast in bands four and five
+are too pessimistic and the two mechanisms partly cancel for dark roast
+in hard water. This is the first hypothesis the validation protocol
+should address, and the off-line waters of Section 5.1 are the natural
+instrument.
+
+\subsection{Scope}\label{scope}
+
+The model applies to filter brewing at 87 to 93 °C. Brew temperature has
+little effect on titratable acidity or on the sensory profile at fixed
+strength and extraction (Batali et al., 2020), so the rules do not
+depend on it within that range. Espresso is excluded: its extraction
+physics, strength and acid balance differ, and the sensory data do not
+cover it. Immersion methods extract more slowly and at a fixed ratio;
+the acidity data used here are for percolation, and the immersion
+studies in the literature give titratable acidity values about 20
+percent different at comparable strength, in the direction expected from
+their higher strength. The model treats the brew as an ideal solution
+and bicarbonate protonation as instantaneous and complete to the extent
+the pH allows; it does not model carbon dioxide loss, calcium--acid
+complexation, or the pH-dependence of acid extraction from the grounds.
+Each of these could shift the neutralised share by a few percentage
+points; none is likely to change the band structure.
+
+\subsection{Coverage and data access}\label{coverage-and-data-access}
+
+The atlas covers countries with open data. England is represented by
+three companies, two of them in chalk regions; Brazilian alkalinity is
+imputed; softened and filtered water in homes is not visible in utility
+data. Population-weighted statistics are dominated by the United States
+and per-locality statistics by small groundwater systems; both are
+reported. Most English alkalinity data exist only in company web lookups
+under terms that reserve all rights and were not used; permission from
+the companies, or a compilation by a United Kingdom institution holding
+database rights, would roughly triple the English coverage. A cheap
+improvement for the whole atlas would be for utilities to publish
+alkalinity alongside hardness in their annual reports; the measurement
+is routine, and its absence is the single largest gap in the data.
+
+\section{Validation protocol}\label{sec-protocol}
+
+The predictions can be tested with domestic equipment. One session
+consists of three cups of the same coffee prepared with the same recipe
+on the same day: tap water; a bottled water with alkalinity between 25
+and 60 mg/L (Table~\ref{tbl-bottled}); and tap water with the dose
+increased according to Table~\ref{tbl-rules}. A second person serves the
+cups without identification. The taster reports, for each pair, which
+cup is more sour, which is more bitter and which is preferred. The
+record includes the city and utility (alkalinity taken from the atlas),
+the roast level stated on the package, the use of a filter or softener,
+and optionally a photograph of an aquarium alkalinity test strip. The
+analysis is a mixed-effects logistic regression of the response
+``tap-water cup is more sour'' on predicted acid neutralisation, with
+roast level as a fixed effect and taster as a random effect; the
+comparison of the increased-dose cup with the reference-water cup tests
+the compensation rule. With paired forced-choice responses, about 150
+sessions distributed across the bands give 80 percent power to detect
+the predicted difference of 20 percentage points between the lowest and
+highest bands. The protocol, the response form and the analysis code are
+in the repository, and the analysis plan will be registered before the
+first submission.
+
+\section{Appendix: bottled waters closest to the
+reference}\label{sec-appendix}
+
+Table~\ref{tbl-bottled-reference} lists, for each country of sale, the
+three bottled waters whose label composition is closest to the reference
+water, as a starting point for the control water in Section 6. The full
+ranking, including tap-water localities, is in the repository
+(docs/rankings.md).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\caption{Bottled waters closest to the reference water in each country
+of sale, by the distance \textbar ln(alkalinity/40)\textbar{} +
+0.5·\textbar ln(hardness/68)\textbar; values from
+labels.}\label{tbl-bottled-reference}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+country
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+product
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+alkalinity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+hardness
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+pH
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+distance
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+country
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+product
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+alkalinity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+hardness
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+pH
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+distance
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Brazil & Dias D'Ávila: Água Mineral Dias D'Ávila sem Gás Pet 5L & 42 &
+39 & & 0.32 \\
+Brazil & Legítima Lindóia: Legítima Lindóia & 39 & 36 & 6.4 & 0.34 \\
+Brazil & Cristal (Fonte Santa Bárbara): Água Mineral Cristal & 50 & 53 &
+6.6 & 0.35 \\
+United States & Crystal Geyser: Crystal Geyser Alpine Spring Water
+(bottled at Olancha Spring) & 53 & 59 & 6.8 & 0.36 \\
+United States & JUST Water: JUST Water Spring Water & 57 & 60 & 7.8 &
+0.41 \\
+United States & Crystal Geyser: Crystal Geyser Alpine Spring Water
+(bottled at Beaughan Spring) & 46 & 36 & 7.4 & 0.45 \\
+United Kingdom & Volvic: Natural Mineral Water 1L & 61 & 63 & 7.0 &
+0.46 \\
+United Kingdom & FIJI Water: Natural Artesian Water & 104 & 103 & 7.9 &
+1.16 \\
+United Kingdom & Deeside: Deeside Mineral Water (still) & 21 & 22 & 6.1
+& 1.19 \\
+Germany & Bad Brambacher: Bad Brambacher Naturell & 76 & 81 & & 0.74 \\
+Germany & Black Forest: Black Forest Still & 25 & 27 & & 0.92 \\
+Germany & Spreequell: Spreequell Naturell & 11 & 56 & & 1.40 \\
+France & Mont Blanc: Source Mont Blanc eau minérale naturelle (6x1.5L) &
+53 & 80 & 7.6 & 0.35 \\
+France & Volvic: Volvic Nature eau minérale naturelle & 66 & 70 & &
+0.51 \\
+France & Abatilles: Abatilles eau minérale naturelle plate & 107 & 94 &
+8.2 & 1.15 \\
+Italy & Levissima: Levissima Naturale (150 cl PET) & 47 & 57 & 7.8 &
+0.24 \\
+Italy & Conad: Conad acqua minerale naturale oligominerale 1.5 l & 112 &
+111 & 7.6 & 1.27 \\
+Italy & Dolomia: Acqua Dolomia naturale & 123 & 127 & 8.2 & 1.44 \\
+Portugal & Cruzeiro: Água do Cruzeiro & 74 & 70 & 7.2 & 0.62 \\
+Portugal & Caramulo: Água Caramulo & 20 & 14 & 6.7 & 1.47 \\
+Portugal & Vimeiro: Vimeiro Lisa & 19 & 12 & 6.3 & 1.62 \\
+\end{longtable}
+
+\section{Data and code availability}\label{data-and-code-availability}
+
+The atlas, the measurement table with per-row provenance, the
+bottled-water table, the model code, the figure and table generators and
+this manuscript are in the project repository, under the MIT licence for
+code and CC BY 4.0 for produced data. Upstream sources retain their own
+licences and are listed with checksums. The redistributable raw
+downloads (about 1.5 GB: SISAGUA, TapWaterData, EPA, the English
+open-data hub, Northern Ireland Water, IBGE and ONS population files)
+are attached to the tagged release, with a manifest per source; files
+obtained under terms that do not permit redistribution are not included.
+
+\section{Acknowledgements}\label{acknowledgements}
+
+The author used an AI assistant (Anthropic's Claude) for data
+engineering, literature retrieval, modelling and drafting under his
+direction; all decisions, interpretations and errors are the author's.
+Access to subscription articles was through the CAPES Portal de
+Periódicos via the Universidade Federal do Paraná. No funding was
+received.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Batali2021}
+Batali, M. E., Cotter, A. R., Frost, S. C., Ristenpart, W. D., \&
+Guinard, J.-X. (2021). Titratable acidity, perceived sourness, and
+liking of acidity in drip brewed coffee. \emph{ACS Food Science \&
+Technology}, \emph{1}(4), 559--569.
+\url{https://doi.org/10.1021/acsfoodscitech.0c00078}
+
+\bibitem[\citeproctext]{ref-Batali2020temp}
+Batali, M. E., Ristenpart, W. D., \& Guinard, J.-X. (2020). Brew
+temperature, at fixed brew strength and extraction, has little impact on
+the sensory profile of drip brew coffee. \emph{Scientific Reports},
+\emph{10}, 16450. \url{https://doi.org/10.1038/s41598-020-73341-4}
+
+\bibitem[\citeproctext]{ref-Bratthall2024}
+Bratthäll, T., Figueira, J., \& Nording, M. L. (2024). Influence of
+divalent cations on the extraction of organic acids in coffee determined
+by GC-MS and NMR. \emph{Heliyon}.
+
+\bibitem[\citeproctext]{ref-Cotter2021}
+Cotter, A. R., Batali, M. E., Ristenpart, W. D., \& Guinard, J.-X.
+(2021). Consumer preferences for black coffee are spread over a wide
+range of brew strengths and extraction yields. \emph{Journal of Food
+Science}, \emph{86}(1), 194--205.
+\url{https://doi.org/10.1111/1750-3841.15561}
+
+\bibitem[\citeproctext]{ref-Frost2020}
+Frost, S. C., Ristenpart, W. D., \& Guinard, J.-X. (2020). Effects of
+brew strength, brew yield, and roast on the sensory quality of drip
+brewed coffee. \emph{Journal of Food Science}, \emph{85}(8), 2530--2543.
+\url{https://doi.org/10.1111/1750-3841.15326}
+
+\bibitem[\citeproctext]{ref-Guinard2023}
+Guinard, J.-X., Frost, S., Batali, M., Cotter, A., Lim, L. X., \&
+Ristenpart, W. D. (2023). A new coffee brewing control chart relating
+sensory properties and consumer liking to brew strength, extraction
+yield, and brew ratio. \emph{Journal of Food Science}, \emph{88}(5),
+2168--2177. \url{https://doi.org/10.1111/1750-3841.16531}
+
+\bibitem[\citeproctext]{ref-Hendon2014}
+Hendon, C. H., Colonna-Dashwood, L., \& Colonna-Dashwood, M. (2014). The
+role of dissolved cations in coffee extraction. \emph{Journal of
+Agricultural and Food Chemistry}, \emph{62}(21), 4947--4950.
+\url{https://doi.org/10.1021/jf501687c}
+
+\bibitem[\citeproctext]{ref-Liu2025}
+Liu, Y., Lin, J., Hu, S., Wang, G., Yang, C., Zhang, Z., Ren, D., Yi,
+L., \& Li, S. (2025). Exploring the impacts and mechanisms of water on
+the taste extractions and perceptions of coffee brews: A case study in
+filter brewing. \emph{Journal of Food Composition and Analysis},
+\emph{146}. \url{https://doi.org/10.1016/j.jfca.2025.107987}
+
+\bibitem[\citeproctext]{ref-SISAGUA}
+Ministério da Saúde do Brasil. (2026). \emph{SISAGUA -- controle
+semestral (dados abertos)}.
+\url{https://dadosabertos.saude.gov.br/dataset/sisagua-controle-semestral}.
+
+\bibitem[\citeproctext]{ref-SCAwater}
+Specialty Coffee Association of America. (2009). \emph{SCAA standard:
+Water for brewing specialty coffee}. Specialty Coffee Association of
+America.
+
+\bibitem[\citeproctext]{ref-Stream}
+Stream. (2026). \emph{Stream water industry open data portal}.
+\url{https://www.streamwaterdata.co.uk}.
+
+\bibitem[\citeproctext]{ref-TapWaterData2026}
+TapWaterData. (2026). \emph{TapWaterData water hardness dataset}.
+\url{https://www.tapwaterdata.com/water-hardness}.
+
+\bibitem[\citeproctext]{ref-EPASYR4}
+United States Environmental Protection Agency. (2024). \emph{Six-year
+review 4 compliance monitoring data (2012--2019)}.
+\url{https://www.epa.gov/dwsixyearreview/six-year-review-4-compliance-monitoring-data-2012-2019}.
+
+\bibitem[\citeproctext]{ref-Yeager2023}
+Yeager, S. E., Batali, M. E., Guinard, J.-X., \& Ristenpart, W. D.
+(2023). Acids in coffee: A review of sensory measurements and
+meta-analysis of chemical composition. \emph{Critical Reviews in Food
+Science and Nutrition}, \emph{63}(8), 1010--1036.
+\url{https://doi.org/10.1080/10408398.2021.1957767}
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
