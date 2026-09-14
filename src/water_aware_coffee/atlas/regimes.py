@@ -258,7 +258,7 @@ def label_rule(rel: float) -> str:
 
 
 def matching_table(summary: pd.DataFrame, cations: CationParams = CATIONS) -> pd.DataFrame:
-    """Regime × roast: relative residual acidity at the regime's median water (central, low, high)."""
+    """Regime × roast: relative residual acidity at the regime median water (central, low, high)."""
     rows = []
     for _, reg in summary.iterrows():
         for r in ROASTS:
