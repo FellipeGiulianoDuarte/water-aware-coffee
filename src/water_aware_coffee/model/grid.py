@@ -62,6 +62,17 @@ class RoastParams:
     brew_ph: float
     agtron: tuple[int, int]
     source: str
+    # Alkalinity (mg/L as CaCO3) of the water the reference TA was measured in. The measured TA
+    # already lost this much acid to bicarbonate; the model adds it back to get the intrinsic TA
+    # before subtracting the target water's alkalinity. 0 for deionised water.
+    ref_water_alkalinity_mgl: float = 0.0
+
+    def intrinsic_ta(self, which: str = "central") -> float:
+        ta = {"central": self.ta_ref_meq_l, "low": self.ta_low, "high": self.ta_high}[which]
+        back = (
+            bicarbonate_protonated_fraction(self.brew_ph) * self.ref_water_alkalinity_mgl / EQ_CACO3
+        )
+        return ta + back
 
 
 @dataclass(frozen=True)
@@ -123,7 +134,7 @@ def residual_acidity(
     which: "central" uses ta_ref and beta_central; "low" uses ta_low and beta_low (least acid);
     "high" uses ta_high and beta_high (most acid).
     """
-    ta = {"central": roast.ta_ref_meq_l, "low": roast.ta_low, "high": roast.ta_high}[which]
+    ta = roast.intrinsic_ta(which)
     ey = roast.ey_ref if ey is None else ey
     ey_scale = ey / roast.ey_ref
     mult = extraction_multiplier(grid.hardness_mgl, grid.mg_fraction_of_hardness, cations, which)
@@ -168,3 +179,18 @@ def acid_lost_fraction(roast: RoastParams, grid: Grid) -> FArray:
         (neutralised / roast.ta_ref_meq_l)[:, None],
         (len(grid.alkalinity_mgl), len(grid.hardness_mgl)),
     ).copy()
+
+
+# Sourness calibration (Batali et al. 2021, ACS Food Sci. Technol., Table 1): trained-panel sour
+# intensity on a 0 to 100 scale against titratable acidity, from the three roast means
+# (TA 12.46 / 11.36 / 9.78 meq/L -> sour 37.5 / 31.8 / 27.7). A straight line through three points;
+# use for orientation, not precision. Per-brew scatter in their Figure 4C is wide (R 0.63 to 0.89).
+SOURNESS_INTERCEPT = -8.2
+SOURNESS_SLOPE_PER_MEQ = 3.61
+
+
+def sourness_from_ta(ta_meq_l: FArray | float) -> FArray:
+    """Predicted perceived sour intensity (0 to 100) for a brew titratable acidity in meq/L."""
+    return np.asarray(
+        SOURNESS_INTERCEPT + SOURNESS_SLOPE_PER_MEQ * np.asarray(ta_meq_l), dtype=float
+    )

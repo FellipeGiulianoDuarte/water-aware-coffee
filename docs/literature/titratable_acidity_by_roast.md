@@ -280,3 +280,35 @@ Recipe the bins apply to: hot-water brew, TA titrated to pH ≈ 8.2, expressed a
 Roast-to-roast ratios (dark / light): Yeager 2021 0.62; Rao 2020 hot 0.43 (endpoint 6.5, unscaled) and 0.38 (scaled); Anokye-Bempah second crack / first crack 0.51–0.57.
 
 Data sufficiency: adequate for a first light/medium/dark split with ±20 % uncertainty on the central values; not adequate for (a) the TA-vs-TDS intercept, (b) drip-specific (percolation, ~20 % extraction) TA — all readable sources are immersion brews, (c) TA in water of known non-zero alkalinity, and (d) any measured alkalinity→TA or alkalinity→pH slope. The single paper that would settle (a) and (b), Batali et al. 2021 (ACS), is paywalled; purchasing it ($48) or requesting it from the authors is the fastest way to close the gap. For (d), no published controlled experiment was found; the model's subtraction term rests on stoichiometry (1 meq/L bicarbonate neutralises 1 meq/L of titratable acid at a pH-8.2 endpoint), not on a measured coffee dataset.
+
+## Addendum 2026-09-14: Batali et al. 2021 obtained (full text, via CAPES / UFPR)
+
+Batali ME, Cotter AR, Frost SC, Ristenpart WD, Guinard J-X. Titratable acidity, perceived sourness, and
+liking of acidity in drip brewed coffee. ACS Food Sci. Technol. 2021, 1(4), 559-569.
+DOI 10.1021/acsfoodscitech.0c00078. Private copy: ../../private/papers/Batali2021.pdf and Batali2021_SI.pdf.
+
+Verified values (VERIFIED-FULLTEXT):
+
+| Item | Value | Where |
+|---|---|---|
+| Design | drip (Curtis G4), TDS 1.0 / 1.25 / 1.5 %, PE 16 / 20 / 24 %, roasts light / medium / dark of one Honduran washed Arabica; 258 brews (roast experiment) | Section 2.1.1 |
+| Roast definition | development time after first crack; no Agtron reported (Frost et al. 2020 has the roast profiles) | Section 2.1.1 |
+| TA method | 0.1 M NaOH to pH 8.2 ± 0.05, reported as mL per 50 mL brew (1 mL = 2 meq/L) | Section 2.3.2 |
+| Mean TA by roast | light 6.23 a, medium 5.68 b, dark 4.89 c mL NaOH (12.46 / 11.36 / 9.78 meq/L) | Table 1 |
+| Mean pH by roast | 4.93 / 5.01 / 5.14 | Table 1 |
+| Mean sour intensity (0 to 100) | 37.54 / 31.77 / 27.65 | Table 1 |
+| TA vs TDS | linear, R 0.75 to 0.97; TA about 4 mL at TDS 0.8 % to about 8 mL at 1.6 % | Figure 3A, text p. 563 |
+| TA vs PE | weak; about -1 mL over PE 15 to 25 % for light and dark; none for medium | Figure 3C, text |
+| TA at TDS 1.25 % across PE 16 to 24 | light about 5.75 to 6.5 mL; medium 5.2 to 6.0; dark 4.6 to 5.2 | Supplemental Figure 1 (read from contours) |
+| Brew water | RO + 0.0116 g CaSO4·2H2O, 0.0497 g MgSO4, 0.0326 g NaHCO3, 0.0257 g KHCO3 per litre | Section 2.1 |
+| Computed water chemistry | alkalinity 0.645 meq/L = 32.3 mg/L as CaCO3; hardness 48.1 mg/L as CaCO3 (Ca 2.7, Mg 10.0 mg/L); Na 8.9, K 10.0 mg/L | our computation from the recipe |
+| Sourness vs TA | proportion of consumers selecting "sour" rose from 24 % at TA 4 mL to 50 % at TA 8 mL | Figure 6, text p. 564 |
+| Temperature | no TA difference between 87, 90, 93 °C at equal TDS | Figure 3B |
+
+Model parameters v1 set from this: src/water_aware_coffee/model/params.py. The measured TA already
+includes neutralisation by the 0.645 meq/L of bicarbonate in their brew water; RoastParams adds it
+back (about 0.6 meq/L) to obtain intrinsic TA before subtracting the target water's alkalinity.
+Sourness calibration (rough, three roast means): sour ≈ -8.2 + 3.61 × TA(meq/L).
+
+Change versus v0: light and medium within 4 percent of the immersion-derived guesses; dark was
+underestimated by 25 percent (9.78 vs 7.5 meq/L). Dark/light ratio 0.78 (v0 assumed 0.62).

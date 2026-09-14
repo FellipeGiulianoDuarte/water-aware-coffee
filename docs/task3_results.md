@@ -6,7 +6,7 @@ docs/figures/task3_grid.png.
 
 Localities with a finished-water alkalinity median: 17,636 (by source: {'epa-syr4-us': 15240, 'uk-stream': 2396}).
 Alkalinity distribution, one locality one vote, mg/L as CaCO3: p10 48, p25 99, median 187, p75 266, p90 330.
-Population-weighted (US utilities with population served, n=15,171, 104 M people): p10 20, p25 46, median 83, p75 136, p90 213. Small groundwater systems are
+Population-weighted (US utilities with population served, n=17,567, 108 M people): p10 21, p25 48, median 85, p75 137, p90 232. Small groundwater systems are
 numerous but serve few people, so the per-locality distribution overstates typical alkalinity.
 
 Share of the brew's titratable acidity neutralised by the water (central TA per roast bin,
@@ -14,9 +14,9 @@ bicarbonate protonation fraction at the bin's brew pH):
 
 | roast | TA central (meq/L) | at SCA 40 mg/L | at per-locality median | at population-weighted median | at population-weighted p75 | share of localities losing > 25 % | share of people losing > 25 % | > 50 % (people) |
 |---|---|---|---|---|---|---|---|---|
-| light | 12 | 6% | 30% | 13% | 22% | 59% | 19% | 4% |
-| medium | 11 | 7% | 32% | 14% | 24% | 62% | 20% | 5% |
-| dark | 7.5 | 10% | 45% | 20% | 33% | 74% | 39% | 12% |
+| light | 12.46 | 6% | 29% | 13% | 21% | 57% | 20% | 3% |
+| medium | 11.36 | 7% | 31% | 14% | 23% | 61% | 22% | 4% |
+| dark | 9.78 | 8% | 36% | 16% | 26% | 66% | 31% | 7% |
 
 Reading: the dark-roast column is systematically higher because dark roasts start with less
 acid: the same water flattens a dark roast more in relative terms, but a dark roast has less

@@ -20,39 +20,21 @@ k = 6 regimes chosen by population-weighted BIC (effective sample size 774), cap
 
 | regime | roast | central | parameter range | across regime's alkalinity p10 to p90 | label | label stable across parameter range |
 |---|---|---|---|---|---|---|
-| 1 | light | 1.05 | 1.00 to 1.06 | 0.53 to 1.07 | works | yes |
-| 1 | medium | 1.06 | 1.00 to 1.07 | 0.49 to 1.07 | works | yes |
-| 1 | dark | 1.08 | 1.02 to 1.12 | 0.27 to 1.10 | works | yes |
+| 1 | light | 1.05 | 1.00 to 1.05 | 0.57 to 1.06 | works | yes |
+| 1 | medium | 1.05 | 1.00 to 1.06 | 0.53 to 1.07 | works | yes |
+| 1 | dark | 1.06 | 1.01 to 1.06 | 0.46 to 1.08 | works | yes |
 | 2 | light | 1.02 | 0.99 to 1.02 | 1.01 to 1.04 | works | yes |
-| 2 | medium | 1.02 | 0.99 to 1.03 | 1.01 to 1.05 | works | yes |
-| 2 | dark | 1.03 | 1.00 to 1.04 | 1.02 to 1.07 | works | yes |
-| 3 | light | 0.98 | 0.97 to 1.05 | 0.98 to 1.02 | works | yes |
-| 3 | medium | 0.98 | 0.97 to 1.05 | 0.98 to 1.02 | works | yes |
-| 3 | dark | 0.97 | 0.95 to 1.04 | 0.97 to 1.03 | works | yes |
-| 4 | light | 0.96 | 0.95 to 1.00 | 0.87 to 0.98 | works | yes |
-| 4 | medium | 0.95 | 0.94 to 0.99 | 0.86 to 0.98 | works | yes |
-| 4 | dark | 0.93 | 0.90 to 0.98 | 0.80 to 0.97 | works | yes |
-| 5 | light | 0.91 | 0.89 to 0.92 | 0.72 to 1.00 | works | yes |
-| 5 | medium | 0.90 | 0.88 to 0.91 | 0.70 to 1.00 | works | yes |
-| 5 | dark | 0.86 | 0.81 to 0.89 | 0.57 to 0.99 | works | yes |
-| 6 | light | 0.70 | 0.64 to 0.85 | 0.70 to 0.84 | compensate (flatter) | no |
-| 6 | medium | 0.68 | 0.60 to 0.81 | 0.68 to 0.83 | compensate (flatter) | no |
-| 6 | dark | 0.54 | 0.35 to 0.73 | 0.54 to 0.76 | compensate (flatter) | no |
-
-## Reading (AI assessment, 2026-09-14)
-
-- The localities form a continuum along the alkalinity ≈ hardness diagonal, not separated clusters. The
-  population-weighted BIC is still falling at k = 6, so the cap binds and the six regimes are a
-  discretisation of that continuum. Fixed alkalinity bands would be easier to explain to brewers and
-  no less defensible; this is worth revisiting (decisions.md item 23).
-- Effective sample size is only 774 because a few large utilities carry most of the population weight.
-- The straight grey lines in the scatter are Brazil's imputed alkalinity (a deterministic function of
-  hardness with one offset per source type). Brazil holds 129 million of the weighted population, so
-  regimes 4 and 5 are population-dominated by imputed values. Country shares are in the summary CSV.
-- Regime 1 (about 1 percent of people) is softened water: alkalinity kept, hardness stripped. It is a
-  real regime, not noise, and the only one where hardness and alkalinity decouple.
-- The matching table at regime medians says "works" for every roast except in regime 6 (very high
-  alkalinity, about 4 percent of people), where all roasts need compensation. The within-regime spread
-  columns show that the flatter half of regime 5 also crosses into "compensate" for dark roasts.
-  The effect of water is therefore concentrated in the top 10 to 15 percent of alkalinity, plus dark
-  roasts generally.
+| 2 | medium | 1.02 | 0.99 to 1.02 | 1.01 to 1.04 | works | yes |
+| 2 | dark | 1.02 | 0.99 to 1.02 | 1.01 to 1.05 | works | yes |
+| 3 | light | 0.98 | 0.98 to 1.05 | 0.98 to 1.02 | works | yes |
+| 3 | medium | 0.98 | 0.98 to 1.05 | 0.98 to 1.02 | works | yes |
+| 3 | dark | 0.97 | 0.97 to 1.04 | 0.97 to 1.02 | works | yes |
+| 4 | light | 0.96 | 0.96 to 0.99 | 0.88 to 0.98 | works | yes |
+| 4 | medium | 0.96 | 0.95 to 0.99 | 0.87 to 0.98 | works | yes |
+| 4 | dark | 0.95 | 0.95 to 0.99 | 0.85 to 0.98 | works | yes |
+| 5 | light | 0.92 | 0.91 to 0.92 | 0.74 to 1.00 | works | yes |
+| 5 | medium | 0.91 | 0.90 to 0.91 | 0.72 to 1.00 | works | yes |
+| 5 | dark | 0.90 | 0.89 to 0.90 | 0.68 to 1.00 | works | yes |
+| 6 | light | 0.73 | 0.71 to 0.84 | 0.73 to 0.86 | compensate (flatter) | no |
+| 6 | medium | 0.71 | 0.68 to 0.82 | 0.71 to 0.84 | compensate (flatter) | no |
+| 6 | dark | 0.66 | 0.64 to 0.79 | 0.66 to 0.82 | compensate (flatter) | no |

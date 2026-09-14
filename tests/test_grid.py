@@ -53,3 +53,19 @@ def test_acid_lost_fraction() -> None:
     assert lost[0, 0] == 0.0
     # 250.2 mg/L CaCO3 = 5 meq/L; light roast TA 10 meq/L -> about half the acidity neutralised
     assert lost[1, 1] == pytest.approx(0.5 * bicarbonate_protonated_fraction(4.9), rel=1e-3)
+
+
+def test_intrinsic_ta_adds_back_reference_water_alkalinity() -> None:
+    from water_aware_coffee.model.grid import sourness_from_ta
+
+    r = RoastParams("x", 12.46, 11.5, 13.0, 0.20, 4.93, (0, 0), "t", ref_water_alkalinity_mgl=32.3)
+    from water_aware_coffee.units import EQ_CACO3
+
+    back = bicarbonate_protonated_fraction(4.93) * 32.3 / EQ_CACO3
+    assert r.intrinsic_ta() == pytest.approx(12.46 + back)
+    assert 12.9 < r.intrinsic_ta() < 13.2
+    # in the same water the model must reproduce the measured TA
+    grid = Grid(alkalinity_mgl=np.array([32.3]), hardness_mgl=np.array([48.0]))
+    res = residual_acidity(r, grid, CationParams())
+    assert res[0, 0] == pytest.approx(12.46, rel=1e-6)
+    assert sourness_from_ta(12.46) == pytest.approx(37.5, abs=0.5)
