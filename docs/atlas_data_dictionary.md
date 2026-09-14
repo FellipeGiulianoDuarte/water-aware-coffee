@@ -8,41 +8,41 @@ All hardness and alkalinity values are mg/L as CaCO3; ions are mg/L of the ion. 
 finished-water samples in the source (bottled: the declared label value). Never trust a bare 'mg/L' hardness from the sources:
 use hardness_best, which prefers hardness derived from calcium and magnesium.
 
-| column | meaning |
-|---|---|
-| `source_id` | Source identifier (see docs/sources in the parent project and the paper's Table 1). |
-| `country_iso2` | ISO 3166-1 alpha-2 country code of the locality (bottled: country of sale). |
-| `admin1` | State, region or UF as published; may be empty. |
-| `locality` | City, municipality, small area, utility or 'brand | product' as published. |
-| `locality_key` | Official code when present (IBGE 6-digit, LSOA, PWSID) else the name. |
-| `utility` | Water company / system / brand. |
-| `utility_code` | PWSID or other system code when present. |
-| `population` | People served (US utilities) or residents (Brazil, England small areas); empty when unknown. |
-| `population_source` | Where the population came from. |
-| `source_type` | surface, ground, mixed or unknown (most common value among the locality's rows). |
-| `hardness_median` | Reported total hardness, median over the locality's rows, mg/L as CaCO3. |
-| `hardness_n` | Number of hardness rows behind the median. |
-| `hardness_share_unit_assumed` | Share of hardness rows whose unit basis was assumed (bare 'mg/L'). |
-| `calcium_median` | mg/L Ca. |
-| `magnesium_median` | mg/L Mg. |
-| `hardness_from_ions` | Ca × 2.497 + Mg × 4.118, mg/L as CaCO3, when both ions are present. |
-| `hardness_best` | hardness_from_ions when available, else hardness_median. |
-| `hardness_best_basis` | 'from_ions' or 'reported'. |
-| `alkalinity_median` | Measured alkalinity, mg/L as CaCO3 (bottled: bicarbonate × 0.820 or printed value). |
-| `alkalinity_n` | Number of alkalinity rows behind the median. |
-| `alkalinity_share_unit_assumed` | Share of alkalinity rows whose basis (CaCO3 vs HCO3) was assumed. |
-| `alkalinity_imputed` | True when alkalinity_best comes from the hardness model, not a measurement. |
-| `alkalinity_best` | alkalinity_median when measured, else the imputed value. |
-| `alkalinity_low` | Imputed rows only: 16th percentile of the imputation (÷1.68). |
-| `alkalinity_high` | Imputed rows only: 84th percentile of the imputation (×1.68). |
-| `alkalinity_fit_id` | Identifier of the imputation model version. |
-| `sodium_median` | mg/L Na. |
-| `ph_median` | pH, median. |
-| `band` | Alkalinity band 1 to 5 (edges 40, 80, 150, 250 mg/L as CaCO3) from alkalinity_best. |
-| `band_name` | Band label. |
-| `softened` | True when hardness < 30 and alkalinity > 60 (ion-exchange softened water pattern). |
-| `period_start` | Earliest sample date behind the medians. |
-| `period_end` | Latest sample date behind the medians. |
+Columns (one entry per column, in file order; a list rather than a table so that it renders in viewers without table support):
+
+- `source_id`: Source identifier (see docs/sources in the parent project and the paper's Table 1).
+- `country_iso2`: ISO 3166-1 alpha-2 country code of the locality (bottled: country of sale).
+- `admin1`: State, region or UF as published; may be empty.
+- `locality`: City, municipality, small area, utility or 'brand | product' as published.
+- `locality_key`: Official code when present (IBGE 6-digit, LSOA, PWSID) else the name.
+- `utility`: Water company / system / brand.
+- `utility_code`: PWSID or other system code when present.
+- `population`: People served (US utilities) or residents (Brazil, England small areas); empty when unknown.
+- `population_source`: Where the population came from.
+- `source_type`: surface, ground, mixed or unknown (most common value among the locality's rows).
+- `hardness_median`: Reported total hardness, median over the locality's rows, mg/L as CaCO3.
+- `hardness_n`: Number of hardness rows behind the median.
+- `hardness_share_unit_assumed`: Share of hardness rows whose unit basis was assumed (bare 'mg/L').
+- `calcium_median`: mg/L Ca.
+- `magnesium_median`: mg/L Mg.
+- `hardness_from_ions`: Ca × 2.497 + Mg × 4.118, mg/L as CaCO3, when both ions are present.
+- `hardness_best`: hardness_from_ions when available, else hardness_median.
+- `hardness_best_basis`: 'from_ions' or 'reported'.
+- `alkalinity_median`: Measured alkalinity, mg/L as CaCO3 (bottled: bicarbonate × 0.820 or printed value).
+- `alkalinity_n`: Number of alkalinity rows behind the median.
+- `alkalinity_share_unit_assumed`: Share of alkalinity rows whose basis (CaCO3 vs HCO3) was assumed.
+- `alkalinity_imputed`: True when alkalinity_best comes from the hardness model, not a measurement.
+- `alkalinity_best`: alkalinity_median when measured, else the imputed value.
+- `alkalinity_low`: Imputed rows only: 16th percentile of the imputation (÷1.68).
+- `alkalinity_high`: Imputed rows only: 84th percentile of the imputation (×1.68).
+- `alkalinity_fit_id`: Identifier of the imputation model version.
+- `sodium_median`: mg/L Na.
+- `ph_median`: pH, median.
+- `band`: Alkalinity band 1 to 5 (edges 40, 80, 150, 250 mg/L as CaCO3) from alkalinity_best.
+- `band_name`: Band label.
+- `softened`: True when hardness < 30 and alkalinity > 60 (ion-exchange softened water pattern).
+- `period_start`: Earliest sample date behind the medians.
+- `period_end`: Latest sample date behind the medians.
 
 Known limitations: Brazilian alkalinity is imputed (alkalinity_imputed = True) with a ×/÷1.7 error band; England is three
 water companies; US alkalinity is 2012 to 2019; bottled values are label declarations of unknown date.
