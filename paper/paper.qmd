@@ -2,6 +2,7 @@
 title: "Tap water alkalinity and coffee acidity: a population-weighted atlas and a prediction model for filter brewing"
 author:
   - name: Fellipe Giuliano Duarte
+    orcid: 0009-0002-0677-1685
     affiliations:
       - name: Independent researcher
 date: today
@@ -170,7 +171,7 @@ The predictions can be tested with domestic equipment. One session consists of t
 
 ## Data and code availability
 
-The atlas, the measurement table with per-row provenance, the bottled-water table, the model code, the figure and table generators and this manuscript are in the project repository, under the MIT licence for code and CC BY 4.0 for produced data. Upstream sources retain their own licences and are listed with checksums. The redistributable raw downloads (about 1.5 GB: SISAGUA, TapWaterData, EPA, the English open-data hub, Northern Ireland Water, IBGE and ONS population files) are attached to the tagged release, with a manifest per source; files obtained under terms that do not permit redistribution are not included.
+The atlas, the measurement table with per-row provenance, the bottled-water table, the model code, the figure and table generators and this manuscript are in the project repository, under the MIT licence for code and CC BY 4.0 for produced data. Upstream sources retain their own licences and are listed with checksums. The redistributable raw downloads (about 1.5 GB: SISAGUA, TapWaterData, EPA, the English open-data hub, Northern Ireland Water, IBGE and ONS population files) are attached to the tagged release, with a manifest per source; files obtained under terms that do not permit redistribution are not included. A snapshot of this manuscript, its LaTeX source, the atlas, its data dictionary and the bottled-water table is deposited on Zenodo under DOI 10.5281/zenodo.22758448.
 
 ## Acknowledgements
 

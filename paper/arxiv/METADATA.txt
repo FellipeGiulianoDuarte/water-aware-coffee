@@ -4,13 +4,13 @@ Title:
 Tap water alkalinity and coffee acidity: a population-weighted atlas and a prediction model for filter brewing
 
 Authors:
-Fellipe Giuliano Duarte
+Fellipe Giuliano Duarte (ORCID 0009-0002-0677-1685; link the ORCID in your arXiv user profile, the form has no per-author field)
 
 Abstract:
 Bicarbonate in brewing water neutralises part of the acidity of coffee. We quantify this effect for municipal tap water. We compiled an open, provenance-tracked atlas of finished tap-water chemistry for about 47,000 localities in the United States, England, Northern Ireland and Brazil, added the label compositions of 187 bottled waters sold in seven countries, and weighted all statistics by population served. Combining the atlas with published drip-coffee measurements of titratable acidity by roast level and of sensory intensity by brew strength and extraction yield, we predict the share of a coffee's acidity that a given water neutralises. On a population basis, the median United States tap water neutralises 13 percent of a light roast's acidity and 16 percent of a dark roast's; the upper quartile neutralises 21 to 26 percent; about 10 percent of the population receives water above 150 mg/L alkalinity as CaCO3, where all roast levels are predicted to need compensation. Alkalinity and hardness are correlated along one line across countries, so hardness, which is reported far more widely, predicts alkalinity within a factor of 1.7. Each 50 mg/L of alkalinity above the Specialty Coffee Association target neutralises about 1 meq/L of acid and lowers predicted sourness by 3.6 points on a 100-point scale; below about 100 mg/L this can be offset by 5 to 10 percent more coffee per 40 mg/L, above 150 mg/L dilution with low-alkalinity water requires less change than any recipe adjustment. Whether the shift is unwelcome depends on the drinker: most black-coffee consumers in published preference studies dislike sourness. The predictions carry stated uncertainties and have not been tested by tasting; a paired-brew protocol is provided. Data, code and figures are open.
 
 Comments:
-14 pages, 5 figures, 7 tables. Code, data and Quarto source: https://github.com/FellipeGiulianoDuarte/water-aware-coffee (release v0.1.0)
+14 pages, 5 figures, 7 tables. Code, data and Quarto source: https://github.com/FellipeGiulianoDuarte/water-aware-coffee (release v0.1.1); Zenodo DOI 10.5281/zenodo.22758448
 
 Primary category: physics.chem-ph (Chemical Physics)
 Optional cross-list: stat.AP (Applications) -- only if endorsement in Statistics is available

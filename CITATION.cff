@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the preprint below."
+type: software
+title: "water-aware-coffee: tap-water chemistry atlas and coffee acidity model"
+authors:
+  - family-names: Duarte
+    given-names: Fellipe Giuliano
+    orcid: "https://orcid.org/0009-0002-0677-1685"
+    affiliation: "Independent researcher"
+repository-code: "https://github.com/FellipeGiulianoDuarte/water-aware-coffee"
+license: MIT
+version: 0.1.1
+date-released: 2026-09-14
+preferred-citation:
+  type: article
+  title: "Tap water alkalinity and coffee acidity: a population-weighted atlas and a prediction model for filter brewing"
+  authors:
+    - family-names: Duarte
+      given-names: Fellipe Giuliano
+      orcid: "https://orcid.org/0009-0002-0677-1685"
+  year: 2026
+  doi: 10.5281/zenodo.22758448
+  publisher:
+    name: Zenodo
+  notes: "Preprint"

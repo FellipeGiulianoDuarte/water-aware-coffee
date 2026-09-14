@@ -2,7 +2,7 @@
 
 An open atlas of tap-water chemistry for coffee brewing, a model of how much of a coffee's acidity a given water removes,
 and compensation rules with their costs. Zero budget: public datasets, published papers, label data. A prediction paper
-(Quarto source in `paper/`) is being prepared for arXiv; a community validation protocol is in `docs/validation_protocol.md`.
+(Quarto source in `paper/`) is deposited on Zenodo, DOI [10.5281/zenodo.22758448](https://doi.org/10.5281/zenodo.22758448), and is being prepared for arXiv; a community validation protocol is in `docs/validation_protocol.md`.
 
 Headline results: population-weighted, the median United States tap water neutralises 13 percent of a light roast's acidity and
 16 percent of a dark roast's; about one person in ten is supplied with water above 150 mg/L alkalinity as CaCO3, where every roast
@@ -49,7 +49,8 @@ company web lookups under all-rights-reserved terms were not used.
 ## Licences
 
 Code: MIT (`LICENSE`). Produced data: CC BY 4.0 (`data/LICENSE`). Cite as: Duarte, F. G. (2026). Tap water alkalinity and coffee
-acidity: a population-weighted atlas and a prediction model for filter brewing. Preprint; repository https://github.com/FellipeGiulianoDuarte/water-aware-coffee.
+acidity: a population-weighted atlas and a prediction model for filter brewing. Preprint, Zenodo. https://doi.org/10.5281/zenodo.22758448
+(see also `CITATION.cff`). Author ORCID: https://orcid.org/0009-0002-0677-1685.
 
 ## Contributing a brew session
 

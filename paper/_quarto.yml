@@ -17,6 +17,8 @@ format:
     fig-pos: "!htbp"
     pdf-engine: pdflatex
     keep-tex: true
+    template-partials:
+      - title.tex
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/apa
