@@ -1,0 +1,8 @@
+The datasets in data/processed/ produced by this project are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution: "Water-aware coffee atlas, Fellipe Giuliano Duarte, <year>, <repository URL>".
+
+Upstream sources keep their own licenses; see docs/sources.md for each source's terms.
+Raw downloads in data/raw/ are not redistributed here.
