@@ -48,10 +48,21 @@ target-version = "py312"
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "N", "W"]
 
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = [
+    "pandera.pandas.dataframe_check",
+    "pandera.pandas.check",
+    "pandera.dataframe_check",
+    "pandera.check",
+    "dataframe_check",
+    "check",
+]
+
 [tool.mypy]
 python_version = "3.12"
 strict = true
 ignore_missing_imports = true
+plugins = ["pandera.mypy"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
