@@ -58,7 +58,19 @@ def sources_table() -> str:
             "CC BY 4.0 compilation",
         ),
     }
-    for sid, g in w.groupby("source_id"):
+    order = [
+        "sisagua-br",
+        "tapwaterdata-us",
+        "epa-syr4-us",
+        "tapwaterdata-us+epa-syr4-us",
+        "uk-stream",
+        "uk-ni-water",
+        "bottled-labels",
+    ]
+    for sid in order:
+        g = w[w["source_id"] == sid]
+        if len(g) == 0:
+            continue
         name, lic = names.get(str(sid), (str(sid), ""))
         rows.append(
             {
