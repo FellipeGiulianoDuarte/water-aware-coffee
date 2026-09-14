@@ -32,11 +32,18 @@ def load_interim(interim_dir: Path, sources: list[str] | None = None) -> pd.Data
 def summarise_long(df: pd.DataFrame, finished_only: bool = True) -> pd.DataFrame:
     d = df[df["water_type"] == "finished"] if finished_only else df
     d = d.copy()
-    d["locality_key"] = d["locality_code"].where(d["locality_code"].notna(), d["locality"])
+    # Key preference: official locality code, else utility code (e.g. PWSID), else the name.
+    key = d["locality_code"].where(d["locality_code"].notna(), d["utility_code"])
+    d["locality_key"] = key.where(key.notna(), d["locality"])
+    d["population"] = pd.to_numeric(
+        d["notes"].astype("string").str.extract(r"population=(\d+)")[0], errors="coerce"
+    )
     g = d.groupby(["source_id", "country_iso2", "admin1", "locality_key", "quantity"], dropna=False)
     out = g.agg(
         locality=("locality", "first"),
         utility=("utility", "first"),
+        utility_code=("utility_code", "first"),
+        population=("population", "max"),
         median=("value", "median"),
         p10=("value", lambda s: s.quantile(0.10)),
         p90=("value", lambda s: s.quantile(0.90)),
@@ -65,6 +72,8 @@ def to_wide(summary: pd.DataFrame) -> pd.DataFrame:
     meta = summary.groupby(idx, dropna=False).agg(
         locality=("locality", "first"),
         utility=("utility", "first"),
+        utility_code=("utility_code", "first"),
+        population=("population", "max"),
         latitude=("latitude", "first"),
         longitude=("longitude", "first"),
         period_start=("period_start", "min"),
@@ -90,10 +99,34 @@ def to_wide(summary: pd.DataFrame) -> pd.DataFrame:
     return wide
 
 
+def join_us_hardness_alkalinity(wide: pd.DataFrame) -> pd.DataFrame:
+    """Cross-source rows: TapWaterData utility-reported hardness (T1, PWSID parsed) joined to EPA
+    SYR4 finished-water alkalinity and pH on the PWSID. Returns rows with
+    source_id "tapwaterdata-us+epa-syr4-us"; one row per (city, PWSID)."""
+    tw = wide[(wide["source_id"] == "tapwaterdata-us") & wide["utility_code"].notna()]
+    epa = wide[wide["source_id"] == "epa-syr4-us"]
+    epa_cols = [
+        "utility_code",
+        "alkalinity_median",
+        "alkalinity_n",
+        "alkalinity_share_unit_assumed",
+        "ph_median",
+        "ph_n",
+        "population",
+    ]
+    joined = tw.drop(
+        columns=[c for c in epa_cols if c != "utility_code" and c in tw.columns]
+    ).merge(epa[epa_cols], on="utility_code", how="inner")
+    joined["source_id"] = "tapwaterdata-us+epa-syr4-us"
+    return joined
+
+
 def build_atlas_v0(interim_dir: Path, out_dir: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     df = load_interim(interim_dir)
     long = summarise_long(df)
     wide = to_wide(long)
+    us = join_us_hardness_alkalinity(wide)
+    wide = pd.concat([wide, us], ignore_index=True)
     out_dir.mkdir(parents=True, exist_ok=True)
     long.to_parquet(out_dir / "atlas_v0_long.parquet", index=False)
     wide.to_parquet(out_dir / "atlas_v0_wide.parquet", index=False)

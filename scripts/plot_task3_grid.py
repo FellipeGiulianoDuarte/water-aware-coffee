@@ -60,7 +60,22 @@ def load_waters() -> pd.DataFrame:
     w = w.rename(columns={"alkalinity_median": "alk", "hardness_best": "hard"})
     w["alk"] = pd.to_numeric(w["alk"], errors="coerce")
     w["hard"] = pd.to_numeric(w["hard"], errors="coerce")
+    w["population"] = pd.to_numeric(w["population"], errors="coerce")
+    # The joined US rows duplicate EPA alkalinity already counted under epa-syr4-us; keep them only
+    # for the grid scatter (they carry hardness too), not for the alkalinity distribution.
     return w
+
+
+def alkalinity_population(waters: pd.DataFrame) -> pd.DataFrame:
+    a = waters[waters["source_id"] != "tapwaterdata-us+epa-syr4-us"].dropna(subset=["alk"])
+    return a[["source_id", "alk", "population"]]
+
+
+def wquantile(x: pd.Series, w: pd.Series, q: float) -> float:
+    order = x.sort_values().index
+    xs, ws = x[order].to_numpy(), w[order].to_numpy()
+    c = ws.cumsum() / ws.sum()
+    return float(xs[min(int((c < q).sum()), len(xs) - 1)])
 
 
 def fig_neutralised(waters: pd.DataFrame) -> None:
@@ -91,9 +106,9 @@ def fig_neutralised(waters: pd.DataFrame) -> None:
         del lo
     ax.axvline(SCA_ALK, color=INK2, linewidth=1, linestyle=":")
     ax.text(SCA_ALK + 3, 0.97, "SCA target 40 mg/L", color=INK2, fontsize=8, va="top")
-    for y, lab in ((0.25, "a quarter of the acidity gone"), (0.5, "half gone")):
+    for y, lab in ((0.25, "a quarter of the acidity gone"), (0.5, "half of the acidity gone")):
         ax.axhline(y, color=GRIDC, linewidth=1, zorder=0)
-        ax.text(298, y + 0.012, lab, color=INK2, fontsize=8, ha="right")
+        ax.text(150, y + 0.012, lab, color=INK2, fontsize=8, ha="center")
     ax.set_ylim(0, 1.0)
     ax.set_xlim(0, 300)
     ax.set_ylabel("share of brew titratable acidity neutralised")
@@ -107,15 +122,15 @@ def fig_neutralised(waters: pd.DataFrame) -> None:
     ax.grid(axis="y", color=GRIDC, linewidth=0.8)
     ax.set_axisbelow(True)
 
-    alk = waters["alk"].dropna()
-    alk = alk[(alk >= 0) & (alk <= 300)]
+    ap = alkalinity_population(waters)
+    alk = ap["alk"][(ap["alk"] >= 0) & (ap["alk"] <= 300)]
     axh.hist(alk, bins=60, range=(0, 300), color="#9c9b96", edgecolor=SURFACE, linewidth=0.5)
     axh.set_ylabel("localities")
     axh.set_xlabel("water alkalinity, mg/L as CaCO3 (finished water, locality median)")
     axh.grid(axis="y", color=GRIDC, linewidth=0.8)
     axh.set_axisbelow(True)
-    n_total = int(waters["alk"].notna().sum())
-    n_over = int((waters["alk"] > 300).sum())
+    n_total = int(len(ap))
+    n_over = int((ap["alk"] > 300).sum())
     axh.text(
         298,
         axh.get_ylim()[1] * 0.9,
@@ -160,7 +175,7 @@ def fig_grid(waters: pd.DataFrame) -> None:
             )
             ax.clabel(cs, fmt={0.5: "0.5", 0.75: "0.75", 1.0: "1.0"}, fontsize=8, colors=INK)
             ax.scatter(
-                both["hard"], both["alk"], s=4, color="#e34948", alpha=0.35, linewidths=0, zorder=3
+                both["hard"], both["alk"], s=4, color=INK, alpha=0.25, linewidths=0, zorder=3
             )
             ax.scatter([68], [40], marker="*", s=90, color=INK, zorder=4)
             if row == 0:
@@ -174,8 +189,9 @@ def fig_grid(waters: pd.DataFrame) -> None:
     cbar = fig.colorbar(cf, ax=axes, shrink=0.8, pad=0.02)
     cbar.set_label("residual acidity relative to SCA reference water (★ 40 alk / 68 hard)")
     fig.suptitle(
-        "Residual acidity across the alkalinity × hardness grid. Red dots: "
-        f"{len(both):,} real localities with both values (finished water). Contours at 0.5, 0.75, 1.0.",
+        "Residual acidity across the alkalinity × hardness grid. Dots: "
+        f"{len(both):,} real localities with both values (finished water; "
+        f"{both.groupby('source_id').size().to_dict()}). Contours at 0.5, 0.75, 1.0.",
         x=0.01,
         ha="left",
         color=INK,
@@ -186,7 +202,11 @@ def fig_grid(waters: pd.DataFrame) -> None:
 
 
 def results_table(waters: pd.DataFrame) -> str:
-    alk = waters["alk"].dropna()
+    ap = alkalinity_population(waters)
+    alk = ap["alk"]
+    pop = ap.dropna(subset=["population"])
+    pop = pop[pop["population"] > 0]
+    pw = {q: wquantile(pop["alk"], pop["population"], q) for q in (0.1, 0.25, 0.5, 0.75, 0.9)}
     lines = [
         "# Task 3 results: is the alkalinity effect big enough to matter?",
         "",
@@ -195,16 +215,21 @@ def results_table(waters: pd.DataFrame) -> str:
         "docs/figures/task3_grid.png.",
         "",
         f"Localities with a finished-water alkalinity median: {len(alk):,} "
-        f"(by source: {waters.dropna(subset=['alk']).groupby('source_id').size().to_dict()}).",
-        f"Alkalinity distribution, mg/L as CaCO3: p10 {alk.quantile(0.1):.0f}, p25 {alk.quantile(0.25):.0f}, "
-        f"median {alk.median():.0f}, p75 {alk.quantile(0.75):.0f}, p90 {alk.quantile(0.9):.0f}.",
+        f"(by source: {ap.groupby('source_id').size().to_dict()}).",
+        f"Alkalinity distribution, one locality one vote, mg/L as CaCO3: p10 {alk.quantile(0.1):.0f}, "
+        f"p25 {alk.quantile(0.25):.0f}, median {alk.median():.0f}, p75 {alk.quantile(0.75):.0f}, "
+        f"p90 {alk.quantile(0.9):.0f}.",
+        f"Population-weighted (US utilities with population served, n={len(pop):,}, "
+        f"{pop['population'].sum() / 1e6:.0f} M people): p10 {pw[0.1]:.0f}, p25 {pw[0.25]:.0f}, "
+        f"median {pw[0.5]:.0f}, p75 {pw[0.75]:.0f}, p90 {pw[0.9]:.0f}. Small groundwater systems are",
+        "numerous but serve few people, so the per-locality distribution overstates typical alkalinity.",
         "",
         "Share of the brew's titratable acidity neutralised by the water (central TA per roast bin,",
         "bicarbonate protonation fraction at the bin's brew pH):",
         "",
-        "| roast | TA central (meq/L) | neutralised at SCA 40 mg/L | at median water | at p75 water | at p90 water |"
-        " share of localities losing > 25 % | > 50 % |",
-        "|---|---|---|---|---|---|---|---|",
+        "| roast | TA central (meq/L) | at SCA 40 mg/L | at per-locality median | at population-weighted median |"
+        " at population-weighted p75 | share of localities losing > 25 % | share of people losing > 25 % | > 50 % (people) |",
+        "|---|---|---|---|---|---|---|---|---|",
     ]
     from water_aware_coffee.model.grid import bicarbonate_protonated_fraction as fprot
 
@@ -215,18 +240,20 @@ def results_table(waters: pd.DataFrame) -> str:
             return f * (a / EQ_CACO3) / ta
 
         lost_all = alk.map(lambda a, r=r, f=f: f * (a / EQ_CACO3) / r.ta_ref_meq_l)
+        lost_pop = pop["alk"].map(lambda a, r=r, f=f: f * (a / EQ_CACO3) / r.ta_ref_meq_l)
+        wts = pop["population"] / pop["population"].sum()
         lines.append(
             f"| {r.name} | {r.ta_ref_meq_l:g} | {lost(SCA_ALK):.0%} | {lost(alk.median()):.0%} | "
-            f"{lost(alk.quantile(0.75)):.0%} | {lost(alk.quantile(0.9)):.0%} | "
-            f"{(lost_all > 0.25).mean():.0%} | {(lost_all > 0.5).mean():.0%} |"
+            f"{lost(pw[0.5]):.0%} | {lost(pw[0.75]):.0%} | "
+            f"{(lost_all > 0.25).mean():.0%} | {((lost_pop > 0.25) * wts).sum():.0%} | "
+            f"{((lost_pop > 0.5) * wts).sum():.0%} |"
         )
     lines += [
         "",
-        "Reading: at the SCA target the water removes roughly a sixth of a light roast's acidity; at the",
-        "median real water it removes more; and for the roughly one quarter of localities above the p75",
-        "the light-roast column approaches or passes one half. The dark-roast column is systematically",
-        "higher because dark roasts start with less acid: the same water flattens a dark roast more, in",
-        "relative terms, but a dark roast has less brightness to lose.",
+        "Reading: the dark-roast column is systematically higher because dark roasts start with less",
+        "acid: the same water flattens a dark roast more in relative terms, but a dark roast has less",
+        "brightness to lose. The population-weighted columns are the ones that describe what people",
+        "actually brew with.",
         "",
         "Caveats that apply to every number above: TA values are derived from immersion-brew papers",
         "titrated to pH 8.2 and scaled to 1.25 percent TDS (docs/literature/titratable_acidity_by_roast.md);",
