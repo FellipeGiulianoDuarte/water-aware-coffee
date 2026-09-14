@@ -58,7 +58,12 @@ def bottled_tables(w: pd.DataFrame) -> tuple[str, str]:
     b = w[
         (w["source_id"] == "bottled-labels") & w["alk_measured"].notna() & w["hard"].notna()
     ].copy()
-    b["brand_product"] = b["locality"].str.replace(" | ", ": ", regex=False)
+
+    def _bp(loc: str) -> str:
+        brand, _, product = loc.partition(" | ")
+        return product if product.lower().startswith(brand.lower()) else f"{brand}: {product}"
+
+    b["brand_product"] = b["locality"].map(_bp)
     lines_doc = [
         "## Bottled waters closest to the reference, by country",
         "",

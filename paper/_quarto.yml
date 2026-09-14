@@ -14,7 +14,7 @@ format:
     papersize: a4
     number-sections: true
     geometry: margin=25mm
-    fig-pos: "H"
+    fig-pos: "!htbp"
     pdf-engine: pdflatex
     keep-tex: true
 

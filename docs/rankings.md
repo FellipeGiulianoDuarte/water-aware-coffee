@@ -15,9 +15,9 @@ Distance = |ln(alkalinity/40)| + 0.5·|ln(hardness/68)|; smaller is closer. Labe
 | rank | product | alkalinity mg/L as CaCO3 | hardness mg/L as CaCO3 | pH | distance |
 |---|---|---|---|---|---|
 | 1 | Dias D'Ávila: Água Mineral Dias D'Ávila sem Gás Pet 5L | 42 | 39 |  | 0.32 |
-| 2 | Legítima Lindóia: Legítima Lindóia | 39 | 36 | 6.4 | 0.34 |
+| 2 | Legítima Lindóia | 39 | 36 | 6.4 | 0.34 |
 | 3 | Cristal (Fonte Santa Bárbara): Água Mineral Cristal | 50 | 53 | 6.6 | 0.35 |
-| 4 | Água Mineral São Pedro: Água Mineral São Pedro (Fonte Linda) | 50 | 49 | 6.6 | 0.38 |
+| 4 | Água Mineral São Pedro (Fonte Linda) | 50 | 49 | 6.6 | 0.38 |
 | 5 | Charrua: Água Mineral Charrua | 31 | 43 | 5.8 | 0.48 |
 | 6 | Lindoya Genuína: Água Mineral Lindoya Genuína | 39 | 25 | 6.5 | 0.51 |
 | 7 | Bioleve: Água Mineral Bioleve (Fonte Jatobá 1) | 64 | 60 | 6.8 | 0.54 |
@@ -29,16 +29,16 @@ Highest alkalinity (flattest for light roasts): São Lourenço: Água Mineral S�
 
 | rank | product | alkalinity mg/L as CaCO3 | hardness mg/L as CaCO3 | pH | distance |
 |---|---|---|---|---|---|
-| 1 | Crystal Geyser: Crystal Geyser Alpine Spring Water (bottled at Olancha Spring) | 53 | 59 | 6.8 | 0.36 |
-| 2 | JUST Water: JUST Water Spring Water | 57 | 60 | 7.8 | 0.41 |
-| 3 | Crystal Geyser: Crystal Geyser Alpine Spring Water (bottled at Beaughan Spring) | 46 | 36 | 7.4 | 0.45 |
-| 4 | Crystal Geyser: Crystal Geyser Alpine Spring Water (bottled at Cabin Bar Spring) | 52 | 45 | 7.9 | 0.46 |
-| 5 | Eternal: Eternal Naturally Alkaline Spring Water (Mt. Shasta, CA source) | 35 | 32 | 7.6 | 0.50 |
-| 6 | Crystal Geyser: Crystal Geyser Alpine Spring Water (bottled at Mazzei Spring) | 37 | 27 | 7.2 | 0.55 |
-| 7 | Crystal Geyser: Crystal Geyser Alpine Spring Water (bottled at Norman, AR spring) | 67 | 85 | 7.6 | 0.63 |
-| 8 | Eternal: Eternal Naturally Alkaline Spring Water (Smoky Mountain, TN source) | 71 | 93 | 8.0 | 0.72 |
+| 1 | Crystal Geyser Alpine Spring Water (bottled at Olancha Spring) | 53 | 59 | 6.8 | 0.36 |
+| 2 | JUST Water Spring Water | 57 | 60 | 7.8 | 0.41 |
+| 3 | Crystal Geyser Alpine Spring Water (bottled at Beaughan Spring) | 46 | 36 | 7.4 | 0.45 |
+| 4 | Crystal Geyser Alpine Spring Water (bottled at Cabin Bar Spring) | 52 | 45 | 7.9 | 0.46 |
+| 5 | Eternal Naturally Alkaline Spring Water (Mt. Shasta, CA source) | 35 | 32 | 7.6 | 0.50 |
+| 6 | Crystal Geyser Alpine Spring Water (bottled at Mazzei Spring) | 37 | 27 | 7.2 | 0.55 |
+| 7 | Crystal Geyser Alpine Spring Water (bottled at Norman, AR spring) | 67 | 85 | 7.6 | 0.63 |
+| 8 | Eternal Naturally Alkaline Spring Water (Smoky Mountain, TN source) | 71 | 93 | 8.0 | 0.72 |
 
-Highest alkalinity (flattest for light roasts): Evian (US): evian Natural Spring Water (295); Crystal Geyser: Crystal Geyser Alpine Spring Water (bottled at Johnstown, NY spring) (115); Fiji: FIJI Natural Artesian Water (104)
+Highest alkalinity (flattest for light roasts): Evian (US): evian Natural Spring Water (295); Crystal Geyser Alpine Spring Water (bottled at Johnstown, NY spring) (115); FIJI Natural Artesian Water (104)
 
 ### United Kingdom
 
@@ -46,59 +46,59 @@ Highest alkalinity (flattest for light roasts): Evian (US): evian Natural Spring
 |---|---|---|---|---|---|
 | 1 | Volvic: Natural Mineral Water 1L | 61 | 63 | 7.0 | 0.46 |
 | 2 | FIJI Water: Natural Artesian Water | 104 | 103 | 7.9 | 1.16 |
-| 3 | Deeside: Deeside Mineral Water (still) | 21 | 22 | 6.1 | 1.19 |
+| 3 | Deeside Mineral Water (still) | 21 | 22 | 6.1 | 1.19 |
 | 4 | Highland Spring: Still Spring Water | 123 | 143 | 7.8 | 1.49 |
 | 5 | Belu: Still Natural Mineral Water | 128 | 186 | 7.7 | 1.66 |
 | 6 | Princes Gate: Still Spring Water | 166 | 192 | 6.2 | 1.94 |
 | 7 | Brecon Carreg: Still Natural Mineral Water | 185 | 199 |  | 2.07 |
-| 8 | Buxton: Buxton Still Natural Mineral Water | 203 | 216 | 7.4 | 2.20 |
+| 8 | Buxton Still Natural Mineral Water | 203 | 216 | 7.4 | 2.20 |
 
-Highest alkalinity (flattest for light roasts): evian: Natural Mineral Water 1L (295); Buxton: Buxton Still Natural Mineral Water (203); Brecon Carreg: Still Natural Mineral Water (185)
+Highest alkalinity (flattest for light roasts): evian: Natural Mineral Water 1L (295); Buxton Still Natural Mineral Water (203); Brecon Carreg: Still Natural Mineral Water (185)
 
 ### Germany
 
 | rank | product | alkalinity mg/L as CaCO3 | hardness mg/L as CaCO3 | pH | distance |
 |---|---|---|---|---|---|
-| 1 | Bad Brambacher: Bad Brambacher Naturell | 76 | 81 |  | 0.74 |
-| 2 | Black Forest: Black Forest Still | 25 | 27 |  | 0.92 |
-| 3 | Spreequell: Spreequell Naturell | 11 | 56 |  | 1.40 |
-| 4 | ViO: ViO still | 125 | 149 |  | 1.53 |
-| 5 | Plose: Plose (still) | 19 | 13 | 6.6 | 1.58 |
-| 6 | VILSA: VILSA Mineralwasser naturelle | 144 | 132 |  | 1.61 |
-| 7 | RhönSprudel: RhönSprudel Naturell | 185 | 190 |  | 2.05 |
-| 8 | Aqua Römer: AQUA RÖMER SANFT-QUELLE Mineralwasser Still | 184 | 222 |  | 2.12 |
+| 1 | Bad Brambacher Naturell | 76 | 81 |  | 0.74 |
+| 2 | Black Forest Still | 25 | 27 |  | 0.92 |
+| 3 | Spreequell Naturell | 11 | 56 |  | 1.40 |
+| 4 | ViO still | 125 | 149 |  | 1.53 |
+| 5 | Plose (still) | 19 | 13 | 6.6 | 1.58 |
+| 6 | VILSA Mineralwasser naturelle | 144 | 132 |  | 1.61 |
+| 7 | RhönSprudel Naturell | 185 | 190 |  | 2.05 |
+| 8 | AQUA RÖMER SANFT-QUELLE Mineralwasser Still | 184 | 222 |  | 2.12 |
 
-Highest alkalinity (flattest for light roasts): Staatl. Fachingen: Staatl. Fachingen STILL (1514); Förstina: Förstina Mineralwasser Naturell (710); Rosbacher: Rosbacher Naturell (668)
+Highest alkalinity (flattest for light roasts): Staatl. Fachingen STILL (1514); Förstina Mineralwasser Naturell (710); Rosbacher Naturell (668)
 
 ### France
 
 | rank | product | alkalinity mg/L as CaCO3 | hardness mg/L as CaCO3 | pH | distance |
 |---|---|---|---|---|---|
 | 1 | Mont Blanc: Source Mont Blanc eau minérale naturelle (6x1.5L) | 53 | 80 | 7.6 | 0.35 |
-| 2 | Volvic: Volvic Nature eau minérale naturelle | 66 | 70 |  | 0.51 |
-| 3 | Abatilles: Abatilles eau minérale naturelle plate | 107 | 94 | 8.2 | 1.15 |
-| 4 | Plancoët: Plancoët plate eau minérale naturelle | 103 | 128 | 6.5 | 1.27 |
-| 5 | Wattwiller: Wattwiller eau minérale naturelle plate | 111 | 133 | 7.5 | 1.35 |
-| 6 | Ogeu: Ogeu Pyrénées eau minérale naturelle plate | 148 | 181 | 7.9 | 1.79 |
-| 7 | Auchan: Auchan eau de source de montagne (1.5L) | 142 | 210 | 7.6 | 1.83 |
-| 8 | Cristaline: Cristaline eau de source - Source Cristal-Roc | 164 | 191 | 7.7 | 1.93 |
+| 2 | Volvic Nature eau minérale naturelle | 66 | 70 |  | 0.51 |
+| 3 | Abatilles eau minérale naturelle plate | 107 | 94 | 8.2 | 1.15 |
+| 4 | Plancoët plate eau minérale naturelle | 103 | 128 | 6.5 | 1.27 |
+| 5 | Wattwiller eau minérale naturelle plate | 111 | 133 | 7.5 | 1.35 |
+| 6 | Ogeu Pyrénées eau minérale naturelle plate | 148 | 181 | 7.9 | 1.79 |
+| 7 | Auchan eau de source de montagne (1.5L) | 142 | 210 | 7.6 | 1.83 |
+| 8 | Cristaline eau de source - Source Cristal-Roc | 164 | 191 | 7.7 | 1.93 |
 
-Highest alkalinity (flattest for light roasts): Evian: evian eau minérale naturelle (1L) (295); Thonon: Thonon eau minérale naturelle (279); Cristaline: Cristaline eau de source - Source Sainte-Cécile (238)
+Highest alkalinity (flattest for light roasts): evian eau minérale naturelle (1L) (295); Thonon eau minérale naturelle (279); Cristaline eau de source - Source Sainte-Cécile (238)
 
 ### Italy
 
 | rank | product | alkalinity mg/L as CaCO3 | hardness mg/L as CaCO3 | pH | distance |
 |---|---|---|---|---|---|
-| 1 | Levissima: Levissima Naturale (150 cl PET) | 47 | 57 | 7.8 | 0.24 |
-| 2 | Conad: Conad acqua minerale naturale oligominerale 1.5 l | 112 | 111 | 7.6 | 1.27 |
+| 1 | Levissima Naturale (150 cl PET) | 47 | 57 | 7.8 | 0.24 |
+| 2 | Conad acqua minerale naturale oligominerale 1.5 l | 112 | 111 | 7.6 | 1.27 |
 | 3 | Dolomia: Acqua Dolomia naturale | 123 | 127 | 8.2 | 1.44 |
-| 4 | Recoaro: Recoaro acqua minerale naturale oligominerale | 125 | 145 | 8.0 | 1.52 |
-| 5 | Rocchetta: Rocchetta acqua minerale naturale oligominerale | 151 | 156 | 7.7 | 1.75 |
-| 6 | Lurisia: Lurisia acqua naturale - Fonte Santa Barbara | 15 | 12 |  | 1.87 |
+| 4 | Recoaro acqua minerale naturale oligominerale | 125 | 145 | 8.0 | 1.52 |
+| 5 | Rocchetta acqua minerale naturale oligominerale | 151 | 156 | 7.7 | 1.75 |
+| 6 | Lurisia acqua naturale - Fonte Santa Barbara | 15 | 12 |  | 1.87 |
 | 7 | Lilia: Acqua Lilia Naturale | 221 | 116 |  | 1.98 |
 | 8 | Guizza: Fonte Guizza acqua minerale naturale oligominerale - naturale | 226 | 242 | 7.6 | 2.36 |
 
-Highest alkalinity (flattest for light roasts): Uliveto: Uliveto acqua minerale effervescente naturale (466); Sorgesana: Sorgesana acqua minerale naturale oligominerale (265); San Benedetto: San Benedetto Naturale (Fonte Benedicta, Scorzè) (232)
+Highest alkalinity (flattest for light roasts): Uliveto acqua minerale effervescente naturale (466); Sorgesana acqua minerale naturale oligominerale (265); San Benedetto Naturale (Fonte Benedicta, Scorzè) (232)
 
 ### Portugal
 
@@ -106,14 +106,14 @@ Highest alkalinity (flattest for light roasts): Uliveto: Uliveto acqua minerale 
 |---|---|---|---|---|---|
 | 1 | Cruzeiro: Água do Cruzeiro | 74 | 70 | 7.2 | 0.62 |
 | 2 | Caramulo: Água Caramulo | 20 | 14 | 6.7 | 1.47 |
-| 3 | Vimeiro: Vimeiro Lisa | 19 | 12 | 6.3 | 1.62 |
+| 3 | Vimeiro Lisa | 19 | 12 | 6.3 | 1.62 |
 | 4 | Luso: Água de Luso (still) | 9 | 9 | 5.8 | 2.50 |
-| 5 | Vimeiro: Vimeiro Original | 351 | 399 | 7.3 | 3.06 |
+| 5 | Vimeiro Original | 351 | 399 | 7.3 | 3.06 |
 | 6 | Serra da Estrela: Água Serra da Estrela | 4 | 5 | 5.7 | 3.61 |
 | 7 | Caldas de Penacova: Água das Caldas de Penacova | 2 | 6 | 5.3 | 4.03 |
-| 8 | Pedras Salgadas: Pedras Salgadas (água mineral natural gasocarbónica) | 1626 | 354 | 6.1 | 4.53 |
+| 8 | Pedras Salgadas (água mineral natural gasocarbónica) | 1626 | 354 | 6.1 | 4.53 |
 
-Highest alkalinity (flattest for light roasts): Pedras Salgadas: Pedras Salgadas (água mineral natural gasocarbónica) (1626); Vimeiro: Vimeiro Original (351); Cruzeiro: Água do Cruzeiro (74)
+Highest alkalinity (flattest for light roasts): Pedras Salgadas (água mineral natural gasocarbónica) (1626); Vimeiro Original (351); Cruzeiro: Água do Cruzeiro (74)
 
 
 ## Tap water closest to the reference, by country
